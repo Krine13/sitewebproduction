@@ -786,7 +786,10 @@ margin-left: 25%;
 .toggle-link {
   display: none; /* Le lien disparaît sur grand écran */
 }
-  
+ .voir {
+  margin-left: 10%;
+  font-size: 16px;
+ } 
 
 @media (max-width:480px) {
   .imagePresentation .grosTitre {
