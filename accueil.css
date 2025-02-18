@@ -1,0 +1,1287 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #083e56;
+    color:aliceblue;
+    box-sizing: border-box;
+    
+    
+  }
+  html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  
+    
+    
+  }
+  
+  
+  strong {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+  
+
+  .logoContainer {
+    position: absolute;
+    width:6%;
+    
+    
+  }
+  
+
+  img, video {
+    max-width: 100%; /* S'adapte à la largeur du parent */
+  height: auto; /* Conserve les proportions */
+  }
+  
+  .presentationContainer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    
+    
+}
+
+
+
+.photo img {
+    
+    width: 100%;
+    height: auto;
+    
+    
+     /* Ajuste la largeur de l'image pour qu'elle ne dépasse pas la largeur du conteneur */
+     /* Ajuste automatiquement la hauteur en fonction de la largeur pour maintenir le ratio */
+     /* Ajuste l'image tout en conservant son ratio d'aspect */
+}
+
+.menu {
+  
+  display: flex;
+  flex-direction: row;
+  gap:80px;
+  
+  
+  color: aliceblue;
+  position: absolute; /* Positionne le menu de manière absolue par rapport à son parent */
+  top: 0; /* Décale-le du haut selon tes besoins */
+ left: 50%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 100%; /* Ajuste la largeur du menu */
+    z-index: 10; /* S'assure que le menu est au-dessus des autres éléments */
+    padding-left: 4%;
+  }
+
+  
+  .hamburger {
+    display: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+}
+
+
+.creat a, .ref a, .tarif a {
+  color: aliceblue ;
+  text-decoration: none;
+}
+
+.presentationText {
+    position: absolute;
+    margin-top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: top 0.1s, opacity 0.5s;
+    animation: moveDownTitre 2s ease-out forwards;
+    animation-delay: -1s;
+}
+.presentationText .grosTitre {
+  font-size: 3.2em;
+  
+  
+}
+.presentationText p {
+  font-size: 1.4em;
+}
+
+
+.bouton-prestation {
+  
+  
+  text-decoration:none;
+  background-color:#434e5f;
+  
+  left:45%;
+  border: white solid;
+  font-size: 17px;
+  color: aliceblue;
+  
+  padding: 5px 10px;
+  animation: zoomer 2s forwards;
+  animation: moveUpSousTitre 2s ease-out forwards;
+  transition: bottom 0.1s, opacity 0.5s;
+  animation-duration: 3s;
+  
+  
+  }
+  
+
+     
+    @media (max-width: 768px) {
+      .presentationContainer  {
+        
+          position: relative;
+          width: 100%;
+          
+          padding:0;
+          
+      }
+  
+      .presentationText {
+          position: absolute;
+          margin-top: 5%; /* Moins d'espace sur le haut */
+          
+          font-size: 0.8rem; /* Réduction de la taille du texte si besoin */
+          text-shadow: 2px 2px 4px rgb(232, 137, 41);
+      }
+
+      
+      .sousTitre {
+        margin-top: -10%;
+      }
+  
+      .logoContainer {
+          
+          width: 8%; /* Augmente un peu la taille si nécessaire pour la visibilité */
+      }
+      .menu {
+        display: none; /* Cache le menu */
+        flex-direction: row;
+        font-size: 80%;
+        border-radius: 8px;
+        position: absolute;
+        color:rgb(255, 254, 254) ;
+        gap:70px;
+        left:10%;
+        margin-left:15%;
+        width: 110%;
+        height: 6%;
+        box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
+        padding: 10px 30px;
+        
+        
+    }
+    .menu a {
+      color:rgb(255, 254, 254) ;
+    }
+    
+    .menu.active {
+        display: flex; /* Affiche le menu quand activé */
+    }
+    
+    .hamburger {
+      
+        display: block; /* Affiche l'icône hamburger */
+    }
+    /* Masquer l'icône hamburger lorsque le menu est actif */
+    
+  }
+    
+  @media (max-width:480px){
+
+    
+     .presentationContainer {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      /*display: block;*/
+      padding: 0 !important;
+      margin:0  !important;
+      /*border: none;*/
+      /*display: block;*/
+    }
+
+    
+    .presentationText {
+      position: absolute;
+      margin-top: 5%;
+      text-shadow: 2px 2px 4px rgb(232, 137, 41);
+      width: 50%;
+      max-width: 100%;
+      height: 40%;
+      font-size: 0.5EM;
+      color: rgb(247, 250, 250);
+    }
+.sousTitre {
+ margin-top: -10%;
+  
+}
+
+    
+
+    .logoContainer {
+      margin-left: 1px;
+      margin-top: 1px;
+
+    }
+    .menu {
+      display: none; /* Cache le menu */
+      flex-direction: row;
+      font-size: 80%;
+      border-radius: 8px;
+      position: absolute;
+      color:rgb(255, 254, 254) ;
+      gap:18px;
+      left:-5%;
+      margin-left:15%;
+      width: 110%;
+      height: 6%;
+      box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
+      padding: 10px 21px;
+      
+  }
+  .menu a {
+    color:rgb(255, 254, 254) ;
+  }
+
+  .menu.active {
+      display: flex; /* Affiche le menu quand activé */
+  }
+
+  .hamburger {
+    
+      display: block !important; /* Affiche l'icône hamburger */
+  }
+}
+   
+   /*.firstContainer h1 {
+    font-size: 1.5em !important;
+   }
+   .firstContainer P {
+    font-size: 1.2rem !important;
+    margin-left: 0;
+   } */
+    
+  
+
+
+
+
+@keyframes moveDownTitre {
+    from {
+        top: -40%; /* Position initiale du texte au départ de l'animation */
+    }
+
+    to {
+        top: 30%; /* Position finale du texte à la fin de l'animation */
+    }
+}
+
+@keyframes zoomer {
+    from {
+        transform: scale(2);
+    }
+    to {
+        transform: scale(1.2); /* Ajustez la valeur selon votre préférence */
+    }
+}
+
+
+
+@keyframes moveUpSousTitre {
+    from {
+        top: 700px;
+    }
+
+    to {
+        top: 500px;
+    }
+}
+
+
+
+ .outerContainer {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  flex-direction: row;
+  
+ }
+ .animate {
+  opacity: 0; /* Invisible au départ */
+  transform: translateY(100px); /* Décale légèrement vers le bas */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Transition fluide */
+}
+
+/* Animation lorsque l'élément est visible */
+.animate.active {
+  opacity: 1;
+  transform: translateY(0); /* Repositionne à l'endroit d'origine */
+} 
+
+.firstContainer {
+  
+  width:60%;
+  
+  
+}
+
+.firstContainer h1 {
+  
+  position: relative; /* Nécessaire pour positionner l'élément pseudo */
+  font-size: 1.8em;
+  margin-left: 15%; /* Ajoute un espace après le trait */
+  margin-top: 16%;
+}
+
+
+
+.firstContainer h1::before {
+  
+  content: ""; /* Crée un élément avant */
+  position: absolute;
+  left: -6%; /* Place le trait à gauche du titre */
+  top: 0;
+  bottom: 0; /* Fait en sorte que le trait s'étende sur la hauteur du titre */
+  width: 0.1em; /* Épaisseur du trait */
+  background-color: rgb(232, 137, 41); /* Couleur du trait */
+}
+
+.firstContainer h1, .firstContainer h1::before {
+  /* L'élément est invisible au départ */
+   opacity: 0;
+   transform: translateX(-10%); 
+ }
+ 
+ .firstContainer h1.active {
+   opacity: 1;
+   animation: slide-in 1s ease-out forwards; /* Rendre l'élément visible quand il est actif */
+ }
+ .firstContainer h1.active::before {
+   animation: slide-in 1s ease-out forwards;
+     opacity: 1;
+ }
+ @keyframes slide-in {
+   from {
+       transform: translateX(-100%); /* Commence en dehors de l'écran à gauche */
+       opacity: 0; /* Transparent au début */
+   }
+   to {
+       transform: translateX(0); /* Arrive à sa position initiale */
+       opacity: 1; /* Devient visible */
+   }
+ }
+ 
+
+.firstContainer p {
+  margin-left: 10%;
+  text-align: justify; /* Justification du texte */
+  line-height: 1.7; /* Hauteur de ligne ajustée */
+  /*border: 1px solid #ddd; /* Bordure pour visualiser le conteneur */
+  /*padding: 10px; /* Espacement interne */
+  font-size: 1.2rem;
+  margin-top: 5%;
+  
+  
+}
+
+.seo {
+  position: relative;
+  width: 100vw;
+  
+
+  
+  
+}
+
+.seo img {
+  
+  
+  margin-top: 16%;
+  width: 60%;
+  margin-left: 30%;
+
+}
+
+@media (max-width:768px) {
+  .outerContainer 
+   {
+    width: 100%;
+    
+    flex-direction: column; /* Passe en colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments dans le conteneur */
+  }
+
+  .firstContainer {
+    width: 80%; /* Prend toute la largeur */
+    
+  }
+
+  .firstContainer h1::before  {
+   left:-6%;
+    
+  }
+  .firstContainer P {
+    margin-left:0;
+    line-height: 1.8em
+  }
+ .firstContainer h1 {
+  margin-left: 6%;
+  font-size: 1.8em;
+  
+ }
+
+ 
+ .seo img{
+  margin-left: 9.5%;
+  margin-top: 5px;
+  width: 80%;
+  
+ }
+ .suiteContainer  {
+  width: 10%;
+  margin-top: 20%;
+ }
+
+ 
+}
+ 
+
+
+
+
+
+.suiteContainer {
+  width: 90%;
+  margin: 10% auto; /* Centrage horizontal et espacement vertical */
+  padding: 2%;
+  background-image: linear-gradient(rgb(20, 114, 139), #083e56);
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  opacity: 0; /* Commence invisible */
+  transform: scale(0.8); /* Échelle initiale */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  
+}
+
+.suiteContainer.active {
+  opacity: 1;
+  transform: scale(1); /* Reviens à la taille normale */
+  animation: bounceIn 1s ease-in-out; /* Animation de rebond */
+}
+
+
+
+
+
+.suiteContainer h2  {
+  font-size: 35px; /* Taille du texte */
+  color: rgb(27, 48, 57);
+  text-align: center;
+  margin-bottom: 2%;
+  font-weight: 700;
+   /* Nécessaire pour positionner le trait */
+}
+
+
+
+.suiteContainer .sousTitre2 {
+  font-size: 1.5em;
+  
+  position: relative;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.suiteContainer .sousTitre2::after {
+  content: ""; /* Nécessaire pour afficher le trait */
+  position: absolute;
+  left:35%; /* Aligne le trait avec le côté gauche du sous-titre */
+  
+  width: 30%; /* S'étend sur toute la largeur de l'élément */
+  height: 2px; /* Hauteur du trait */
+  background-color: rgb(232, 137, 41); /* Couleur du trait */
+  align-items: center;
+}
+
+.suiteContainer p {
+  font-size: 1.2rem;
+  line-height: 1.6; /* Lisibilité accrue */
+  
+  text-align: center; /* Texte justifié */
+  width: 80%;
+  margin-left: 10%;
+}
+
+.suiteContainer a {
+  color:rgb(232, 137, 41)
+}
+
+
+  
+
+
+/*.suiteContainer p {
+  font-size: 1.2em;
+}*/
+
+.outerContainer2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-top: 0;
+  gap: 5%;
+    
+}
+
+.animation-fade-in {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+
+.image-anime {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+.suiteContainer2 {
+  width: 70%;
+  position: relative;
+ 
+  
+  
+}
+
+
+
+.suiteContainer2 h2::before {
+  
+  content: ""; /* Crée un élément avant */
+  position: absolute;
+  left: -20px; /* Place le trait à gauche du titre */
+  top: 10px;
+  bottom: 0; /* Fait en sorte que le trait s'étende sur la hauteur du titre */
+  width: 0.3%; /* Épaisseur du trait */
+  height: 62px;
+  background-color: rgb(232, 137, 41); /* Couleur du trait */
+  opacity: 0; /* Initialement invisible */
+  transform: translateX(-100%); /* Commence en dehors de l'écran */
+  transition: opacity 1s ease, transform 1s ease; /* Transition fluide */
+  
+}
+
+@keyframes slide-in {
+  from {
+      transform: translateX(-100%); /* Commence en dehors de l'écran à gauche */
+      opacity: 0; /* Transparent au début */
+  }
+  to {
+      transform: translateX(0); /* Arrive à sa position initiale */
+      opacity: 1; /* Devient visible */
+  }
+}
+
+.suiteContainer2 h2.visible::before {
+  animation: slide-in 1s ease forwards;
+}
+
+.suiteContainer2 h2.visible {
+  animation: slide-in 1s ease forwards;
+}
+
+.suiteContainer2 h2 {
+  
+  width: 65%;
+  margin-left: 60px;
+
+  /*text-align: justify; /* Justification du texte */
+  line-height: 1.3; /* Hauteur de ligne ajustée */
+  /*border: 1px solid #ddd; /* Bordure pour visualiser le conteneur */
+ 
+  font-size: 1.9em;
+  font-weight: 600;
+  
+  
+  transition: height 0.5s ease;
+  
+}
+
+/*.suiteContainer2 p {
+  width: 60%;
+  margin-left: 11%;
+  line-height: 1.5;
+}*/
+
+.imageContainer {
+  
+  width: 100%;
+  position: relative;
+}
+
+.imageRef img {
+  width: 100%; /* Ajustez selon vos besoins */
+  height: auto;
+  
+}
+.textOverlay {
+ 
+  margin-left: 20%;
+  margin-top: 0;
+}
+.textOverlay ul {
+  list-style-type: none; /* Enlève les puces */
+    padding-left: 0; /* Enlève l'indentation de la liste */
+}
+
+.textOverlay h3, h4 {
+  color: rgb(240, 154, 74);
+  font-size: 20px; /* Taille relative à la largeur de l'écran */
+  
+  
+}
+
+
+
+.imageRef .textOverlay {
+  position: absolute;
+  top: 50%; /* Centrer verticalement */
+  left: 250px; /* Centrer horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste l'alignement */
+  color: rgb(15, 1, 1); /* Contraste pour être lisible sur l'image */
+  font-size: 1.2em; /* Taille du texte, ajustez selon vos besoins */
+  text-align: center;
+  font-weight: bold;
+}
+
+.resume {
+  width: 780px;
+  height: auto;
+  background-image: linear-gradient(rgb(20, 114, 139), #083e56);
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+
+}
+
+.resume h3 {
+  
+  font-size: 1.9em;
+  color:  rgb(246, 157, 63);
+  text-align: center;
+  
+  
+  font-weight: 600;
+   
+}
+
+.resume p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5em;
+  width: 80%;
+  margin-left: 10%;
+}
+
+@media(max-width:768px){
+
+  .outerContainer2 {
+   flex-direction: column !important;
+   align-items: center;
+  }
+
+  .suiteContainer2 {
+    position: relative;
+    width: 80%;
+  }
+  .suiteContainer2 h2{
+   width: 60%;
+   margin-left:5%;
+   
+   font-weight: 600;
+ }
+ .suiteContainer2 h2::before {
+  position: absolute;
+   margin-left: -8%;
+   height: 60px;
+   width: 2px;
+   left: 4%;
+ }
+ 
+ .imageContainer .imageRef {
+   display: flex; /* Si vous avez plusieurs éléments ici, flex peut s'appliquer */
+   width: 90%;
+   
+   align-items: center; /* Centrer le contenu horizontalement */
+   gap: 10px;
+ }
+ 
+ .imageRef .textOverlay {
+  margin-left: 10%;
+ }
+.imageRef {
+  width: 120% !important;
+  margin-left: -10%;
+}
+ .textOverlay ul li h3, .textOverlay ul li h4 {
+  
+   font-size: 16px;
+ }
+ .resume {
+   width:90%;
+   margin-top: 10%;
+   font-size: 1.4em;
+ }
+ .resume h3 {
+  font-size: 1.4em;
+ }
+
+ .texte4 p {
+  font-size: 1.2em;
+  
+ }
+ 
+}
+
+@media (max-width:480px) {
+ .body {
+  background-color: rgb(248, 248, 249)!important;
+ }
+  .suiteContainer2  {
+    width: 100VW !important;
+    
+  }
+  .suiteContainer2 h2 {
+    width: 100%;
+    
+  font-size: 30px;
+  padding-left:7%;
+  font-weight: bold;
+  }
+  .suiteContainer2 h2::before {
+    left:11%;
+    top:6%;
+    height: 65px;
+    width: 0.4%;
+  }
+  .imageContainer {
+    position: relative;
+    margin-top:10%;
+    margin-left: 20%;
+    
+
+  }
+ 
+ .imageRef img {
+  width: 100%; /* Plus grande que le conteneur */
+  height: auto; /* Pour garder les proportions */
+  margin-left: -18%; /* Si nécessaire, ajustez la position */
+}
+  .imageRef .textOverlay {
+    margin-left: -25%;
+    
+  }
+  .textOverlay {
+    
+    width:80% ;
+    height: auto;
+    line-height: 0.6em;
+    
+  }
+  .resume h3 {
+    font-size: 1.4em;
+  }
+
+  .explicationContainer {
+    flex-direction: column-reverse;
+  }
+
+  
+  .container4 .titre4::before {
+    margin-left:2% !important;
+    width: 0.4% !important;
+  }
+  .container4 .titre4 {
+    font-size: 1.6em;
+  }
+  .explication {
+    width:80% !important;
+    
+  }
+  .texte4 P{
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    
+  }
+  .button1 {
+    margin-left:18% !important;
+  }
+  .footer {
+    background-color: deeppink;
+  }
+ 
+    
+  }
+  
+
+
+  
+
+ 
+ 
+ 
+ 
+
+.big {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  margin-top: 10%;
+}
+.container4 {
+  position: relative;
+
+  
+}
+.container4 .titre4 {
+  margin-top: 35px;
+  font-size: 30px;
+  color:aliceblue;
+  margin-left: 6%;
+  
+ 
+}
+
+
+.container4 .titre4::before {
+  content: ""; /* Crée un élément avant */
+  position: absolute;
+  left: 4%;
+  top:4.5%;
+  bottom: 0; /* Fait en sorte que le trait s'étende sur la hauteur du titre */
+  width: 0.2%; /* Épaisseur du trait */
+  height: 90%;
+  background-color: rgb(232, 137, 41); /* Couleur du trait */
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.explicationContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  
+  flex-direction: row;
+}
+
+
+
+.explication {
+  
+  font-size: 19px;
+  
+  margin-left: 25px;
+  padding: 0 5% ;
+  Width: 500px;
+  height: auto;
+  
+  
+
+}
+
+.explication .texte4 {
+  left: 0;
+  margin-bottom: 10% ;
+  line-height: 50px;
+  text-align: justify;
+  
+  
+  
+  
+
+}
+.texte4 .button1 {
+   margin-left: 100px;
+  color: aliceblue;
+  background-color: rgb(255, 157, 0);
+ font-size: 0.9em; 
+ padding:2%;
+}
+
+.dernier {
+  margin-left: 150px;
+  margin-top: 0;
+  width: 670px;
+}
+
+
+
+@media(max-width:1024px) {
+  .explicationContainer{
+    flex-direction: column !important;
+    align-items: center;
+   }
+   .container4 .titre4 {
+    margin-left: 20%;
+    margin-top: 10%;
+   }
+   .titre4::before {
+    margin-left: 12%;
+   }
+   
+   .explication .button1 {
+    margin-left: 22%;
+   }
+   
+   .dernier  {
+    margin-left: 3%;
+   }
+   
+}
+
+.footerContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100vw;
+  height:auto;
+  
+  margin-top: 15%;
+  
+  background-color:fuchsia
+  }
+
+  .contact {
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 2%;
+    
+    }
+   .telephone {
+    width: 20%;
+    left:30%;
+
+   } 
+  
+.tel {
+  width:25px;
+  padding-left: 60%;
+  padding-top: 12%;
+  
+  
+  
+  
+  } 
+
+  
+  
+  .footerContainer .loi {
+  
+  margin-left: 40%;
+  margin-top:2%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 100VW;
+  margin-left: 30%;
+  gap:10%
+  }
+  
+  
+  
+   .condition a,
+  .mention a,
+  .politique a 
+  {
+  color: black;  
+  font-size: 1em;
+  justify-content: space-between;
+  
+  
+  
+  }
+  
+ 
+  
+  .footerContainer .footer2 { 
+  
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;  
+    width: 100%;
+    margin-top: 2%;
+}
+
+
+.footer2 {
+display: flex;
+justify-content: center;
+text-align: center;
+width: 100vw;
+height: auto;
+margin-top:30%;
+}
+.footer2 p {
+color: black; 
+align-items: center;
+
+}
+
+/*.footer2 .reseau {
+position: absolute;
+}*/
+
+.reseau {
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;  
+  align-items: center;  
+  width: 100vw; 
+  padding: 10px 0;
+  
+  background-color: lightgray; 
+
+}
+.insta {
+width: 30px;
+height: auto;
+margin-left: 47.5%;
+}
+.link {
+width: 30px;
+height: auto;
+}
+.insta {
+margin-right: 15px;
+}
+
+
+@media (max-width:768px) {
+
+
+
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.contact {
+position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.telephone {
+  position: absolute;
+    width: auto;
+    left: 0;
+    display: flex;
+    margin-left: 40%;
+    padding-bottom: 6%;
+    
+}
+
+.tel {
+    padding-left: 0;
+    
+}
+
+.contact p {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 4%;
+}
+
+.loi {
+    position: relative;
+    flex-direction: column;
+    right: 2%;
+    width: 100%;
+    margin: 0 0;
+  
+}
+
+.loi a {
+  margin-left: 0;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.footer2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1em;
+}
+.footer2 p {
+  margin-top:0;
+  margin-right: 5%;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.insta, .link {
+    margin: 0;
+    width: 30px;
+    height: auto;
+}
+}
+
+ /* @media (max-width:480px) {
+    footer {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      overflow: hidden !important;*/
+      @media (max-width:480px) {
+
+        
+        .footerContainer {
+          display: flex;
+          position: relative;
+          height: auto;
+         flex-direction: column;
+        margin-top: 0;
+       background-color:fuchsia
+      }
+        
+      .footerContainer .loi {
+          flex-direction: column;
+          margin-top: 40%;
+          
+         color: rgb(8, 8, 8);
+         
+          
+        }
+      
+        .condition {
+          margin-left: 17%;
+        }
+        .mention {
+          margin-left: 30%;
+        }
+      
+        .politique {
+          margin-left: 23%;
+        }
+        .contact {
+          position: relative;
+          margin-right: 60%;
+          text-align: center;
+          height: auto;
+          width: 100%;
+          
+          
+        }
+        .contact p {
+          padding-left:5% ;
+          
+        }
+        .telephone {
+          position: relative;
+          width: 50%;
+          left: 23%;
+          padding-bottom: 10%;
+        }
+      
+        .telephone .tel {
+          
+          margin-left: 0%;
+          margin-top: -30%;
+        }
+        
+        
+      
+        .footerContainer .footer2 {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+          margin-top: 50%;
+          margin-right: 10%;
+          background-color: fuchsia ;
+        }
+      
+        .footer2 p {
+          align-items: center;
+         margin-top: 5%;
+         margin-left: 5%;
+          
+         
+        }
+       
+        
+        .footerContainer .reseau {
+          position: relative;
+          flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
+          margin-left: 15%;
+          height: auto; 
+          width: 100% !important;
+         
+      }
+      
+      .insta {
+        position: absolute;
+        margin-right:14%;
+      }
+      .link {
+        padding-left: 50%;
+      }
+    }
+  
+
+
+
+  
+    
+  

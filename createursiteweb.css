@@ -1,0 +1,1405 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #083e56;
+  
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+.imagePresentation { 
+  position: relative;
+  width: 100vw;
+  height: auto;
+  
+}
+
+.logoContainer {
+position: absolute;
+top: 2%; /* Ajustez pour le placer verticalement */
+left: 1%; /* Ajustez pour le placer horizontalement */
+width: 7%; /* Ajustez la taille du logo */
+z-index: 15; /* Assurez-vous qu'il apparaît au-dessus de l'image */
+}
+.logoContainer img {
+width: 100%; /* Le logo s'adapte à la largeur de son conteneur */
+height: auto; /* Maintient le ratio du logo */
+}
+
+
+.photo img {
+  width: 100%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap:80px;
+  color: aliceblue;
+  position: absolute; /* Positionne le menu de manière absolue par rapport à son parent */
+  top: 0; /* Décale-le du haut selon tes besoins */
+  left: 50%;
+  text-shadow: 2px 2px 4px rgba(252, 249, 249, 0.8);
+    padding: 10px;
+    width: 40%; /* Ajuste la largeur du menu */
+    z-index: 10; /* S'assure que le menu est au-dessus des autres éléments */
+    padding-left: 4%;
+  }
+
+  .hamburger {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+  }
+  
+  .creat a, .ref a, .tarif a{
+  text-decoration: none;
+  color: aliceblue;
+  }
+  
+
+
+
+.grosTitre {
+  
+      position: absolute;
+      color: rgb(255, 254, 253);
+      font-size: 1.6em;
+      top: 55%; /* Centre verticalement */
+      left: 55%; /* Centre horizontalement */
+      transform: translate(-50%, -50%); /* Ajustement pour centrer */
+      z-index: 10; /* Assure que le texte est au-dessus de l'image */
+      text-align: center; /* Centrer le texte si nécessaire */
+      text-shadow: 
+      0 0 5px , /* Lueur bleue */
+      0 0 10px #42e6f3,
+      
+      0 0 40px #15c4f4, /* Lueur cyan plus forte */
+      0 0 80px #1572f4,
+      0 0 120px #1572f4;
+      /*0 0 10px #42e6f3, 
+      0 0 20px #1567f4, 
+      0 0 30px #fff, 
+      0 0 40px #620af0; /* Moins de lueurs pour alléger */
+  animation: monAnimation 1s infinite ease-out alternate, electricEffect 1.2s infinite; /* Animation continue */
+  
+  }
+
+   
+@keyframes electricEffect {
+  0%, 100% {
+      text-shadow: 0 0 10px #42e6f3, 0 0 20px #15c4f4;
+  }
+  50% {
+      text-shadow: 0 0 20px #00d4ff, 0 0 40px #1567f4;
+  }
+}
+
+@keyframes monAnimation {
+  from {
+    filter:blur(12px);
+    
+    opacity:0;
+  }
+ 
+  to {
+    filter:blur(0px);
+    
+    opacity:1;
+  }
+}
+
+
+
+.largeurContainer {
+display: flex;
+justify-content: center; /* Centre tout le contenu horizontalement */
+width: 100%;
+
+  
+  /*display: flex; /* Active Flexbox pour aligner les enfants côte à côte */
+/* flex-direction: row;
+  gap: 20px; /* Ajoute un espace entre le texte et l'image */
+ /* width: 100%; /* Prend toute la largeur disponible */
+ /* margin: 0 auto; /* Centre le conteneur si nécessaire */
+}
+
+.texteContainer {
+  width: 90%;
+
+text-align: justify;
+
+ 
+}
+
+.texteContainer h2 {
+  color: aliceblue;
+  font-size: 1.8em;
+  margin-bottom: 20px; /* Espacement sous le titre */
+  position: relative;
+  margin-top: 3%;
+  overflow: visible; /* S'assurer que rien ne cache l'élément */
+  
+}
+
+
+.texteContainer h2::before {
+  content: ""; /* Crée un élément avant */
+position: absolute;
+left: -2%; /* Place le trait à gauche du titre */
+top:10%;
+bottom: 0; /* Fait en sorte que le trait s'étende sur la hauteur du titre */
+width: 2px; /* Épaisseur du trait */
+height: 2em;
+background-color: rgb(232, 137, 41); /* Couleur du trait */
+opacity: 0;
+transform: translateX(-10%);
+transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.texteContainer h2, .texteContainer h2::before {
+ /* L'élément est invisible au départ */
+  opacity: 0;
+  transform: translateX(-10%); 
+}
+
+.texteContainer h2.active {
+  opacity: 1;
+  animation: slide-in 1s ease-out forwards; /* Rendre l'élément visible quand il est actif */
+}
+.texteContainer h2.active::before {
+  animation: slide-in 1s ease-out forwards;
+    opacity: 1;
+}
+@keyframes slide-in {
+  from {
+      transform: translateX(-100%); /* Commence en dehors de l'écran à gauche */
+      opacity: 0; /* Transparent au début */
+  }
+  to {
+      transform: translateX(0); /* Arrive à sa position initiale */
+      opacity: 1; /* Devient visible */
+  }
+}
+
+.sousTitre {
+color: #fbf9f9;
+font-size: 1.6em;
+font-weight: 600;
+margin-bottom: 3%;
+
+
+}
+
+
+.texteContainer a {
+  color:rgb(232, 137, 41);
+}
+.texteContainer ul {
+color: aliceblue;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-top: 8%;
+  margin-left: 5%;
+  padding-top: 5%;
+  width: 60%;
+  height: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Ombre douce */
+  
+}
+.paragrapheContainer {
+display: flex; /* Active l'alignement côte à côte */
+margin-top: 20px; /* Ajoute un espace sous le titre */
+gap: 100px;
+flex-direction: row;
+
+perspective: 1000px; /* Ajout de profondeur pour un effet 3D */
+overflow: hidden; /* Cache le débordement de l'animation */
+position: relative;
+
+
+}
+
+
+.paragraphe1,
+.paragraphe2 {
+flex: 1; /* Chaque paragraphe prend 50% de l'espace */
+color: #333; /* Couleur du texte */
+box-shadow:0 4px 8px rgba(0, 0, 0, 1); /* Ombre douce */
+padding-left: 2%;
+
+
+}
+
+.paragraphe2 {
+
+margin-top: 25%;
+margin-left: 5%;
+width: 100%;
+  height: 100%;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden; /* Cache le verso de la page */
+  transform-origin: right; /* Point d'origine pour l'animation */
+  animation: turnPage 2s ease-in-out 1; /* Applique l'animation */
+
+}
+.encadre {
+border: 1px solid rgb(232, 137, 41); /* Bordure noire */
+  padding: 2px 5px;       /* Espace entre le texte et la bordure */
+  display: inline-block;  /* Assure que l'encadré suit la taille du contenu */
+  
+  background-color: rgb(232, 137, 41); /* Couleur de fond légère (optionnel) */
+}
+.imageContainer {
+position: absolute;
+display: flex;
+width: 40%;
+height: auto;
+margin-left: 55%;
+box-shadow: 0 4px 8px rgba(247, 246, 246, 0.995); /* Ombre douce */
+}
+
+.imageContainer img {
+width: 100%;
+}
+
+
+ 
+
+.paragraphe1 p,
+.paragraphe2 p {
+line-height: 1.8; /* Espacement entre les lignes */
+font-size: 1.2em;
+width: 85%;
+color: #fbf9f9;
+
+
+}
+
+
+
+
+
+.paragraphe2 P{
+
+  
+line-height: 2.3em;
+
+}
+
+
+
+
+
+.paragraphe2  {
+  
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+ width: 25px;
+ height: auto;
+ transform-origin: center;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 2); /* Ombre portée */
+  margin-top: 30%;
+  margin-left: 0%;
+  
+  
+  
+  
+  
+}
+/*@keyframes relief {
+  
+  0% {
+    
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    
+            transform: scale(1);
+    opacity: 1;
+  }
+}*/
+
+
+.paragraphe2 {
+  opacity: 0; /* Invisible au départ */
+  transform: scale(0); /* Réduit à 0 */
+  transition: opacity 0.5s, transform 1s ease-out;
+}
+
+/* Lorsque la classe "active" est ajoutée */
+
+.paragraphe2.active {
+  opacity: 1;
+  transform: scale(1);
+  animation: relief 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0s;
+}
+/*@keyframes relief {
+  
+  0% {
+    
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    
+            transform: scale(1);
+    opacity: 1;
+  }
+}*/
+@keyframes relief {
+  0% {
+    
+            transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    
+            transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+
+
+  
+
+
+.prestations {
+display: flex;
+width: 43vw;
+height: 8vh;
+justify-content: center;
+align-items: center;
+margin-top: 10%;
+margin-left: 28%;
+background-color: rgb(232, 137, 41);
+box-shadow: 0 4px 8px rgba(247, 246, 246, 0.995); /* Ombre douce */
+opacity: 0; /* L'élément est invisible au départ */
+  transform: scale(0); /* L'élément est réduit au départ */
+  transition: opacity 0.5s, transform 1.2s ease-out; /* Ajoute une transition douce */
+}
+
+.presta {
+ text-align: center;
+ font-size: 25px;
+ color: aliceblue;
+ 
+}
+
+
+
+.prestations.active {
+  opacity: 1; /* Rendre l'élément visible quand il est actif */
+  transform: scale(1); /* Réinitialiser la taille à 100% */
+  animation:etirer 1.5s both; 
+
+}
+
+
+
+@keyframes etirer {
+ 
+  0% {
+    
+            transform: translateY(-45px);
+    
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+   
+            transform: translateY(-24px);
+    
+            animation-timing-function: ease-in;
+  }
+  65% {
+    
+            transform: translateY(-12px);
+   
+            animation-timing-function: ease-in;
+  }
+  82% {
+    
+            transform: translateY(-6px);
+    
+            animation-timing-function: ease-in;
+  }
+  93% {
+   
+            transform: translateY(-4px);
+    
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    
+            transform: translateY(0px);
+    
+            animation-timing-function: ease-out;
+  }
+  100% {
+   
+            transform: translateY(0px);
+   
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .menu {
+    display: none; /* Cache le menu */
+    flex-direction: row;
+    font-size: 80%;
+    border-radius: 8px;
+    position: absolute;
+    color:rgb(255, 254, 254) ;
+    gap:70px;
+    left:10%;
+    margin-left:15%;
+    width: 110%;
+    height: 6%;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    
+    
+}
+.menu a {
+  color:rgb(255, 254, 254) ;
+}
+
+.menu.active {
+    display: flex; /* Affiche le menu quand activé */
+}
+
+.hamburger {
+  
+    display: block; /* Affiche l'icône hamburger */
+}
+
+  .texteContainer {
+margin-top: 5%; 
+}
+  .texteContainer h2 {
+    margin-left: 7%;
+  }
+
+  .texteContainer h2::before {
+   top:0em;
+    
+   height: 100% !important;
+  }
+  .paragrapheContainer {
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .texteContainer .sousTitre {
+    margin-left: 5%;
+  }
+  .imageContainer  {
+    margin-top: 160%;
+    width: 80%;
+    margin-left: 9%;
+    
+  }
+ 
+
+ }
+
+
+
+
+@media (max-width:768px) {
+
+  .paragraphe1 p{
+   width: 90%;
+   padding-left: 3%;
+ }
+ .paragraphe2 {
+   width: 100%;
+   margin-top: 55%;
+ }
+ .prestations  {
+  width: 80%;
+  margin-left: 10%;
+ }
+}
+
+.configuration {
+  
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  position:relative;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.config1, .config2, .config3 {
+  opacity: 0; /* L'élément est invisible au départ */
+  transform: scale(0); /* L'élément est réduit au départ */
+  transition: opacity 0.5s, transform 1.2s ease-out; /* Ajoute une transition douce */
+}
+
+.config1.active, .config2.active, .config3.active {
+  opacity: 1; /* Rendre l'élément visible quand il est actif */
+  transform: scale(1); /* Réinitialiser la taille à 100% */
+}
+
+
+.config1{
+  background-image: linear-gradient(rgb(20, 114, 139), #083e56);
+  color:#fbf9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  width: 30%;
+  animation: rebond;
+  animation-duration:0.2s;
+  transition-delay: 0.1s; /* Délai pour le troisième */
+  
+}
+
+@keyframes rebond {
+  0% {
+    
+            transform: scale(0);
+    
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+ 
+  55% {
+    
+            transform: scale(0.7);
+   
+            animation-timing-function: ease-in;
+  }
+ 
+  100% {
+    
+            transform: scale(1);
+    
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.config1 h2{
+  font-weight: 100;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10%;
+  text-decoration-thickness: 10% ;
+  
+}
+.config1 ul {
+  
+  line-height: 3.5EM;
+  font-size: 1.2EM;
+  margin-top: 1.4em;
+  margin-left: 8%;
+}
+.ligne1 {
+line-height: 1.2em;
+}
+
+button {
+  
+
+background-color: rgb(232, 137, 41);
+color: #fdfbfb;
+border: none;
+height: 2.8em;
+
+margin-left: 25%;
+}
+.config2 {
+  background-image: linear-gradient(rgb(20, 114, 139), #083e56);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  width: 30%;
+  color:#fbf9f9;
+  animation: rebond;
+  animation-duration:0.6s;
+  transition-delay: 0.3s; /* Délai pour le troisième */
+  
+
+}
+
+@keyframes rebond {
+  0% {
+    
+            transform: scale(0);
+    
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+ 
+  55% {
+    
+            transform: scale(0.7);
+   
+            animation-timing-function: ease-in;
+  }
+ 
+  100% {
+    
+            transform: scale(1);
+    
+            animation-timing-function: ease-out;
+  }
+}
+
+
+
+.config2 h2{
+  font-weight: 100;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10%;
+  text-decoration-thickness: 10% ;
+}
+.config2 ul {
+  line-height: 3.9em;
+  font-size: 1.2em;
+  margin-top: 1.4em;
+  margin-left: 6%;
+
+}
+.ligne {
+  line-height: 1.4em;
+}
+.config3 {
+  background-image: linear-gradient(rgb(20, 114, 139), #083e56);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  width: 30%;
+  color: #fbf9f9;
+  animation: rebond ;
+  animation-duration:1s;
+  transition-delay: 0.5s; /* Délai pour le troisième */
+}
+
+@keyframes rebond {
+  0% {
+    
+            transform: scale(0);
+    
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  
+  100% {
+    
+            transform: scale(1);
+    
+            animation-timing-function: ease-in;
+  }
+}
+
+
+
+.config3 h3 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-underline-offset: 10%;
+  text-decoration-thickness: 10% ;
+}
+
+.config3 ul {
+  line-height: 3.3EM;
+  font-size: 1.2EM;
+  margin-top: 2.3em;
+  margin-left: 8%;
+}
+
+.ligne2 {
+  line-height: 1.2em;
+}
+
+
+
+.recap {
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+  
+}
+.recap a {
+  color:rgb(232, 137, 41) ;
+}
+
+.recap .p1 {
+  font-size: 2em;
+  color: #fdfbfb;
+  margin-left: 10%;
+  padding-top: 2%;
+  
+}
+
+
+.recap p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: #fdfbfb;
+  margin-left: 10%;
+}
+
+
+/* Style du lien */
+
+
+.hidden-text {
+  display: inline; /* Le texte est visible sur les grands écrans */
+}
+.toggle-link {
+  display: none; /* Le lien disparaît sur grand écran */
+}
+  
+
+@media (max-width:480px) {
+  .imagePresentation .grosTitre {
+    font-size: 16px;
+    margin-left: 2%;
+    
+    
+  }
+
+  .menu {
+      display: none; /* Cache le menu */
+      flex-direction: row;
+      font-size: 80%;
+      border-radius: 8px;
+      position: absolute;
+      color:rgb(255, 254, 254) ;
+      gap:18px;
+      left:-5%;
+      margin-left:15%;
+      width: 110%;
+      height: 6%;
+      box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
+      padding: 10px 21px;
+      
+      
+  }
+  .menu a {
+    color:rgb(255, 254, 254) ;
+  }
+
+  .menu.active {
+      display: flex; /* Affiche le menu quand activé */
+  }
+
+  .hamburger {
+    margin-top: -2%;
+      display: block; /* Affiche l'icône hamburger */
+  }
+
+  
+  .texteContainer h2::before {
+    top:0.3em;
+    height: 80% !important;
+    left:-1em ;
+  }
+  .imageContainer {
+    margin-top: 286%;
+    margin-left: 0.8%;
+  }
+  .imageContainer img {
+    width: 130%;
+  }
+  
+  
+  .paragraphe1 ul {
+    width: 70%;
+    margin-left: 10%;
+  }
+  .prestations {
+    height: 12vh;
+  }
+  /* Cache le texte supplémentaire par défaut */
+ 
+  
+  .recap  .p1{
+    margin-top: 180%;
+  }
+  
+
+  .hidden-text {
+    display: none !important;
+  }
+
+  .toggle-link {
+    cursor: pointer;
+    color: #fffffe;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10%;
+    display: inline-block; /* Le lien apparaît sur mobile */
+  }
+
+  /* Effet au survol */
+  .toggle-link:hover {
+    text-decoration: none;
+    color: #f6861e;
+  }
+}
+  
+
+  
+
+
+
+.colonneContainer {
+  display: flex;
+  width: 96VW;
+  height:250px;
+  /*gap: 20px;*/
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+  box-shadow: 0 8px 50px rgb(251, 250, 249); /* Ombre portée */
+  margin-left: 1.3%;
+  
+  
+}
+
+.colonne1 {
+  
+  
+  /*background-color: #e810e0;*/
+  width: 20%;
+
+}
+
+.iconId {
+  width: 16%;
+  margin-left: 38%;
+  margin-top: 25%;
+  
+}
+
+.colonne1 h3 {
+  font-family:monospace;
+  margin-left: 27%;
+  color: #fbf9f9;
+}
+
+.colonne2 {
+  
+  /*background-color: #e810e0;*/
+  width: 20%;
+  
+}
+.colonne2 a {
+  color:#fbf9f9;
+  text-decoration: none;
+}
+.cible {
+  width: 16%;
+  margin-left: 38%;
+  margin-top: 25%;
+}
+
+.colonne2 h3 {
+  font-family: monospace;
+  margin-left: 27%;
+  color: #fbf9f9;
+}
+
+.colonne3 {
+  
+  /*background-color: #e810e0;*/
+  width: 20%;
+  
+}
+
+.responsive {
+  width: 16%;
+  margin-left: 40%;
+  margin-top: 25%; 
+}
+
+.colonne3 h3 {
+  font-family:monospace;
+  margin-left: 27%;
+  color: #fbf9f9;
+}
+
+.colonne4 {
+/*background-color: #e810e0;*/
+  width: 20%;
+}
+
+.colonne4 h3 {
+font-family: monospace;
+margin-left: 3%;
+text-align: center;
+color: #fbf9f9;
+}
+
+.service {
+width: 16%;
+margin-left: 40%;
+margin-top: 25%;  
+}
+
+
+.colonne5 {
+/*background-color: #e810e0;*/
+  width: 20%;
+}
+
+.colonne5 a {
+  color:#fbf9f9;
+  text-decoration: none;
+}
+.colonne5 h3 {
+font-family: monospace;
+margin-left: 3%;
+text-align: center;
+color: #fbf9f9;
+}
+
+.cles {
+width: 17%;
+margin-left: 40%;
+margin-top: 25%;  
+}
+.colonne1 h3,
+.colonne2 h3,
+.colonne3 h3,
+.colonne4 h3,
+.colonne5 h3 {
+  font-size: 16px;
+  
+  opacity: 0; /* L'élément est invisible au départ */
+  transform: scale(0); /* L'élément est réduit au départ */
+  transition: opacity 0.5s, transform 1.2s ease-out; /* Ajoute une transition douce */
+}
+
+
+
+.colonne1 h3.active, .colonne2 h3.active, .colonne3 h3.active, .colonne4 h3.active, .colonne5 h3.active {
+  opacity: 1; /* Rendre l'élément visible quand il est actif */
+  transform: scale(1); /* Réinitialiser la taille à 100% */
+  animation: shake 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    
+            transform: rotate(0deg);
+    
+            transform-origin: 50% 100%;
+  }
+  10% {
+   
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+   
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    
+            transform: rotate(4deg);
+  }
+  80% {
+    
+            transform: rotate(-2deg);
+  }
+  90% {
+    
+            transform: rotate(2deg);
+  }
+}
+
+.footerContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100vw;
+  height:auto;
+  
+  margin-top: 15%;
+  
+  background-color:fuchsia
+  }
+
+  .contact {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 2%;
+    
+    }
+   .telephone {
+    width: 20%;
+    left:30%;
+
+   } 
+  
+.tel {
+  width:25px;
+  padding-left: 60%;
+  padding-top: 12%;
+  
+  
+  
+  
+  } 
+
+  
+  
+  .footerContainer .loi {
+  margin-left: 30%;
+  margin-top:2%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 100VW;
+  gap:10%;
+  margin-left: 30%;
+  gap:10%
+  }
+  
+  
+  
+   .condition a,
+  .mention a,
+  .politique a 
+  {
+  color: black;  
+  font-size: 1em;
+  justify-content: space-between;
+  
+  
+  
+  }
+  
+ 
+  
+  
+  
+  .footerContainer .footer2 { 
+  
+     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;  
+      width: 100%;
+      margin-top: 2%;
+  }
+  
+  
+  .footer2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  margin-top:30%;
+  }
+  .footer2 p {
+    
+  align-items: center;
+  
+  }
+  
+  /*.footer2 .reseau {
+  position: absolute;
+  }*/
+  
+  .reseau {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;  
+    align-items: center;  
+    width: 100vw; 
+    padding: 10px 0;
+    
+    background-color: lightgray; 
+  
+  }
+  .insta {
+  width: 30px;
+  height: auto;
+  margin-left: 47.5%;
+ }
+  .link {
+  width: 30px;
+  height: auto;
+}
+.insta {
+  margin-right: 15px;
+}
+
+
+
+
+  
+  
+
+  
+
+@media (max-width:768px) {
+  .configuration  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .configuration .config1, .config2, .config3 {
+    width: 80%;
+  margin-bottom: 30px;
+    margin-left: 10%;
+    
+  }
+  .recap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 170%;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.contact {
+position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.telephone {
+  position: absolute;
+    width: auto;
+    left: 0;
+    display: flex;
+    margin-left: 40%;
+    padding-bottom: 6%;
+    
+}
+
+.tel {
+    padding-left: 0;
+    
+}
+
+.contact p {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 5%;
+  margin-right: 4%;
+}
+
+.loi {
+  position: relative;
+  flex-direction: column;
+  right: 2%;
+  width: 100%;
+  margin: 0 0;
+
+}
+
+.loi a {
+margin-left: 0;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.footer2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1em;
+}
+.footer2 p {
+margin-top:0;
+margin-right: 5%;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+.insta, .link {
+  margin: 0;
+  width: 30px;
+  height: auto;
+}
+}
+
+
+@media (max-width:480px) {
+  .colonneContainer {
+    display: flex;
+    flex-direction: column;
+    height: 200%;
+    box-shadow: none;
+    width: 70%;
+   text-align: center;
+   align-items: center;
+   
+  }
+  .colonne1, .colonne2, .colonne3, .colonne4, .colonne5 {
+    width: 100%;
+    margin-bottom:20%;
+    margin-left: 40%;
+    /*background-color: fuchsia;*/
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 10px rgba(0, 0, 0, 0.1); /* Ombres superposées */
+    box-shadow: 0 10px 20px rgb(253, 252, 252), 0 6px 10px rgb(253, 252, 252);
+  }
+  .iconId, .cible, .responsive, .service, .cles {
+    margin-left: 0%;
+    margin-bottom: 10%;
+  }
+  .colonne1 h3, .colonne2 h3, .colonne3 h3 {
+    margin-left: 2%;
+  }
+  
+  .footerContainer {
+    display: flex;
+    position: relative;
+    height: auto;
+   flex-direction: column;
+  margin-top: 0;
+ background-color:fuchsia
+}
+  
+.footerContainer .loi {
+    flex-direction: column;
+    margin-top: 40%;
+    
+   color: rgb(8, 8, 8);
+   
+    
+  }
+
+  .condition {
+    margin-left: 19%;
+  }
+  .mention {
+    margin-left: 32%;
+  }
+
+  .politique {
+    margin-left: 25%;
+  }
+  .contact {
+    position: relative;
+    margin-right: 65%;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    
+    
+  }
+  .contact p {
+    padding-left:12% ;
+    
+  }
+  .telephone {
+    position: relative;
+    width: 80%;
+    left: 25%;
+    padding-bottom: 10%;
+  }
+
+  .telephone .tel {
+    
+    margin-left: 0%;
+    margin-top: -30%;
+  }
+  
+  
+
+  .footerContainer .footer2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50%;
+    margin-right: 10%;
+    background-color: fuchsia ;
+  }
+
+  .footer2 p {
+    align-items: center;
+   margin-top: 5%;
+   margin-left: 5%;
+    
+   
+  }
+ 
+  
+  .footerContainer .reseau {
+    position: relative;
+    flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
+    margin-left: 15%;
+    height: auto; 
+    width: 100% !important;
+   
+}
+
+.insta {
+  position: absolute;
+  margin-right:14%;
+}
+.link {
+  padding-left: 50%;
+}
+
+}
