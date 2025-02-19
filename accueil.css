@@ -220,7 +220,7 @@ body {
     
     .presentationText {
       position: absolute;
-      margin-top: 5%;
+      margin-top:1rem;
       text-shadow: 2px 2px 4px rgb(232, 137, 41);
       width: 50%;
       max-width: 100%;
@@ -809,8 +809,10 @@ body {
     width:80% ;
     height: auto;
     line-height: 0.6em;
-    
+    padding-left: 1.9em;
+   
   }
+
   .resume h3 {
     font-size: 1.4em;
   }
@@ -819,9 +821,13 @@ body {
     flex-direction: column-reverse;
   }
 
-  
+  .dernier img {
+    width: 68%;
+    margin-left: 15%;
+    
+  }
   .container4 .titre4::before {
-    margin-left:2% !important;
+    margin-left:8% !important;
     width: 0.4% !important;
   }
   .container4 .titre4 {
@@ -935,7 +941,8 @@ body {
 .texte4 .button1 {
    margin-left: 100px;
   color: aliceblue;
-  background-color: rgb(255, 157, 0);
+  background-color: rgb(232, 137, 41);
+  text-decoration: none;
  font-size: 0.9em; 
  padding:2%;
 }
@@ -1191,7 +1198,7 @@ position: relative;
           position: relative;
           height: auto;
          flex-direction: column;
-        margin-top: 0;
+        margin-top: 1.6em;
        background-color:fuchsia
       }
         

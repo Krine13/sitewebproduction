@@ -869,14 +869,20 @@ margin-left: 25%;
     text-decoration: underline;
     font-weight: bold;
     font-size: 1.2em;
-    margin-left: 10%;
+    margin-left: 38%;
+    margin-bottom: 5%;
     display: inline-block; /* Le lien apparaît sur mobile */
+    margin-top: -10%;
   }
 
   /* Effet au survol */
   .toggle-link:hover {
-    text-decoration: none;
-    color: #f6861e;
+    
+    color: #fbfbfa;
+  }
+  .voir {
+    width: 30%;
+    margin-top: 1.2em;
   }
 }
   
