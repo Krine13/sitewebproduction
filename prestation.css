@@ -856,6 +856,9 @@ body {
       }
 
       @media (max-width:480px) {
+        .offre p, .facilite p, .espaceContainer p {
+          font-weight: 600;
+        }
         .footerContainer {
           display: flex;
           position: relative;
@@ -961,6 +964,9 @@ body {
       }
       .footer2 p {
         margin-left: 10%;
+      }
+      .offre p, .facilite p, .espaceContainer p {
+        font-weight: 600;
       }
     }
   
