@@ -1517,7 +1517,7 @@ padding-left: 50%;
   .configuration {
     display: block;
   }
-  .config1, .config2, .config3 {
+  .configuration .config1, .config2, .config3 {
     position: static;
    width: 96%;
    
