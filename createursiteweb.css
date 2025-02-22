@@ -1520,7 +1520,7 @@ padding-left: 50%;
   .configuration .config1, .config2, .config3 {
     position: static;
    width: 96%;
-   margin-left: 0;
+   margin-left: 1%;
    
    animation: zoomer 2s forwards;
    animation-duration: 2s;
