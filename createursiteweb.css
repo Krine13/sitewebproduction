@@ -1095,20 +1095,23 @@ margin-top: 25%;
 
 @media (max-width:768px) {
   .configuration  {
-    display: flex;
-    flex-direction: column;
+   display: block;
+  width: 100vw;
+  height: auto;
+  margin: 5% 0;
   }
 
   .configuration .config1, .config2, .config3 {
     width: 80%;
-  margin-bottom: 30px;
     margin-left: 10%;
+    margin-top: 5%;
+    padding: 2% 0;
     
   }
   .recap {
     display: flex;
     flex-direction: column;
-    margin-top: 170%;
+    margin-top: 5%;
   }
 
   .footerContainer {
@@ -1236,7 +1239,11 @@ margin-right: 5%;
 .paragraphe1 ul {
   width: 70%;
 }
+.configuration {
+  display: block;
+}
 .configuration .config1, .config2, .config3 {
+  position: static;
   width: 96%;
   margin-left: 2%;
   animation: zoomer 2s forwards;
@@ -1265,7 +1272,7 @@ margin-right: 5%;
 }
 .recap {
   
-  margin-top: 280%;
+  margin-top:10%;
   width: 90%;
 }
 .recap p {
@@ -1507,9 +1514,13 @@ padding-left: 50%;
   .prestations {
     height: 12vh;
   }
+  .configuration {
+    display: block;
+  }
   .config1, .config2, .config3 {
-   width: 96% !important;
-   margin-left: 2% !important;
+    position: static;
+   width: 96%;
+   
    animation: zoomer 2s forwards;
    animation-duration: 2s;
    animation-delay: 0s; /* Démarrer immédiatement */
@@ -1530,7 +1541,7 @@ padding-left: 50%;
  
   
   .recap  .p1{
-    margin-top:70%;
+    margin-top:10%;
   }
   
 
@@ -1606,14 +1617,14 @@ padding-left: 50%;
   }
 
   .condition {
-    margin-left: 19%;
+    margin-left: 15%;
   }
   .mention {
-    margin-left: 32%;
+    margin-left: 28%;
   }
 
   .politique {
-    margin-left: 25%;
+    margin-left: 20%;
   }
   .contact {
     position: relative;

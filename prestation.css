@@ -948,6 +948,21 @@ body {
         padding-left: 50%;
       }
     }
+
+    @media (max-width:420px) {
+      .contact {
+        margin-right: 2%;
+      }
+      .condition {
+        margin-left: 20%;
+      }
+      .politique {
+        margin-left: 27%;
+      }
+      .footer2 p {
+        margin-left: 10%;
+      }
+    }
   
       
           
