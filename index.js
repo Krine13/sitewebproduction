@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
           animate.observe(element);
       });
   
-    
+      
       
   
     
@@ -153,7 +153,7 @@ window.addEventListener('scroll', function() {
       
       
 
-      const elements = document.querySelectorAll('.suiteContainer2 h2, .container4 .titre4'); // Sélectionne tous les éléments correspondants
+      const elements = document.querySelectorAll('.resume,.suiteContainer2 h2, .container4 .titre4'); // Sélectionne tous les éléments correspondants
       console.log(window.getComputedStyle(document.querySelector('.container4 .titre4'), '::before').transition);
       elements.forEach(element => {
         const position = element.getBoundingClientRect();
@@ -175,9 +175,56 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  function toggleTextDisplay(moreText, link) {
+      // Avant le changement de display, on log
+      console.log('Avant changement, display:', moreText.style.display);
 
-  
+      // Vérifie la valeur de display et bascule l'affichage
+      if (moreText.style.display === 'none' || moreText.style.display === '') {
+          moreText.style.setProperty('display', 'inline', 'important'); // Force l'affichage du texte
+          link.textContent = 'Lire moins'; // Change le texte du lien
+      } else {
+          moreText.style.setProperty('display', 'none', 'important'); // Cache le texte
+          link.textContent = (link.getAttribute('data-target') === 'moreText1') ? 'Les coulisses du SEO' : 'En savoir plus'; // Réinitialise le texte du lien
+      }
+
+      // Après le changement, on log
+      console.log('Après changement, display:', moreText.style.display);
+  }
+
+  // Sélectionne tous les liens avec la classe 'toggle-link'
+  document.querySelectorAll('.toggle-link').forEach(button => {
+      button.addEventListener('click', function(event) {
+          event.preventDefault(); // Empêche le rechargement de la page
           
+          const targetId = this.getAttribute('data-target'); // Récupère l'ID du texte à afficher
+          const moreText = document.getElementById(targetId); // Trouve l'élément correspondant
+
+          if (!moreText) {
+              console.error(`Element with id "${targetId}" not found.`); // Affiche une erreur si l'élément cible n'est pas trouvé
+              return;
+          }
+
+          toggleTextDisplay(moreText, this); // Appel de la fonction pour basculer l'affichage
+      });
+  });
+
+  // Fonction pour gérer le resize
+  function handleResize() {
+      if (window.innerWidth > 480) {
+          document.querySelectorAll('.hidden-text').forEach(el => {
+              el.style.display = 'inline'; // Assure que le texte est toujours visible sur grand écran
+          });
+      }
+  }
+
+  window.addEventListener('load', handleResize);
+  window.addEventListener('resize', handleResize);
+});
+
+
+      
       
       
   
