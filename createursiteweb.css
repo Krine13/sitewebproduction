@@ -526,29 +526,22 @@ margin-top: 5%;
   .texteContainer .sousTitre {
     margin-left: 5%;
   }
-  .imageContainer  {
-    margin-top: 160%;
-    width: 80%;
-    margin-left: 9%;
-    
-  }
- 
-
- }
-
-
-
-
-@media (max-width:768px) {
-
-  .paragraphe1 p{
+  
+.paragraphe1 p{
    width: 90%;
    padding-left: 3%;
+
  }
  .paragraphe2 {
    width: 100%;
    margin-top: 55%;
  }
+ .imageContainer  {
+  margin-top: 160%;
+  width: 80%;
+  margin-left: 9%;
+  
+}
  .prestations  {
   width: 80%;
   margin-left: 10%;
@@ -1241,7 +1234,7 @@ margin-right: 5%;
       display: block; /* Affiche l'icône hamburger */
   }
 .paragraphe1 ul {
-  width: 80%;
+  width: 100%;
 }
 .configuration .config1, .config2, .config3 {
   width: 96%;
@@ -1476,7 +1469,9 @@ padding-left: 50%;
     margin-top: 2%;
   }
  
-  
+  .paragraphe1 {
+  padding: 0 0;
+  }
   
   .paragraphe1 ul {
     width: 70%;
