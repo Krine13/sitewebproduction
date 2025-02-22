@@ -1234,7 +1234,7 @@ margin-right: 5%;
       display: block; /* Affiche l'icône hamburger */
   }
 .paragraphe1 ul {
-  width: 100%;
+  width: 70%;
 }
 .configuration .config1, .config2, .config3 {
   width: 96%;
@@ -1264,7 +1264,7 @@ margin-right: 5%;
   font-size: 20px;
 }
 .recap {
-  margin-top: 100%;
+  margin-top: 280%;
   width: 90%;
 }
 .recap p {
