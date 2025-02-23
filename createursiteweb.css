@@ -1589,7 +1589,7 @@ padding-left: 50%;
   
   .recap  .p1{
     margin-top:10%;
-    font-size: 1em;
+    
   }
   .recap p {
     font-size: 1rem;
@@ -1599,7 +1599,7 @@ padding-left: 50%;
     display: none !important;
   }
   #toggleText1 {
-    margin-left: 0;
+    margin-left: 2%;
     color: rgb(232, 137, 41);
 
   }
