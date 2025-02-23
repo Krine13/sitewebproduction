@@ -1245,7 +1245,7 @@ margin-right: 5%;
   }
 
   .texteContainer h2, .sousTitre {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 72%;
 }
 .non {
@@ -1256,14 +1256,16 @@ margin-right: 5%;
 
 .paragraphe1 p, .paragraphe2 p {
   width: 90%;
-  
-  
+  font-size: 1em;
+  padding-top: 2%;
   line-height: 1.6em;
 }
 .paragraphe1 {
   padding-top: 2%;
 }
-
+.voir2 {
+  display: none;
+}
 .paragraphe1 ul {
   width: 80%;
   font-size: 1em;
@@ -1546,7 +1548,13 @@ padding-left: 50%;
     
     margin-top: 75%;
   }
-
+#toggleText1 {
+  margin-left: 2%;
+  font-size: 1em;
+}
+.voir {
+  margin-left: 34%;
+}
   
  
 }

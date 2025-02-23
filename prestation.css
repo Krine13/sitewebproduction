@@ -296,8 +296,16 @@ body {
             }
 
             @media (max-width:480px) {
+              
               .offre p {
               font-family: cursive ;
+              
+            }
+            .offre ul {
+              font-size: 1em;
+              line-height: 1.8em;
+              padding:0 5%;
+              
             }
               .titre {
                 width: 100%;
@@ -615,24 +623,32 @@ body {
         }
 
         @media (max-width:480px) {
+          .container {
+            height: auto;
+          }
           .label-nom {
-            margin-bottom: 10px;
+            margin-bottom: 5%;
         }
         
         .label-email {
-            margin-top: 20%;
+            margin-top: 5%;
         }
         
         .label-message {
-            padding-top:20%;
+            padding-top:5%;
+        }
+        .label-nom, .label-email, .label-message {
+          font-size: 1rem;
+          
         }
         input[type="text"], input[type="nom"], input[type="email"]  {
             display: block;
             width: 70%;
-            padding: 10px;
-            margin-top: 10px;
+            height: 1.2em;
+            
+            
             margin-left: 35%;
-            margin-bottom: 20px;
+            
             border: 1px solid #ccc;
             border-radius: 4px;
             
@@ -650,16 +666,8 @@ body {
         }
         
         
-        input[type="email"] {
         
-            margin-bottom: 10px;
-        }
-        
-        .label-text {
-          position: absolute;
-          margin-left: 18.5%;
-          
-        }
+
 
         .button {
           
