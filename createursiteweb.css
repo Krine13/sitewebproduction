@@ -1588,6 +1588,7 @@ padding-left: 50%;
  
   
   .recap  .p1{
+    font-size: 1.2em;
     margin-top:10%;
     
   }
@@ -1596,10 +1597,11 @@ padding-left: 50%;
   }
 
   .hidden-text {
-    display: none !important;
+    display: none;
   }
   #toggleText1 {
-    margin-left: 2%;
+    margin-top: 2%;
+  margin-left: 34%;
     color: rgb(232, 137, 41);
 
   }
