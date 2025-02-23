@@ -1596,6 +1596,7 @@ padding-left: 50%;
   
   .recap  .p1{
     margin-top:10%;
+    font-size: 1rem;
   }
   
 
@@ -1609,7 +1610,7 @@ padding-left: 50%;
     text-decoration: underline;
     font-weight: bold;
     font-size: 1.2em;
-    margin-left: 38%;
+    margin-left: 40%;
     margin-bottom: 5%;
     display: inline-block; /* Le lien apparaît sur mobile */
     margin-top: -10%;
