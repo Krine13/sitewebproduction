@@ -538,7 +538,7 @@ opacity: 0; /* L'élément est invisible au départ */
  }
  .imageContainer  {
   
-  transform: translateY(-295%);
+  transform: translateY(5%);
   width: 90%;
   margin-left: 6%;
   
@@ -1263,21 +1263,21 @@ margin-right: 5%;
 .paragraphe1 {
   padding-top: 2%;
 }
-.paragraphe2 {
-  /*position: static;*/
-  margin-top: 70%;
-}
+
 .paragraphe1 ul {
   width: 80%;
   font-size: 1em;
 }
-
-
 .imageContainer  {
 
-  transform: translateY(-350%);
+  transform: translateY(5%);
   width: 100%;
   margin-left: 1%;
+}
+
+.paragraphe2 {
+  /*position: static;*/
+  margin-top: 75%;
 }
 
 .configuration {
@@ -1537,7 +1537,7 @@ padding-left: 50%;
     width: 100%;
    
     margin-left: 0.8%;
-    transform: translateY(-428%);
+    transform: translateY(5%);
   }
   .voir {
     margin-left: 37%;
