@@ -507,6 +507,7 @@ opacity: 0; /* L'élément est invisible au départ */
 }
 
   .texteContainer {
+    display: block;
 margin-top: 5%; 
 }
   .texteContainer h2 {
@@ -519,10 +520,9 @@ margin-top: 5%;
    height: 100% !important;
   }
   .paragrapheContainer {
-    display:flex;
-    flex-direction: column;
-    
+    display: block;
   }
+    
   .texteContainer .sousTitre {
     margin-left: 5%;
   }
@@ -530,16 +530,19 @@ margin-top: 5%;
 .paragraphe1 p{
    width: 90%;
    padding-left: 3%;
+   padding-bottom: 2%;
 
  }
  .paragraphe2 {
    width: 100%;
-   margin-top: 55%;
+  position: static;
+  margin-top: 70%;
  }
  .imageContainer  {
-  margin-top: 160%;
-  width: 80%;
-  margin-left: 9%;
+  
+  margin-top:-165%;
+  width: 90%;
+  margin-left: 6%;
   
 }
  .prestations  {
@@ -1244,6 +1247,9 @@ margin-right: 5%;
 .non {
   display: none;
 }
+.texteContainer {
+  display: block;
+}
 .texteContainer p{
   font-size: 1.2rem;
 }
@@ -1251,7 +1257,15 @@ margin-right: 5%;
 .paragraphe1 p, .paragraphe2 p {
   width: 90%;
   font-size: 1em;
+  
   line-height: 1.6em;
+}
+.paragraphe1 {
+  padding-top: 2%;
+}
+.paragraphe2 {
+  position: static;
+  margin-top: 5%;
 }
 .paragraphe1 ul {
   width: 80%;
@@ -1260,7 +1274,8 @@ margin-right: 5%;
 
 
 .imageContainer  {
-  margin-top: 210%;
+  
+  margin-top:-180%;
   width: 100%;
   margin-left: 1%;
 }
@@ -1492,6 +1507,9 @@ padding-left: 50%;
     margin-top: -2%;
       display: block; /* Affiche l'icône hamburger */
   }
+  .texteContainer {
+    display: block;
+  }
 
   .texteContainer h2 {
     font-size: 1.4em;
@@ -1521,19 +1539,15 @@ padding-left: 50%;
     margin-left: 37%;
   }
   .paragraphe2 {
-    margin-top: 55%;
+    position: static;
+    margin-top: 75%;
   }
 
   .imageContainer {
     width: 100%;
-   height: auto;
+   
     margin-left: 0.8%;
-    margin-top: 250%;
-  }
-  .imageContainer img {
-    width: 100%;
-  
-
+    margin-top: -215%;
   }
  
 }
