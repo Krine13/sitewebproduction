@@ -1530,17 +1530,17 @@ margin-top: 5%;
       width:90%;
       }
       .suiteContainer h2 {
-        font-size: 25px;
+        font-size: 1.4em;
       }
       .sousTitre2 {
         margin-top: 8%;
-        font-size: 20px ;
+        font-size: 1.2em ;
         width: 80%;
         margin-left: 10%;
       }
       .suiteContainer p {
         width: 100%;
-        text-align: justify;
+        margin-left: 0;
       }
       
      
@@ -1579,17 +1579,17 @@ margin-top: 5%;
           
         }
         .suiteContainer2 h2 {
-          width: 100%;
+          width: 80%;
         padding-top: 10%;  
-        font-size: 30px;
+        font-size: 1.4em;
         padding-left:0%;
         font-weight: bold;
         }
         .suiteContainer2 h2::before {
-          left:-2%;
+          left:-3%;
           top:40%;
           height: 65px;
-          width: 0.4%;
+          width: 0.7%;
         }
 
        
@@ -1630,7 +1630,7 @@ margin-top: 5%;
        }
         .resume h3 {
           
-          font-size: 1em;
+          font-size: 1.3rem;
           text-align: left;
           
         }
@@ -1638,7 +1638,7 @@ margin-top: 5%;
           text-align: left;
          width: 95%;
          margin: 2% 4%; 
-         font-size: 1.2rem;
+         font-size: 1rem;
         }
 
         .resume.visible {
@@ -1684,20 +1684,23 @@ margin-top: 5%;
           margin-left:-7%;
           
         }
+        .big {
+          padding-top: 5%;
+        }
         .container4 .titre4::before {
           margin-left:4%;
           width: 0.4%;
         }
         .container4 .titre4 {
-          
-          line-height: 1.4em;
+          font-size: 1.4em !important;
+          line-height: 1.2em;
         }
         .explication {
           width:80%;
           
         }
         .texte4 P{
-          font-size: 1.2rem;
+          font-size: 1rem;
           line-height: 1.6em;
           
         }
