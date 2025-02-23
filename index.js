@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             entry.target.classList.remove("active");
           }
         });
-      }, { threshold: 0.2 });
+      }, { threshold: 0.4});
     
       animatedElements.forEach((el) => observer.observe(el));
     

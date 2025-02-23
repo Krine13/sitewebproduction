@@ -1214,7 +1214,10 @@ margin-right: 15px;
     margin-left: 0;
   }
   .firstContainer h1 {
-    font-size: 1.6em;
+    font-size: 1.4em;
+  }
+  .firstContainer p {
+    font-size: 0.9em;
   }
  .outerContainer {
   display: block;
@@ -1225,18 +1228,22 @@ margin-right: 15px;
 width:90%;
 }
 .suiteContainer h2 {
-  font-size: 25px;
+  
+  font-size: 1.4em;
   margin-left: 0;
 }
 .sousTitre2 {
   margin-top: 8%;
-  font-size: 20px ;
+  font-size: 1.4em;
   width: 80%;
   margin-left: 10%;
 }
 .suiteContainer p {
-  width: 100%;
-  text-align: justify;
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.4em;
+  margin-left: 10%;
+  
 }
 
 
@@ -1275,16 +1282,16 @@ color: #fefeff;
     
   }
   .suiteContainer2 h2 {
-    width: 100%;
+    width: 75%;
   padding-top: 10%;  
-  font-size: 30px;
+  font-size: 1.4em;
   padding-left:7%;
   font-weight: bold;
   }
   .suiteContainer2 h2::before {
     left:0;
-    top:40%;
-    height: 65px;
+    top:45%;
+    height: 55px;
     width: 0.4%;
   }
 
@@ -1334,7 +1341,7 @@ color: #fefeff;
     text-align: left;
    width: 95%;
    margin: 2% 4%; 
-   font-size: 1.2rem;
+   font-size: 1rem;
   }
 
   .resume.visible {
@@ -1385,7 +1392,7 @@ color: #fefeff;
     width: 0.4%;
   }
   .container4 .titre4 {
-    font-size: 1.6em !important;
+    font-size: 1.4em ;
     line-height: 1.4em;
     margin-left: 12%;
   }
@@ -1394,8 +1401,10 @@ color: #fefeff;
     
   }
   .texte4 P{
-    font-size: 1.2rem;
-    line-height: 1.6em;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    
+    
     
   }
   .button1 {

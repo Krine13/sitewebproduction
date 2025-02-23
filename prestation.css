@@ -140,6 +140,8 @@ body {
             
               display: block; /* Affiche l'icône hamburger */
           }
+
+          
         
           }
 
@@ -150,6 +152,7 @@ body {
               font-size: 11px;
               margin-top: 5%;
             }
+            
           }
              
           
@@ -313,6 +316,16 @@ body {
               
               .offre .facilite {
                 transform: translateX(-5%);
+              }
+             }
+
+             @media screen and (max-width:420px) {
+              .titre h1, .offre h2  {
+              font-size: 1.2em;
+              }
+              .offre ul {
+                font-size: 1em;
+                line-height: 2em;
               }
              }
          
