@@ -539,7 +539,7 @@ margin-top: 5%;
   margin-top: 70%;
  }
  .imageContainer  {
-  
+  display: block;
   margin-top:-165%;
   width: 90%;
   margin-left: 6%;
@@ -1276,7 +1276,7 @@ margin-right: 5%;
 
 
 .imageContainer  {
-  
+display: block;
   margin-top:-180%;
   width: 100%;
   margin-left: 1%;
@@ -1539,7 +1539,7 @@ padding-left: 50%;
     margin-left: 10%;
   }
   .imageContainer {
-    
+    display: block;
     width: 100%;
    
     margin-left: 0.8%;
