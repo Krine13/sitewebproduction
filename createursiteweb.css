@@ -1592,14 +1592,14 @@ padding-left: 50%;
     font-size: 1em;
   }
   .recap p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .hidden-text {
     display: none !important;
   }
   #toggleText1 {
-    margin-left: 2%;
+    margin-left: 0;
     color: rgb(232, 137, 41);
 
   }
