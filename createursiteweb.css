@@ -536,18 +536,19 @@ opacity: 0; /* L'élément est invisible au départ */
    padding-bottom: 2%;
 
  }
+ .imageContainer  {
+  
+  transform: translateY(-295%);
+  width: 90%;
+  margin-left: 6%;
+  
+}
  .paragraphe2 {
    width: 100%;
   position: static;
   margin-top: 70%;
  }
- .imageContainer  {
-  display: block;
-  margin-top:-165%;
-  width: 90%;
-  margin-left: 6%;
-  
-}
+ 
  .prestations  {
   width: 80%;
   margin-left: 10%;
@@ -1251,13 +1252,11 @@ margin-right: 5%;
   display: none;
 }
 
-.texteContainer p{
-  font-size: 1.2rem;
-}
+
 
 .paragraphe1 p, .paragraphe2 p {
   width: 90%;
-  font-size: 1em;
+  
   
   line-height: 1.6em;
 }
@@ -1276,7 +1275,7 @@ margin-right: 5%;
 
 .imageContainer  {
 
-  margin-top:-180%;
+  transform: translateY(-350%);
   width: 100%;
   margin-left: 1%;
 }
@@ -1538,7 +1537,7 @@ padding-left: 50%;
     width: 100%;
    
     margin-left: 0.8%;
-    margin-top: -215%;
+    transform: translateY(-428%);
   }
   .voir {
     margin-left: 37%;
