@@ -1253,7 +1253,9 @@ margin-right: 5%;
 .texteContainer p{
   font-size: 1.2rem;
 }
-
+.paragrapheContainer {
+  display: block;
+}
 .paragraphe1 p, .paragraphe2 p {
   width: 90%;
   font-size: 1em;
@@ -1265,7 +1267,7 @@ margin-right: 5%;
 }
 .paragraphe2 {
   position: static;
-  margin-top: 5%;
+  margin-top: 70%;
 }
 .paragraphe1 ul {
   width: 80%;
