@@ -1256,7 +1256,7 @@ margin-right: 5%;
 
 .paragraphe1 p, .paragraphe2 p {
   width: 90%;
-  font-size: 1em;
+  font-size: 1rem;
   padding-top: 2%;
   line-height: 1.6em;
 }
@@ -1529,7 +1529,9 @@ padding-left: 50%;
   .paragraphe1 {
   padding: 0 0;
   }
-  
+  .paragraphe1 p, .paragraphe2 p {
+    font-size: 1rem;
+  }
   .paragraphe1 ul {
     width: 70%;
     margin-left: 10%;
