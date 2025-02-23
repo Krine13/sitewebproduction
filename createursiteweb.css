@@ -505,10 +505,13 @@ opacity: 0; /* L'élément est invisible au départ */
   
     display: block; /* Affiche l'icône hamburger */
 }
-
+.largeurContainer {
+  display: block;
+  width: 100%;
+}
   .texteContainer {
-    display: block;
-margin-top: 5%; 
+  margin-left: 5%;  
+  margin-top: 5%; 
 }
   .texteContainer h2 {
     margin-left: 7%;
@@ -1247,15 +1250,11 @@ margin-right: 5%;
 .non {
   display: none;
 }
-.texteContainer {
-  display: block;
-}
+
 .texteContainer p{
   font-size: 1.2rem;
 }
-.paragrapheContainer {
-  display: block;
-}
+
 .paragraphe1 p, .paragraphe2 p {
   width: 90%;
   font-size: 1em;
@@ -1266,7 +1265,7 @@ margin-right: 5%;
   padding-top: 2%;
 }
 .paragraphe2 {
-  position: static;
+  /*position: static;*/
   margin-top: 70%;
 }
 .paragraphe1 ul {
@@ -1276,7 +1275,7 @@ margin-right: 5%;
 
 
 .imageContainer  {
-display: block;
+
   margin-top:-180%;
   width: 100%;
   margin-left: 1%;
@@ -1509,9 +1508,7 @@ padding-left: 50%;
     margin-top: -2%;
       display: block; /* Affiche l'icône hamburger */
   }
-  .texteContainer {
-    display: block;
-  }
+  
 
   .texteContainer h2 {
     font-size: 1.4em;
@@ -1527,9 +1524,7 @@ padding-left: 50%;
     font-size: 1.4em;
     margin-top: 2%;
   }
- .paragrapheContainer {
-  display: block;
- }
+ 
   .paragraphe1 {
   padding: 0 0;
   }
@@ -1539,7 +1534,7 @@ padding-left: 50%;
     margin-left: 10%;
   }
   .imageContainer {
-    display: block;
+    
     width: 100%;
    
     margin-left: 0.8%;
@@ -1549,7 +1544,7 @@ padding-left: 50%;
     margin-left: 37%;
   }
   .paragraphe2 {
-    position: static;
+    
     margin-top: 75%;
   }
 
