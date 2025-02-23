@@ -1536,7 +1536,13 @@ padding-left: 50%;
     width: 70%;
     margin-left: 10%;
   }
-
+  .imageContainer {
+    
+    width: 100%;
+   
+    margin-left: 0.8%;
+    margin-top: -215%;
+  }
   .voir {
     margin-left: 37%;
   }
@@ -1545,13 +1551,7 @@ padding-left: 50%;
     margin-top: 75%;
   }
 
-  .imageContainer {
-    
-    width: 100%;
-   
-    margin-left: 0.8%;
-    margin-top: -215%;
-  }
+  
  
 }
   
