@@ -688,7 +688,7 @@ body {
             flex-direction: column;
             width: 100%;
             
-            color: #083e56;
+            color:black;
             
             background-color: fuchsia;
             }
@@ -732,7 +732,7 @@ body {
             .mention a,
             .politique a 
             {
-            color: #083e56;  
+            color: black;  
             font-size: 1rem;
             justify-content: space-between;
             
@@ -880,97 +880,101 @@ body {
         .offre p, .facilite p, .espaceContainer p {
           font-weight: 600;
         }
-        .footerContainer {
-          display: flex;
-          position: relative;
-          height: auto;
-         flex-direction: column;
-        margin-top: 0;
-       background-color:fuchsia
-      }
-        
-      .footerContainer .loi {
-          flex-direction: column;
-          margin-top: 40%;
-          
-         color: rgb(8, 8, 8);
-         
-          
-        }
-      
-        .condition {
-          margin-left: 24%;
-        }
-        .mention {
-          margin-left: 37%;
-        }
-      
-        .politique {
-          margin-left: 29%;
-        }
-        .contact {
-          position: relative;
-          margin-left: 37%;
-          text-align: center;
-          height: auto;
-          width: 60%;
-          
-          
-        }
-        .contact p {
-          transform: translateX(-28%);
-          
-        }
-        .telephone {
-          position: relative;
-          width: 50%;
-          left: 23%;
-          padding-bottom: 10%;
-        }
-      
-        .telephone .tel {
-          
-          margin-left: 0%;
-          margin-top: -30%;
-        }
-        
-        
-      
-        .footerContainer .footer2 {
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          flex-direction: column;
-          margin-top: 50%;
-          margin-right: 10%;
-          background-color: fuchsia ;
-        }
-      
-        .footer2 p {
-          align-items: center;
-         margin-top: 5%;
-         margin-left: 5%;
-          
-         
-        }
-       
-        
-        .footerContainer .reseau {
-          position: relative;
-          flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-          margin-left: 15%;
-          height: auto; 
-          width: 100% !important;
-         
-      }
-      
-      .insta {
-        position: absolute;
-        margin-right:14%;
-      }
-      .link {
-        padding-left: 50%;
-      }
+       .footerContainer {
+  display: flex;
+  position: relative;
+  height: auto;
+ flex-direction: column;
+margin-top: 10%;
+background-color:fuchsia
+}
+.contact {
+  position: relative;
+  margin-left: 55%;
+  margin-top: 5%;
+  text-align: center;
+  height: auto;
+  width: 60%;
+  
+  
+}
+.contact p {
+  transform: translateX(-45%);
+  
+  
+}
+.footerContainer .loi {
+  flex-direction: column;
+  margin-top: 25%;
+
+ color: rgb(8, 8, 8);
+ 
+  
+}
+
+.condition {
+  margin-left: 24%;
+}
+.mention {
+  margin-left: 38%;
+  z-index: 1;
+  transform: translateY(-30%);
+}
+
+.politique {
+  margin-left: 30%;
+  margin-top: 0;
+  z-index: 1;
+  transform: translateY(-60%);
+}
+
+
+/*.telephone {
+  position: relative;
+  width: 50%;
+  left:-8%;
+  padding-bottom: 10%;
+  margin-top: -15%;
+  z-index: 1;
+}*/
+
+
+.footerContainer .footer2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-right: 10%;
+  background-color: fuchsia ;
+}
+
+.footer2 p {
+  align-items: center;
+ margin-top: 20%;
+ margin-left: 8%;
+  
+ 
+}
+
+
+.footerContainer .reseau {
+  position: relative;
+  flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
+  margin-left: 15%;
+  height: auto; 
+  width: 100% !important;
+ 
+}
+
+.insta {
+position: absolute;
+transform:translateX(-100%);
+}
+.link {
+padding-left: 50%;
+}
+
     }
 
     @media (max-width:420px) {

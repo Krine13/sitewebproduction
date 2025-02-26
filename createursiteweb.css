@@ -570,6 +570,7 @@ opacity: 0; /* L'élément est invisible au départ */
   opacity: 0; /* L'élément est invisible au départ */
   transform: scale(0); /* L'élément est réduit au départ */
   transition: opacity 0.5s, transform 1.2s ease-out; /* Ajoute une transition douce */
+
 }
 
 .config1.active, .config2.active, .config3.active {
@@ -622,10 +623,10 @@ opacity: 0; /* L'élément est invisible au départ */
   text-decoration-thickness: 10% ;
   
 }
-.config1 ul {
+.config1 ul, .config2 ul, .config3 ul {
   
-  line-height: 3.5EM;
-  font-size: 1.2EM;
+  line-height: 3.5em;
+  font-size: 1.2em;
   margin-top: 1.4em;
   margin-left: 8%;
 }
@@ -639,6 +640,7 @@ color: #fdfbfb;
 border: none;
 height: 2.8em;
 margin-left: 25%;
+
 }
 
 .config2 {
@@ -687,10 +689,7 @@ margin-left: 25%;
   text-decoration-thickness: 10% ;
 }
 .config2 ul {
-  line-height: 3.9em;
-  font-size: 1.2em;
-  margin-top: 1.4em;
-  margin-left: 6%;
+ padding: 1% 5%;
 
 }
 .ligne {
@@ -735,12 +734,12 @@ margin-left: 25%;
   text-decoration-thickness: 10% ;
 }
 
-.config3 ul {
+/*.config3 ul {
   line-height: 3.3EM;
   font-size: 1.2EM;
   margin-top: 2.3em;
   margin-left: 8%;
-}
+}*/
 
 .ligne2 {
   line-height: 1.2em;
@@ -1416,75 +1415,77 @@ button {
 .colonne1 h3, .colonne2 h3, .colonne3 h3 {
   margin-left: 2%;
 }
+
 .footerContainer {
   display: flex;
   position: relative;
   height: auto;
  flex-direction: column;
-margin-top: 0;
+margin-top: 10%;
 background-color:fuchsia
 }
 
 .footerContainer .loi {
   flex-direction: column;
-  margin-top: 40%;
-  
+  margin-top: 25%;
+
  color: rgb(8, 8, 8);
  
   
 }
 
 .condition {
-  margin-left: 19%;
+  margin-left: 18%;
 }
 .mention {
   margin-left: 32%;
+  z-index: 1;
+  transform: translateY(-30%);
 }
 
 .politique {
   margin-left: 25%;
+  margin-top: 0;
+  z-index: 1;
+  transform: translateY(-60%);
 }
+
 .contact {
   position: relative;
-  margin-right: 65%;
+  margin-left: 2%;
+  margin-top: 5%;
   text-align: center;
   height: auto;
-  width: 100%;
+  width: 60%;
   
   
 }
 .contact p {
-  padding-left:12% ;
+  transform: translateX(-45%);
+  
   
 }
 .telephone {
   position: relative;
-  width: 80%;
-  left: 25%;
+  width: 50%;
+  left:-8%;
   padding-bottom: 10%;
+  margin-top: -15%;
 }
-
-.telephone .tel {
-  
-  margin-left: 0%;
-  margin-top: -30%;
-}
-
-
 
 .footerContainer .footer2 {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 50%;
+  margin-top: 10%;
   margin-right: 10%;
   background-color: fuchsia ;
 }
 
 .footer2 p {
   align-items: center;
- margin-top: 5%;
+ margin-top: 15%;
  margin-left: 5%;
   
  
@@ -1502,11 +1503,13 @@ background-color:fuchsia
 
 .insta {
 position: absolute;
-margin-right:14%;
+transform:translateX(-100%);
 }
 .link {
-padding-left: 50%;
+padding-left: 20%;
 }
+
+
 }
 @media (max-width:420px) {
 
@@ -1734,7 +1737,7 @@ button {
   
 .footerContainer .loi {
     flex-direction: column;
-    margin-top: 40%;
+    margin-top: 30%;
     
    color: rgb(8, 8, 8);
    
@@ -1745,7 +1748,7 @@ button {
     margin-left: 15%;
   }
   .mention {
-    margin-left: 28%;
+    margin-left: 29%;
   }
 
   .politique {
@@ -1753,7 +1756,7 @@ button {
   }
   .contact {
     position: relative;
-    margin-right: 65%;
+    margin-right: 50%;
     text-align: center;
     height: auto;
     width: 100%;
@@ -1761,37 +1764,38 @@ button {
     
   }
   .contact p {
-    padding-left:12% ;
+    margin-right:-15%;
     
   }
   .telephone {
     position: relative;
-    width: 80%;
-    left: 25%;
-    padding-bottom: 10%;
+    width: 100%;
+    left: 10%;
+    
   }
 
   .telephone .tel {
-    
-    margin-left: 0%;
-    margin-top: -30%;
+    width: 17px;
+    margin-left: 30%;
+    margin-top: 23%;
   }
   
   
 
   .footerContainer .footer2 {
+    display: block;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 50%;
-    margin-right: 10%;
+    
+    height: 25vh;
     background-color: fuchsia ;
   }
 
   .footer2 p {
-    align-items: center;
-   margin-top: 5%;
+    
+   margin-top: 8%;
    margin-left: 5%;
     
    
@@ -1799,17 +1803,18 @@ button {
  
   
   .footerContainer .reseau {
-    position: relative;
+  
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     margin-left: 15%;
     height: auto; 
-    width: 100% !important;
-   
-}
+  }
+
+  
 
 .insta {
   position: absolute;
-  margin-right:14%;
+  margin-right:2%;
+  
 }
 .link {
   padding-left: 50%;

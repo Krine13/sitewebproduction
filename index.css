@@ -294,11 +294,10 @@ body {
     font-size: 0.5em;
     color: rgb(247, 250, 250);
   }
-  
-.sousTitre {
-transform:translateY(-10%);
-
-}
+ .presentationText .grosTitre {
+  font-size: 5em;
+  margin-top: -2%;
+ } 
 
   
 
@@ -549,7 +548,9 @@ transform:translateY(-10%);
   width: 80%;
   margin-left: 10%;
 }
-
+#toggleText1 {
+  display: none;
+}
 .suiteContainer a {
   color:rgb(232, 137, 41)
 }
@@ -696,7 +697,9 @@ transform:translateY(-10%);
   margin-left: 11%;
   line-height: 1.5;
 }*/
-
+#toggleText2 {
+  display:none;
+}
 .imageContainer {
   
   width: 100%;
@@ -937,7 +940,8 @@ transform:translateY(-10%);
 
 }
 .texte4 p {
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1.8em;
   
  }
  
@@ -1333,7 +1337,7 @@ color: #fefeff;
  }
   .resume h3 {
     
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: left;
     
   }
@@ -1428,8 +1432,8 @@ margin-top: 5%;
   
 .footerContainer .loi {
     flex-direction: column;
-    margin-top: 40%;
-    
+    margin-top: 25%;
+  
    color: rgb(8, 8, 8);
    
     
@@ -1440,14 +1444,21 @@ margin-top: 5%;
   }
   .mention {
     margin-left: 32%;
+    z-index: 1;
+    transform: translateY(-30%);
   }
 
   .politique {
     margin-left: 25%;
+    margin-top: 0;
+    z-index: 1;
+    transform: translateY(-60%);
   }
+
   .contact {
     position: relative;
     margin-left: 2%;
+    margin-top: 5%;
     text-align: center;
     height: auto;
     width: 60%;
@@ -1456,6 +1467,7 @@ margin-top: 5%;
   }
   .contact p {
     transform: translateX(-28%);
+    
     
   }
   .telephone {
@@ -1478,14 +1490,14 @@ margin-top: 5%;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 50%;
+    margin-top: 10%;
     margin-right: 10%;
     background-color: fuchsia ;
   }
 
   .footer2 p {
     align-items: center;
-   margin-top: 5%;
+   margin-top: 15%;
    margin-left: 5%;
     
    
@@ -1630,7 +1642,7 @@ margin-top: 5%;
        }
         .resume h3 {
           
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           text-align: left;
           
         }
@@ -1721,15 +1733,27 @@ margin-top: 5%;
         .footerContainer {
           display: flex;
           position: relative;
-          height: auto;
+          height: 50vh;
          flex-direction: column;
         margin-top: 5%;
        background-color:fuchsia
       }
+      .contact {
+        position: relative;
+        margin-right: 30%;
         
+        
+        width: 100%;
+        margin-top: 0;
+        
+      }
+      .contact p {
+        padding-left:12% ;
+        
+      }  
       .footerContainer .loi {
           flex-direction: column;
-          margin-top: 40%;
+          margin-top: 24%;
           
          color: rgb(8, 8, 8);
          
@@ -1746,19 +1770,7 @@ margin-top: 5%;
         .politique {
           margin-left: 22%;
         }
-        .contact {
-          position: relative;
-          margin-right: 30%;
-          text-align: center;
-          height: auto;
-          width: 100%;
-          
-          
-        }
-        .contact p {
-          padding-left:12% ;
-          
-        }
+        
         .telephone {
           position: relative;
           width: 80%;
@@ -1766,48 +1778,40 @@ margin-top: 5%;
           padding-bottom: 10%;
         }
       
-        .telephone .tel {
-          
-          margin-left: 0%;
-          margin-top: -30%;
-        }
+        
         
         
       
         .footerContainer .footer2 {
           display: flex;
-          justify-content: center;
-          text-align: center;
           flex-direction: column;
-          margin-top: 50%;
-          margin-right: 10%;
+          height: 0px;
+          
           background-color: fuchsia ;
         }
       
         .footer2 p {
           align-items: center;
-         margin-top: 5%;
-         margin-left: 5%;
-          
-         
-        }
+          margin-left: 5%;
+          margin-bottom: 40%;
+       }
        
         
         .footerContainer .reseau {
           position: relative;
           flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
           margin-left: 15%;
-          height: auto; 
-          width: 100% !important;
-         
-      }
+          height: auto;
+        }
       
       .insta {
         position: absolute;
         margin-right:14%;
+        
       }
       .link {
         padding-left: 50%;
+        
       }
       
       /*.footerContainer .loi {
