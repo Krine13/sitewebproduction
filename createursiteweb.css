@@ -1501,21 +1501,15 @@ background-color:fuchsia
 }
 
 
-.footerContainer .reseau {
+.footerContainer .reseaux {
   position: relative;
   flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-  margin-left: 15%;
   height: auto; 
   width: 100% !important;
- 
+  margin-right: 12%;
 }
-
-.insta {
-position: absolute;
-transform:translateX(-100%);
-}
-.link {
-padding-left: 20%;
+.reseaux .insta {
+  margin-bottom: 2%;
 }
 
 }
@@ -1821,17 +1815,14 @@ width: 20px;
 
   .reseaux .link {
     margin-top: 25%;
+    padding-left:1%;
   }
 
 .insta {
-  position: absolute;
-  
   margin-top: 2%;
+  margin
   
 }
-.link {
-  padding-left: 50%;
-  
-}
+
 }
 
