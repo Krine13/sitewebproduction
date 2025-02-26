@@ -1641,6 +1641,7 @@ padding-left: 50%;
 }
 button {
   font-size: 12px;
+  margin-left: 27%;
 }
 @keyframes zoomer {
    from {
