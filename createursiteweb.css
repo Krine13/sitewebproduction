@@ -1323,18 +1323,20 @@ color: #fefeff;
   font-size: 18px;
   padding: 2% 5%;
 }
+button {
+  height: 2em;
+  font-size: 15px;
+  margin-top: 10%;
+  margin-left: 27%;
+}
+
 .config1 ul, .config3 ul {
   line-height: 2.4em;
 }
 .config2 ul {
   line-height: 2.4em;
 }
-button {
-  height: 2em;
-  font-size: 15px;
-  margin-top: 10%;
-  margin-left: 28%;
-}
+
 
 @keyframes zoomer {
  from {
@@ -1452,26 +1454,33 @@ background-color:fuchsia
 
 .contact {
   position: relative;
-  margin-left: 2%;
+  
   margin-top: 5%;
   text-align: center;
   height: auto;
-  width: 60%;
+  width: 100%;
   
   
 }
 .contact p {
-  transform: translateX(-45%);
+ margin-right: 53%; 
   
   
 }
 .telephone {
   position: relative;
-  width: 50%;
-  left:-8%;
+  width: 45%;
+  left: 14%;
   padding-bottom: 10%;
-  margin-top: -15%;
 }
+
+.telephone .tel {
+  
+  margin-left: 0%;
+  margin-top: -30%;
+}
+
+
 
 .footerContainer .footer2 {
   display: flex;
@@ -1509,8 +1518,9 @@ transform:translateX(-100%);
 padding-left: 20%;
 }
 
-
 }
+
+
 @media (max-width:420px) {
 
   body {
@@ -1641,10 +1651,11 @@ padding-left: 20%;
 }
 .config1 ul, .config2 ul, .config3 ul {
   font-size: 15px;
+  padding: 2% 4%;
 }
 button {
   font-size: 12px;
-  margin-left: 27%;
+  margin-left: 29%;
 }
 @keyframes zoomer {
    from {
@@ -1731,13 +1742,36 @@ button {
     position: relative;
     height: auto;
    flex-direction: column;
-  margin-top: 0;
+  margin-top: 5%;
  background-color:fuchsia
 }
+.telephone {
+  position: relative;
+  width: 50%;
+  left: 16%;
+  padding-bottom: 15%;
+}
+.tel {
+  margin-top: -20%;
+width: 20px;
+}
+
+.contact {
+  position: relative;
   
+  
+  
+  width: 100%;
+  margin-top: 0;
+  
+}
+.contact p {
+  margin-right: 53%;
+  
+}  
 .footerContainer .loi {
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 24%;
     
    color: rgb(8, 8, 8);
    
@@ -1748,77 +1782,55 @@ button {
     margin-left: 15%;
   }
   .mention {
-    margin-left: 29%;
+    margin-left: 30%;
   }
 
   .politique {
     margin-left: 20%;
   }
-  .contact {
-    position: relative;
-    margin-right: 50%;
-    text-align: center;
-    height: auto;
-    width: 100%;
-    
-    
-  }
-  .contact p {
-    margin-right:-15%;
-    
-  }
-  .telephone {
-    position: relative;
-    width: 100%;
-    left: 10%;
-    
-  }
-
-  .telephone .tel {
-    width: 17px;
-    margin-left: 30%;
-    margin-top: 23%;
-  }
+  
+  
+  
   
   
 
   .footerContainer .footer2 {
     display: flex;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
-    margin-top: 20%;
-    margin-right: 10%;
-    height: auto;
+    height: 0;
+    
     background-color: fuchsia ;
   }
 
   .footer2 p {
     align-items: center;
-   margin-top: 8%;
-   margin-left: 5%;
-    
-   
-  }
+    margin-left: 5%;
+    margin-bottom: -30%;
+ }
  
   
-  .footerContainer .reseau {
+  .footerContainer .reseaux {
     position: relative;
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-    margin-left: 15%;
-    height: auto; 
-  }
-
+    width: 100%;
+    margin-top: 25%;
   
+  }
+  
+
+  .reseaux .link {
+    margin-top: 25%;
+  }
 
 .insta {
   position: absolute;
-  margin-right:2%;
+  
+  margin-top: 2%;
   
 }
 .link {
   padding-left: 50%;
+  
 }
-
 }
 
