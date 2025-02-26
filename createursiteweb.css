@@ -1783,18 +1783,18 @@ button {
   
 
   .footerContainer .footer2 {
-    display: block;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    
-    height: 25vh;
+    margin-top: 20%;
+    margin-right: 10%;
+    height: auto;
     background-color: fuchsia ;
   }
 
   .footer2 p {
-    
+    align-items: center;
    margin-top: 8%;
    margin-left: 5%;
     
@@ -1803,7 +1803,7 @@ button {
  
   
   .footerContainer .reseau {
-  
+    position: relative;
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     margin-left: 15%;
     height: auto; 
