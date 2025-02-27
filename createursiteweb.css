@@ -1478,20 +1478,24 @@ margin-top: -30%;
   z-index: 1;
   transform: translateY(-60%);
 }
+.mention, .politique {
+  margin-top: 1%;
+}
 
 .footerContainer .footer2 {
-  display: flex;
+  display: block;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 30%;
+  margin-top: 20%;
   margin-right: 10%;
   background-color: fuchsia ;
 }
 
 .footer2 p {
+  position: static;
   align-items: center;
- margin-top: 2%;
+ margin-top: 10%;
  margin-left: 5%;
   
  
@@ -1789,7 +1793,7 @@ width: 20px;
   
 
   .footerContainer .footer2 {
-    display: flex;
+    display: block;
     flex-direction: column;
     height: 0;
     margin-top: 25%;
@@ -1797,8 +1801,9 @@ width: 20px;
   }
 
   .footer2 p {
+    position: static;
     align-items: center;
-    
+    margin-top: 5%;
     margin-bottom: -10%;
  }
  
