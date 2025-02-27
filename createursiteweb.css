@@ -1463,11 +1463,13 @@ margin-top: -30%;
 
 .condition {
   margin-left: 18%;
+  
 }
 .mention {
   margin-left: 32%;
   z-index: 1;
   transform: translateY(-30%);
+  margin-top:0;
 }
 
 .politique {
@@ -1773,10 +1775,12 @@ width: 20px;
   }
   .mention {
     margin-left: 30%;
+    margin-top:0;
   }
 
   .politique {
     margin-left: 20%;
+    margin-top: 0;
   }
   
   
