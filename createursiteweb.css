@@ -1482,14 +1482,14 @@ margin-top: -30%;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 30%;
   margin-right: 10%;
   background-color: fuchsia ;
 }
 
 .footer2 p {
   align-items: center;
- margin-top: 15%;
+ margin-top: 2%;
  margin-left: 5%;
   
  
@@ -1788,7 +1788,7 @@ width: 20px;
     display: flex;
     flex-direction: column;
     height: 0;
-    
+    margin-top: 25%;
     background-color: fuchsia ;
   }
 
