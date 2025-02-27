@@ -1468,19 +1468,17 @@ margin-top: -30%;
 .mention {
   margin-left: 32%;
   z-index: 1;
-  transform: translateY(-30%);
-  margin-top:0;
+  
+  
 }
 
 .politique {
   margin-left: 25%;
-  margin-top: 0;
+  
   z-index: 1;
-  transform: translateY(-60%);
+  
 }
-.mention, .politique {
-  margin-top: 1%;
-}
+
 
 .footerContainer .footer2 {
   display: block;
@@ -1818,15 +1816,11 @@ width: 20px;
   
 
   .reseaux .link {
-    margin-top: 25%;
+    margin-top: 3%;
     padding-left:1%;
   }
 
-.insta {
-  margin-top: 2%;
-  
-  
-}
+
 
 }
 
