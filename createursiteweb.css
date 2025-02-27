@@ -1794,8 +1794,8 @@ width: 20px;
 
   .footer2 p {
     align-items: center;
-    margin-left: 5%;
-    margin-bottom: -30%;
+    
+    margin-bottom: -10%;
  }
  
   
@@ -1803,7 +1803,7 @@ width: 20px;
     position: relative;
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
-    margin-top: 25%;
+    margin-top: 15%;
   
   }
   
