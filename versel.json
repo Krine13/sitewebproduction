@@ -1,13 +1,13 @@
 {
     "redirects": [
       {
-        "source": "/createursiteweb.html",
-        "destination": "/createursiteweb",
+        "source": "/createursiteweb",
+        "destination": "/createursiteweb.html",
         "permanent": true
       },
       {
-        "source": "/prestation.html",
-        "destination": "/prestation",
+        "source": "/prestation",
+        "destination": "/prestation.html",
         "permanent": true
       }
     ]
