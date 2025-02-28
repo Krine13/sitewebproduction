@@ -2,13 +2,13 @@
     "rewrites": [
       {
         "source": "/createursiteweb",
-        "destination": "/createursiteweb.html",
-        "permanent": true
+        "destination": "/createursiteweb.html"
+        
       },
       {
         "source": "/prestation",
-        "destination": "/prestation.html",
-        "permanent": true
+        "destination": "/prestation.html"
+        
       }
     ]
   }
