@@ -1,0 +1,17 @@
+{
+    "redirects": [
+      {
+        "source": "/createursiteweb.html",
+        "destination": "/createursiteweb",
+        "permanent": true
+      },
+      {
+        "source": "/prestation.html",
+        "destination": "/prestation",
+        "permanent": true
+      }
+     
+    ]
+  }
+  
+  
