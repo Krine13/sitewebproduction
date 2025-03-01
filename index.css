@@ -1409,10 +1409,8 @@ color: #fefeff;
   
 
   .footerContainer .footer2 {
+    position: relative;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     margin-top: 10%;
     margin-right: 10%;
     background-color: fuchsia ;
@@ -1429,19 +1427,19 @@ color: #fefeff;
   
   .footerContainer .reseau {
     position: relative;
-    flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-    margin-left: 15%;
+    flex-direction: row;  /* ✅ Garde les icônes en ligne */
+    
     height: auto; 
-    width: 100% !important;
+    width: 100%;
    
 }
 
 .insta {
   position: absolute;
-  transform:translateX(-100%);
+  transform:translateX(-20%);
 }
 .link {
-  padding-left: 20%;
+  margin-left: 95%;
 }
  
 }
@@ -1544,10 +1542,10 @@ color: #fefeff;
        .imageRef img {
         width: 100%; /* Plus grande que le conteneur */
         height: auto; /* Pour garder les proportions */
-        margin-left: -28%; /* Si nécessaire, ajustez la position */
+        margin-left: -60%; /* Si nécessaire, ajustez la position */
       }
         .imageRef .textOverlay {
-          margin-left: -28%;
+          margin-left: -5%;
           top:45%;
           
         }
@@ -1656,42 +1654,41 @@ color: #fefeff;
         .footerContainer {
           display: flex;
           position: relative;
-          height: 50vh;
+          height:45vh;
          flex-direction: column;
-        margin-top: 5%;
+        
        background-color:fuchsia
+      }
+      .telephone .tel{
+        margin-left: 55%;
+        margin-top: 5%;
       }
       .contact {
         position: relative;
-        margin-right: 30%;
-        
-        
-        width: 100%;
+        margin-right: 69%;
+       width: 100%;
         margin-top: 0;
         
       }
       .contact p {
-        padding-left:12% ;
+        padding-left:47% ;
         
       }  
       .footerContainer .loi {
           flex-direction: column;
           margin-top: 24%;
-          
-         color: rgb(8, 8, 8);
-         
-          
-        }
+          color: rgb(8, 8, 8);
+       }
       
         .condition {
-          margin-left: 16%;
+          margin-left: 14%;
         }
         .mention {
-          margin-left: 32%;
+          margin-left: 30%;
         }
       
         .politique {
-          margin-left: 22%;
+          margin-left: 20%;
         }
         
         .telephone {
@@ -1702,112 +1699,50 @@ color: #fefeff;
         }
       
         
-        
-        
-      
-        .footerContainer .footer2 {
+        /*.footerContainer .footer2 {
           display: flex;
           flex-direction: column;
-          height: 0px;
-          
-          background-color: fuchsia ;
-        }
-      
-        .footer2 p {
-          align-items: center;
-          margin-left: 5%;
-          margin-bottom: 40%;
-       }
-       
-        
-        .footerContainer .reseau {
           position: relative;
-          flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-          margin-left: 15%;
-          height: auto;
-        }
-      
-      .insta {
-        position: absolute;
-        margin-right:14%;
-        
-      }
-      .link {
-        padding-left: 50%;
-        
-      }
-      
-      /*.footerContainer .loi {
-          flex-direction: none;
-          margin-top: 40%;
-          
-         color: rgb(8, 8, 8);
-         
-          
-        }
-      
-        .condition {
-          position: static;
-          margin-left: 17%;
-          width: 100%;
-        }
-        .mention {
-          position: static;
-          width: 100%;
-          margin-left: 30%;
-        }
-      
-        .politique {
-          margin-left: 23%;
+          top: 30%;
+          background-color: fuchsia ;
         }*/
-        .contact {
-          position: static;
-           height: auto;
-          width: 100%;
-        } 
-          
-       
-       
-        .loi {
-          margin-right: 2%;
-        }
         
-      
-        .footerContainer .footer2 {
+        
+       
+      .footerContainer .footer2 {
           display: flex;
           justify-content: center;
           text-align: center;
           flex-direction: column;
-          margin-top: 50%;
+          height: auto;
+      
           margin-right: 10%;
           background-color: fuchsia ;
         }
       
         .footer2 p {
           align-items: center;
-         margin-top: 5%;
+         margin-top: 20%;
          margin-left: 5%;
-          
-         
-        }
-       
+      }
+
+      .reseaux {
+        position: absolute;
         
-        .footerContainer .reseau {
-          position: relative;
-          flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-          margin-left: 15%;
-          height: auto; 
-          width: 100% !important;
-         
+        width: 100vw;
+        height: auto;
+        top: 100%;
+       }
+      
+       .link {
+        margin-left:16%;
+       } 
+      .insta {
+        
+        margin-left: 8%;
+        
       }
       
-      .insta {
-        position: absolute;
-        margin-right:14%;
-      }
-      .link {
-        padding-left: 50%;
-      }
     }
   
   
