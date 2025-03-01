@@ -1,23 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: #083e56;
     color:aliceblue;
     box-sizing: border-box;
-    
-    
-  }
-  html {
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  
-    
     
   }
+ 
   
   
   strong {
@@ -65,20 +57,20 @@ body {
 
 .menu {
   
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  flex-direction: row;
-  gap:80px;
-  
-  
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+  top: 0;
+  background-color: #083e56;
   color: aliceblue;
-  position: absolute; /* Positionne le menu de manière absolue par rapport à son parent */
-  top: 0; /* Décale-le du haut selon tes besoins */
- left: 50%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    width: 100%; /* Ajuste la largeur du menu */
-    z-index: 10; /* S'assure que le menu est au-dessus des autres éléments */
-    padding-left: 4%;
+  padding: 10px 4% 10px 0;
+  width: 100%;
+  z-index: 1000;
   }
 
   
@@ -94,7 +86,7 @@ body {
 
 
 .creat a, .ref a, .tarif a {
-  color: aliceblue ;
+  color: aliceblue;
   text-decoration: none;
 }
 
@@ -103,8 +95,6 @@ body {
     margin-top: 7%;
     left: 50%;
     transform: translateX(-50%);
-    
-    
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     transition: top 0.1s, opacity 0.5s;
     animation: moveDownTitre 2s ease-out forwards;
@@ -112,9 +102,8 @@ body {
 }
 .presentationText .grosTitre {
   font-size: 3.2em;
-  
-  
 }
+
 .presentationText p {
   font-size: 1.4em;
 }
@@ -130,38 +119,39 @@ body {
   border: white solid;
   font-size: 17px;
   color: aliceblue;
-  
   padding: 5px 10px;
   animation: zoomer 2s forwards;
   animation: moveUpSousTitre 2s ease-out forwards;
   transition: bottom 0.1s, opacity 0.5s;
   animation-duration: 3s;
   
-  
-  }
+}
   
 
      
     @media screen and (max-width: 768px) {
-
-      body {
-        display:block;
-        width: 100%;
-      }
-
+    body, html { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Évite le scroll horizontal */
+    }
       .presentationContainer  {
-        
-          position: relative;
-          width: 100%;
-          
+      position: relative;
+        width: 100%;
           padding:0;
           
+      }
+      .presentationContainer img {
+        width: 100%;
+      
       }
   
       .presentationText {
           position: absolute;
-          margin-top: 5%; /* Moins d'espace sur le haut */
-          
+          top: 5%; /* Moins d'espace sur le haut */
+          left: 50%;
+          transform: translateX(-50%);
           font-size: 0.8rem; /* Réduction de la taille du texte si besoin */
           text-shadow: 2px 2px 4px rgb(232, 137, 41);
       }
@@ -172,138 +162,67 @@ body {
       }
   
       .logoContainer {
-          
           width: 8%; /* Augmente un peu la taille si nécessaire pour la visibilité */
       }
+
       .menu {
-        display: none; /* Cache le menu */
+        visibility: hidden; /* Cache le menu */
+        opacity: 0;
         flex-direction: row;
         font-size: 80%;
         border-radius: 8px;
-        
         color:rgb(255, 254, 254) ;
-        gap:70px;
-        left:10%;
-        
-        width: 80%;
+        gap:90px;
+        width: 70%;
         height: 6%;
+        background-color: transparent;
         box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
-        padding: 2% 20%;
+        padding: 3% 10%;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
         
         
     }
     .menu a {
-      color:rgb(255, 254, 254) ;
+      color:rgb(255, 254, 254);
+      
     }
     
     .menu.active {
-        display: flex; /* Affiche le menu quand activé */
-    }
-    
-    .hamburger {
-      
-        display: block; /* Affiche l'icône hamburger */
-    }
-    /* Masquer l'icône hamburger lorsque le menu est actif */
-    
-  }
-    
-  @media screen and (max-width:420px){
-
-    body {
-      display: block;
-      width: 100%;
-    }
-     .presentationContainer {
-      
-      width: 100%;
-      
-      height: auto;
-      
-    }
-
-    
-    .presentationText {
-      
-      margin-top: 0;
-      text-shadow: 2px 2px 4px rgb(232, 137, 41);
-      width: 50%;
-      height: 40%;
-      font-size: 0.5em;
-      color: rgb(247, 250, 250);
-    }
-.sousTitre {
- transform:translateY(-10%);
-  
-}
-
-    
-
-    .logoContainer {
-      margin-left: 1px;
-      margin-top: 1px;
-
-    }
-    .menu {
-      display: none; /* Cache le menu */
-      font-size: 80%;
-      border-radius: 8px;
-      position: fixed;
-      color:rgb(255, 254, 254) ;
-      gap:12px;
-      width: 100vw;
-      height:auto;
-      box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
-      padding:3% 0%;
-      
-  }
-  .menu a {
-    color:rgb(255, 254, 254) ;
-  }
-
-  .menu.active {
+      visibility: visible;
+      opacity: 1;
       display: flex; /* Affiche le menu quand activé */
-  }
-
-  .hamburger {
+    }
     
-      display: block; /* Affiche l'icône hamburger */
+    .menu.active + .hamburger {
+      display: none; /* Cache l'icône quand le menu est affiché */
   }
-}
+  }
+    
+  
 @media screen and (max-width:480px){
 
-  body {
-    display: block;
-    width: 100%;
-  }
+  
    .presentationContainer {
-    
-    width: 100%;
-    
+     width: 100%;
     height: auto;
-    
   }
 
   
   .presentationText {
     
-    margin-top: 0;
+    margin-top: -2%;
     text-shadow: 2px 2px 4px rgb(232, 137, 41);
     width: 50%;
     height: 40%;
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: rgb(247, 250, 250);
   }
- .presentationText .grosTitre {
-  font-size: 5em;
-  margin-top: -2%;
- } 
-
   
 
   .logoContainer {
     margin-left: 1px;
     margin-top: 1px;
+    
 
   }
   
@@ -317,7 +236,8 @@ body {
     width: 100vw;
     height:auto;
     box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
-    padding:3% 0%;
+    padding:3% 4%;
+    text-align: center;
     
 }
 .menu a {
@@ -334,7 +254,64 @@ body {
 }
 }
     
+@media screen and (max-width:420px){
 
+   
+  .presentationContainer {
+   width: 100%;
+   height: auto;
+   
+ }
+
+ 
+ .presentationText {
+   
+   margin-top: 0;
+   text-shadow: 2px 2px 4px rgb(232, 137, 41);
+   width: 50%;
+   height: 40%;
+   font-size: 0.5em;
+   color: rgb(247, 250, 250);
+ }
+.sousTitre {
+transform:translateY(-10%);
+
+}
+
+ 
+
+ .logoContainer {
+   margin-left: 1px;
+   margin-top: 1px;
+
+ }
+ .menu {
+   display: none; /* Cache le menu */
+   font-size: 80%;
+   border-radius: 8px;
+   position: fixed;
+   color:rgb(255, 254, 254) ;
+   gap:12px;
+   width: 100vw;
+   height:auto;
+   box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
+   padding:3% 1%;
+   text-align: center;
+   
+}
+.menu a {
+ color:rgb(255, 254, 254) ;
+}
+
+.menu.active {
+   display: flex; /* Affiche le menu quand activé */
+}
+
+.hamburger {
+ 
+   display: block; /* Affiche l'icône hamburger */
+}
+}
    
 
 
@@ -426,11 +403,8 @@ body {
    transform: translateX(-10%); 
  }
  
- .firstContainer h1.active {
-   opacity: 1;
-   animation: slide-in 1s ease-out forwards; /* Rendre l'élément visible quand il est actif */
- }
- .firstContainer h1.active::before {
+ 
+ .firstContainer h1.active, .firstContainer h1.active::before {
    animation: slide-in 1s ease-out forwards;
      opacity: 1;
  }
@@ -450,12 +424,8 @@ body {
   margin-left: 10%;
   text-align: justify; /* Justification du texte */
   line-height: 1.7; /* Hauteur de ligne ajustée */
-  /*border: 1px solid #ddd; /* Bordure pour visualiser le conteneur */
-  /*padding: 10px; /* Espacement interne */
   font-size: 1.2rem;
   margin-top: 5%;
-  
-  
 }
 
 .seo {
@@ -475,17 +445,6 @@ body {
   margin-left: 30%;
 
 }
-
-
- 
-
- 
-
- 
-
-
-
-
 
 .suiteContainer {
   width: 90%;
@@ -523,7 +482,6 @@ body {
 
 .suiteContainer .sousTitre2 {
   font-size: 1.5em;
-  
   position: relative;
   text-align: center;
   margin-bottom: 4%;
@@ -533,7 +491,6 @@ body {
   content: ""; /* Nécessaire pour afficher le trait */
   position: absolute;
   left:35%; /* Aligne le trait avec le côté gauche du sous-titre */
-  
   width: 30%; /* S'étend sur toute la largeur de l'élément */
   height: 2px; /* Hauteur du trait */
   background-color: rgb(232, 137, 41); /* Couleur du trait */
@@ -543,11 +500,11 @@ body {
 .suiteContainer p {
   font-size: 1.2rem;
   line-height: 1.6; /* Lisibilité accrue */
-  
   text-align: center; /* Texte justifié */
   width: 80%;
   margin-left: 10%;
 }
+
 #toggleText1 {
   display: none;
 }
@@ -570,6 +527,11 @@ body {
     width: 80%; /* Prend toute la largeur */
     margin-left: 2%;
   }
+  .firstContainer h1 {
+    margin-left: 10%;
+    font-size: 1.8em;
+    
+   }
 
   .firstContainer h1::before  {
    transform: translateX(-6%);
@@ -579,28 +541,17 @@ body {
     margin-left:5%;
     line-height: 1.8em
   }
- .firstContainer h1 {
-  margin-left: 10%;
-  font-size: 1.8em;
-  
- }
+ 
 
  
  .seo img{
-  position: static;
+  /*position: static;*/
   margin-left: 5%;
   margin-top: 4%;
   width: 80%;
   
  }
 }
-
-
-
-
-/*.suiteContainer p {
-  font-size: 1.2em;
-}*/
 
 .outerContainer2 {
   display: flex;
@@ -611,17 +562,18 @@ body {
     
 }
 
-.animation-fade-in {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.5s ease, transform 1s ease;
-}
-
-
+.animation-fade-in,
 .image-anime {
   opacity: 0;
-  transform: scale(0.9);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animation-fade-in {
+  transform: translateY(100px);
+}
+
+.image-anime {
+  transform: scale(0.9);
 }
 
 .visible {
@@ -633,12 +585,16 @@ body {
 .suiteContainer2 {
   width: 100%;
   position: relative;
- 
-  
+}
+.suiteContainer2 h2 {
+  width: 65%;
+  margin-left: 60px;
+  line-height: 1.3; /* Hauteur de ligne ajustée */
+  font-size: 1.9em;
+  font-weight: 600;
+  transition: height 0.5s ease;
   
 }
-
-
 
 .suiteContainer2 h2::before {
   
@@ -667,36 +623,11 @@ body {
   }
 }
 
-.suiteContainer2 h2.visible::before {
+.suiteContainer2 h2.visible,.suiteContainer2 h2.visible::before {
   animation: slide-in 1s ease forwards;
 }
 
-.suiteContainer2 h2.visible {
-  animation: slide-in 1s ease forwards;
-}
 
-.suiteContainer2 h2 {
-  
-  width: 65%;
-  margin-left: 60px;
-
-  /*text-align: justify; /* Justification du texte */
-  line-height: 1.3; /* Hauteur de ligne ajustée */
-  /*border: 1px solid #ddd; /* Bordure pour visualiser le conteneur */
- 
-  font-size: 1.9em;
-  font-weight: 600;
-  
-  
-  transition: height 0.5s ease;
-  
-}
-
-/*.suiteContainer2 p {
-  width: 60%;
-  margin-left: 11%;
-  line-height: 1.5;
-}*/
 #toggleText2 {
   display:none;
 }
@@ -724,7 +655,7 @@ body {
 
 .textOverlay ul li h3, .textOverlay ul li h4 {
   line-height: 1rem;
-   font-size: 15px;
+   font-size: 1em;
    color: rgb(246, 157, 63);
  }
 
@@ -733,7 +664,7 @@ body {
 .imageRef .textOverlay {
   position: absolute;
   top: 40%; /* Centrer verticalement */
-  left: 250px; /* Centrer horizontalement */
+  left: 35%; /* Centrer horizontalement */
   transform: translate(-50%, -50%); /* Ajuste l'alignement */
   color: rgb(15, 1, 1); /* Contraste pour être lisible sur l'image */
   font-size: 1em; /* Taille du texte, ajustez selon vos besoins */
@@ -756,8 +687,6 @@ body {
   font-size: 1.9em;
   color:  rgb(246, 157, 63);
   text-align: center;
-  
-  
   font-weight: 600;
    
 }
@@ -789,11 +718,14 @@ body {
     margin-left: 0;
     text-align:justify;
    }
-   #toggleText1 {
+   #toggleText1, #toggleText2 {
     cursor: pointer;
     color:#fbfbfa;
-    margin-left: 34%;
+   
     font-size: 20px;
+   } 
+   #toggleText1 {
+    margin-left: 34%;
    }
   .outerContainer2 {
    display: block;
@@ -809,6 +741,7 @@ body {
   font-size: 35px;
    position: static;
    font-weight: 600;
+   padding: 0;
  }
  .suiteContainer2 h2::before {
   top: 7%;
@@ -821,17 +754,22 @@ body {
    width: 100%;
    margin-left: 0;
    margin-top:10%;
+   display: flex;
+   justify-content: center;
    align-items: center; /* Centrer le contenu horizontalement */
    gap: 10px;
- }
- 
- .imageRef .textOverlay {
-  margin-left: 15%;
  }
  .imageRef img {
   width: 90%;
  }
-
+ 
+ .imageRef .textOverlay {
+  margin-left: 18%;
+ }
+ 
+.textOverlay ul li h3, .textOverlay ul li h4 {
+  font-size: 1.2em;
+}
  .resume {
   width:90%;
   margin-top: 10%;
@@ -855,9 +793,6 @@ body {
  
 }
 #toggleText2 {
-  font-size: 20px;
-  cursor: pointer;
-  color: #fbfbfa;
   margin-left: 38%;
 }
 
@@ -1144,25 +1079,26 @@ margin-right: 15px;
 }
 
 .contact {
-
-    
-    
     align-items: center;
     width: 100%;
-    margin-right: 18%;
+    left: 35%;
     margin-top: 7%;
 }
 
 .telephone {
   
-    width: auto;
-    
+    width:auto;
     display: flex;
-    margin-left: 40%;
-    
     padding-bottom: 6%;
-    
 }
+.telephone img {
+  width: 17px;
+}
+.contact .telephone {
+  position: absolute;
+  left: 5%;
+}
+
 
 
 .contact p {
@@ -1282,7 +1218,7 @@ color: #fefeff;
 }
   .suiteContainer2  {
     position: static;
-    width: 100vw;
+    width: 100%;
     
   }
   .suiteContainer2 h2 {
@@ -1304,7 +1240,7 @@ color: #fefeff;
   .imageContainer {
     position: relative;
     margin-top:10%;
-    margin-left: 20%;
+   /* margin-left: 20%;*/
     width: 100%;
     
 
@@ -1319,15 +1255,18 @@ color: #fefeff;
   margin-left: -28%; /* Si nécessaire, ajustez la position */
 }
   .imageRef .textOverlay {
-    margin-left: -23%;
+    
     top:44%;
+    left:120px;
     
   }
-  
-  .textOverlay h3, h4 {
-    font-size: 15px;
-  
-    line-height: 1rem;
+  .imageRef .textOverlay {
+    left: 36%;
+    width: 80%;
+  }
+  .textOverlay ul li h3, .textOverlay ul li h4 {
+    font-size: 1em;
+    line-height: 0.8rem;
   }
 
  .resume {
@@ -1372,16 +1311,12 @@ color: #fefeff;
     margin-top: -10%;
   }
   
+  
   /* Effet au survol */
   .toggle-link:hover {
-    
     color: #fbfbfa;
   }
-  /* Effet au survol */
-  .toggle-link:hover {
-    
-    color: #fbfbfa;
-  }
+
   .explicationContainer {
     flex-direction: column-reverse;
   }
@@ -1389,6 +1324,7 @@ color: #fefeff;
   .dernier img {
     width: 96%;
     margin-left:-7%;
+    margin-top: 5%;
     
   }
   .container4 .titre4::before {
@@ -1414,14 +1350,8 @@ color: #fefeff;
   .button1 {
     margin-left:18% !important;
   }
- .dernier img {
-margin-top: 5%;
- }
  
-    
-  }
-@media screen and (max-width:480px) {
-  .footerContainer {
+ .footerContainer {
     display: flex;
     position: relative;
     height: auto;
@@ -1429,10 +1359,30 @@ margin-top: 5%;
   margin-top: 10%;
  background-color:fuchsia
 }
+
+.contact {
+  position: relative;
+ left:36%;
+  text-align: center;
+  height: auto;
+  width: 100vw;
   
+  
+}
+.telephone {
+  width: 100%;
+  margin-left: -66%;
+  margin-bottom: 18%;
+}
+.contact p {
+  transform: translateX(-28%);
+  
+  
+}
+
 .footerContainer .loi {
     flex-direction: column;
-    margin-top: 25%;
+    margin-top: 27%;
   
    color: rgb(8, 8, 8);
    
@@ -1440,7 +1390,7 @@ margin-top: 5%;
   }
 
   .condition {
-    margin-left: 18%;
+    margin-left: 19%;
   }
   .mention {
     margin-left: 32%;
@@ -1455,33 +1405,6 @@ margin-top: 5%;
     transform: translateY(-60%);
   }
 
-  .contact {
-    position: relative;
-    margin-left: 2%;
-    margin-top: 5%;
-    text-align: center;
-    height: auto;
-    width: 60%;
-    
-    
-  }
-  .contact p {
-    transform: translateX(-28%);
-    
-    
-  }
-  .telephone {
-    position: relative;
-    width: 50%;
-    left: 23%;
-    padding-bottom: 10%;
-  }
-
-  .telephone .tel {
-    
-    margin-left: 0%;
-    margin-top: -30%;
-  }
   
   
 
