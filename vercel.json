@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/createursiteweb",
+      "destination": "/createursiteweb.html"
+    },
+    {
+      "source": "/prestation",
+      "destination": "/prestation.html"
+    }
+  ]
+}
+
+  
