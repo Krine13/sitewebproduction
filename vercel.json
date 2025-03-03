@@ -1,15 +1,18 @@
 {
+  "redirects": [
+    {
+      "source": "/:path",
+      "destination": "/:path.html",
+      "has": [{ "type": "filesystem" }],
+      "statusCode": 200
+    }
+  ],
   "rewrites": [
     {
-      "source": "/createursiteweb",
-      "destination": "/createursiteweb.html"
-    },
-    {
-      "source": "/prestation",
-      "destination": "/prestation.html"
+      "source": "/:path.html",
+      "destination": "/:path"
     }
   ]
-  
 }
 
 
