@@ -1,26 +1,4 @@
 
-    // Sélectionne tous les liens qui déclenchent l'affichage du texte
-   /* document.querySelectorAll('[id^="toggleText"]').forEach(button => {
-      button.addEventListener('click', function(event) {
-        event.preventDefault(); // Empêche l'actualisation de la page
-        const targetId = this.getAttribute('data-target'); // Récupère l'ID du texte à afficher
-        const moreText = document.getElementById(targetId); // Trouve l'élément correspondant
-  
-        if (!moreText) {
-          console.error(`Element with id "${targetId}" not found.`); // Affiche une erreur si l'élément cible n'est pas trouvé
-          return;
-        }
-  
-        // Toggle l'affichage du texte
-        if (moreText.style.display === 'none') {
-          moreText.style.display = 'inline'; // Affiche le texte
-          this.textContent = 'Lire moins'; // Change le texte du lien
-        } else {
-          moreText.style.display = 'none'; // Masque le texte
-          this.textContent = 'Lire la suite'; // Réinitialise le texte du lien
-        }
-      });
-    });*/
     
     // Fonction pour détecter les éléments dans la fenêtre
 document.addEventListener("DOMContentLoaded", function () {
