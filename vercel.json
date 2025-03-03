@@ -8,7 +8,16 @@
       "source": "/prestation",
       "destination": "/prestation.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://www.sitewebproduction.com/:path*",
+      "permanent": true
+    }
   ]
 }
+
+
 
   
