@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "url": "https://www.sitewebproduction.com",
-        "logo": "https://www.sitewebproduction.com/logo.png"
+        "logo": "https://www.sitewebproduction.com/Site web 2.png"
     };
     
     const script = document.createElement('script');
