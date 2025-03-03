@@ -1,21 +1,13 @@
 {
   "cleanUrls": true,
-
-  "redirects": [
-    {
-      "source": "/:path",
-      "destination": "/:path.html",
-      "has": [{ "type": "filesystem" }],
-      "statusCode": 200
-    }
-  ],
   "rewrites": [
     {
-      "source": "/:path.html",
-      "destination": "/:path"
+      "source": "/:path",
+      "destination": "/:path.html"
     }
   ]
 }
+
 
 
 
