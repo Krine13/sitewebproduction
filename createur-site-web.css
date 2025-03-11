@@ -15,7 +15,9 @@ html {
   overflow-x: hidden;
 }
 
-
+img {
+  aspect-ratio: 3 / 2;
+}
 
 
 .imagePresentation { 
