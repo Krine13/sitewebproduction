@@ -27,7 +27,7 @@ body {
   
 
   img, video {
-    aspect-ratio: 3 / 2;
+    
     max-width: 100%; /* S'adapte à la largeur du parent */
   height: auto; /* Conserve les proportions */
   }
