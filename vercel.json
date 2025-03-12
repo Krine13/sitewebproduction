@@ -5,6 +5,13 @@
       "source": "/:path",
       "destination": "/:path.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/createursiteweb",
+      "destination": "/createur-site-web",
+      "permanent": true
+    }
   ]
 }
 
