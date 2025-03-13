@@ -200,6 +200,7 @@ margin-bottom: 3%;
 
 .texteContainer a {
   color:rgb(232, 137, 41);
+  
 }
 .texteContainer ul {
 color: aliceblue;
@@ -260,6 +261,7 @@ border: 1px solid rgb(232, 137, 41); /* Bordure noire */
   
   background-color: rgb(232, 137, 41); /* Couleur de fond légère (optionnel) */
 }
+
 .imageContainer {
 position: absolute;
 display: flex;
@@ -407,7 +409,9 @@ opacity: 0; /* L'élément est invisible au départ */
 
 }
 
-
+.texteContainer a, .encadre, .presta p, .voir a, .recap a, .hidden-text a {
+  font-size: 20px;
+}
 
 @keyframes etirer {
  
