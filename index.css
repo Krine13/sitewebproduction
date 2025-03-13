@@ -91,13 +91,13 @@ body {
   text-decoration: none;
 }
 
-.presentationText {
+.presentationContainer .presentationText {
     position: absolute;
-    margin-top: 7%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 40%;
+    left: 33%;
+    
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    transition: top 0.1s, opacity 0.5s;
+    transition: top 2s, opacity 0.5s;
     animation: moveDownTitre 2s ease-out forwards;
     animation-delay: -1s;
 }
@@ -107,6 +107,7 @@ body {
 
 .presentationText p {
   font-size: 1.4em;
+  
 }
 
 
@@ -121,8 +122,8 @@ body {
   font-size: 17px;
   color: aliceblue;
   padding: 5px 10px;
-  animation: zoomer 2s forwards;
-  animation: moveUpSousTitre 2s ease-out forwards;
+  animation: zoomer 2s forwards, moveUpSousTitre 2s ease-out forwards;
+  
   transition: bottom 0.1s, opacity 0.5s;
   animation-duration: 3s;
   
@@ -148,11 +149,11 @@ body {
       
       }
   
-      .presentationText {
+      .presentationContainer .presentationText {
           position: absolute;
-          top: 5%; /* Moins d'espace sur le haut */
-          left: 50%;
-          transform: translateX(-50%);
+          top: 35%; /* Moins d'espace sur le haut */
+          left: 26%;
+          
           font-size: 0.8rem; /* Réduction de la taille du texte si besoin */
           text-shadow: 2px 2px 4px rgb(232, 137, 41);
       }
@@ -209,9 +210,10 @@ body {
   }
 
   
-  .presentationText {
+  .presentationContainer .presentationText {
     
     margin-top: -2%;
+    margin-left: -2%;
     text-shadow: 2px 2px 4px rgb(232, 137, 41);
     width: 50%;
     height: 40%;
@@ -265,9 +267,9 @@ body {
  }
 
  
- .presentationText {
+ .presentationContainer .presentationText {
    
-   margin-top: 0;
+   margin-top: -2%;
    text-shadow: 2px 2px 4px rgb(232, 137, 41);
    width: 50%;
    height: 40%;
@@ -315,39 +317,38 @@ transform:translateY(-10%);
 }
    
 
-
-
-
 @keyframes moveDownTitre {
-    from {
-        top: -40%; /* Position initiale du texte au départ de l'animation */
-    }
+  from {
+      transform: translateY(-150%); /* Position initiale du texte */
+  }
 
-    to {
-        top: 30%; /* Position finale du texte à la fin de l'animation */
-    }
+  to {
+      transform: translateY(0); /* Position finale du texte */
+  }
 }
+
 
 @keyframes zoomer {
     from {
-        transform: scale(2);
+        transform: scale(1.2);
     }
     to {
-        transform: scale(1.2); /* Ajustez la valeur selon votre préférence */
+        transform: scale(1); /* Ajustez la valeur selon votre préférence */
     }
 }
 
 
 
 @keyframes moveUpSousTitre {
-    from {
-        top: 700px;
-    }
+  from {
+      transform: translateY(100%); /* Position initiale */
+  }
 
-    to {
-        top: 500px;
-    }
+  to {
+      transform: translateY(0); /* Position finale */
+  }
 }
+
 
 
 

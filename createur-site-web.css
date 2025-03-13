@@ -87,16 +87,8 @@ height: auto; /* Maintient le ratio du logo */
       text-align: center; /* Centrer le texte si nécessaire */
       text-shadow: 
       0 0 5px , /* Lueur bleue */
-      0 0 10px #42e6f3,
-      
-      0 0 40px #15c4f4, /* Lueur cyan plus forte */
-      0 0 80px #1572f4,
-      0 0 120px #1572f4;
-      /*0 0 10px #42e6f3, 
-      0 0 20px #1567f4, 
-      0 0 30px #fff, 
-      0 0 40px #620af0; /* Moins de lueurs pour alléger */
-  animation: monAnimation 1s infinite ease-out alternate, electricEffect 1.2s infinite; /* Animation continue */
+      0 0 10px #42e6f3;
+      animation: monAnimation 1s infinite ease-out alternate, electricEffect 1.2s infinite; /* Animation continue */
   
   }
 
@@ -112,17 +104,15 @@ height: auto; /* Maintient le ratio du logo */
 
 @keyframes monAnimation {
   from {
-    filter:blur(12px);
-    
-    opacity:0;
+    transform: translate(-50%, -50%) scale(0.9); /* Ajout d'un effet de réduction pour l'animation */
+    opacity: 0;
   }
- 
   to {
-    filter:blur(0px);
-    
-    opacity:1;
+    transform: translate(-50%, -50%) scale(1); /* Revenir à la taille normale */
+    opacity: 1;
   }
-}
+  }
+
 
 
 
@@ -1208,6 +1198,7 @@ margin-right: 5%;
     display: block;
     width: 100%;
   }
+  
   .imagePresentation .grosTitre {
     font-size: 16px;
     margin-left: 2%;
@@ -1294,8 +1285,6 @@ color: #fefeff;
   cursor: pointer;
 }
 .imageContainer  {
-
-  transform: translateY(5%);
   width: 100%;
   margin-left: 1%;
 }
