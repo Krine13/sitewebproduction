@@ -12,11 +12,16 @@
     <header>
     <div class="imagePresentation">
         <div class="photo">
-    <img src="./image/createursite.jpeg" 
-    srcset="./image/createursite-mobile.jpeg 420w, ./image/createursite-mobile.gpeg 480w  , ./image/createursite.jpeg 1024w" 
-    alt="doigt qui touche écran digital" 
-    loading="lazy">
-        <div class="logoContainer">
+            <picture>
+                <source srcset="./image/createursite.avif" type="image/avif">
+                 <img 
+                    src="./image/createursite.jpg" 
+                   width="1200px" height="480px"
+                    srcset="./image/createursite-mobile.jpg 420w, ./image/createursite-mobile.jpg 480w  , ./image/createursite.jpg 1024w"
+                    alt="doigt qui touche écran digital">
+            </picture>
+               
+           <div class="logoContainer">
             <a href="/index">
             <img src="./image/Site web 2.png" class="logo" alt="logo de site web production" loading="lazy">
             </a>
