@@ -1064,18 +1064,16 @@ margin-top: 25%;
       flex-direction: column;
       align-items: center;
       position: relative;  
-      width: 100%;
+      width: 50%;
       margin-top: 2%;
   }
   
   
   .footer2 {
+    position: relative;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100vw;
-  height: auto;
   margin-top:30%;
+  margin-left: 25%;
   }
   .footer2 p {
     
@@ -1087,21 +1085,22 @@ margin-top: 25%;
   position: absolute;
   }*/
   
-  .reseau {
+  .reseaux {
     display: flex;
+    gap: 10px;
     flex-direction: row;  
     justify-content: center;  
     align-items: center;  
-    width: 100vw; 
-    padding: 10px 0;
+    width: 50%; 
+   /*padding: 10px 0;*/
     
-    background-color: lightgray; 
+     
   
   }
   .insta {
   width: 30px;
   height: auto;
-  margin-left: 47.8%;
+  
   
  }
   .link {
@@ -1201,6 +1200,7 @@ margin-left: 0;
 
 .footer2 {
   margin-top: 0;
+  margin-left: 0;
   text-align: center;
   font-size: 1em;
 }
@@ -1498,12 +1498,12 @@ top: 3%;
 
 
 .footerContainer .footer2 {
-  display: block;
+  
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 20%;
-  
+  margin-left: -5%;
+  margin-top: 22%;
   background-color: fuchsia ;
 }
 
@@ -1517,15 +1517,13 @@ top: 3%;
 }
 
 
-.footerContainer .reseaux {
-  position: relative;
-  flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
-  height: auto; 
-  width: 100% !important;
-  margin-right: 9%;
+.reseaux {
+  width: 100%;
+  gap: 5px;
 }
-.reseaux  .insta  {
+.reseaux  .insta, .link  {
   margin-bottom: 2%;
+ transform: translateX(-20%);
 
 }
 
@@ -1808,7 +1806,7 @@ button {
   .footerContainer .footer2 {
     display: block;
     flex-direction: column;
-    height: 0;
+    height: auto;
     margin-top: 25%;
     background-color: fuchsia ;
   }
@@ -1816,8 +1814,8 @@ button {
   .footer2 p {
     position: static;
     align-items: center;
-    margin-top: 5%;
-    margin-bottom: -10%;
+    margin-top: 20%;
+    
     margin-right: 9%;
     
  }
@@ -1828,7 +1826,7 @@ button {
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
     margin-top: 12%;
-    gap: 30px;
+    gap: 5px;
   }
   
   .reseaux .insta {
@@ -1836,7 +1834,7 @@ button {
     
   }
  
- 
+  
 
 
 }
