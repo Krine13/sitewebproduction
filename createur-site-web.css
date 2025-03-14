@@ -1499,10 +1499,7 @@ top: 3%;
 
 
 .footerContainer .footer2 {
-  
-  
-
-  flex-direction: column;
+ flex-direction: column;
   margin-left: -5%;
   margin-top: 35%;
   background-color: fuchsia ;
@@ -1510,7 +1507,7 @@ top: 3%;
 .footer2 p {
   
   margin-bottom: 16%;
-  margin-right: 8%;
+  margin-right: 11%;
    
 }
   
