@@ -1146,6 +1146,7 @@ margin-top: 25%;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
     margin-top: 10%;
     padding: 20px;
 }
@@ -1472,7 +1473,7 @@ top: 3%;
 .footerContainer .loi {
   flex-direction: column;
   margin-top: 25%;
-
+  height: auto;
  color: rgb(8, 8, 8);
  
   
@@ -1510,8 +1511,8 @@ top: 3%;
 .footer2 p {
   position: static;
   align-items: center;
- margin-top: 10%;
- margin-right: 9%;
+ margin-top: 14%;
+ margin-right: 8%;
   
  
 }
@@ -1781,20 +1782,22 @@ button {
 }  
 .footerContainer .loi {
     flex-direction: column;
+    width: 100%;
+    height: auto;
     color: rgb(8, 8, 8);
     margin-top: 25% !important;
 }
 
   .condition {
-    margin-left: 14%;
+    margin-left: 22%;
   }
   .mention {
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top:0;
   }
 
   .politique {
-    margin-left: 21%;
+    margin-left: 27%;
     margin-top: 0;
   }
   
@@ -1826,6 +1829,7 @@ button {
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
     margin-top: 12%;
+    margin-left: -2% ;
     gap: 5px;
   }
   
