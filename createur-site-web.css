@@ -1501,13 +1501,19 @@ top: 3%;
 .footerContainer .footer2 {
   
   
-  position: relative;
+
   flex-direction: column;
   margin-left: -5%;
   margin-top: 35%;
   background-color: fuchsia ;
 }
-
+.footer2 p {
+  
+  margin-bottom: 16%;
+  margin-right: 8%;
+   
+}
+  
 
 .reseaux {
   width: 100%;
@@ -1516,18 +1522,10 @@ top: 3%;
 }
 .reseaux  .insta, .link  {
   
- transform: translateX(-20%);
+ transform: translateX(-22%);
 
 }
-.footer2 p {
-  position: absolute;
-  margin-bottom: 16%;
-   margin-right: 8%;
-   
-    
-   
-  }
-  
+
 
 }
 
@@ -1807,7 +1805,7 @@ button {
   
 
   .footerContainer .footer2 {
-    margin-top: 30%;
+    margin-top: 25%;
     height: auto;
     background-color: fuchsia ;
   }
