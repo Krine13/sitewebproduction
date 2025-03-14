@@ -1507,26 +1507,27 @@ top: 3%;
   margin-top: 35%;
   background-color: fuchsia ;
 }
-.footer2 p {
-  position: absolute;
-}
-.footer2 p {
-margin-top: 16%;
- margin-right: 8%;
-  
- 
-}
+
 
 .reseaux {
   width: 100%;
   gap: 5px;
+  margin-top: -15%;
 }
 .reseaux  .insta, .link  {
-  margin-bottom: 2%;
+  
  transform: translateX(-20%);
 
 }
-
+.footer2 p {
+  position: absolute;
+  margin-bottom: 16%;
+   margin-right: 8%;
+   
+    
+   
+  }
+  
 
 }
 
@@ -1812,8 +1813,8 @@ button {
   }
 
  .footer2 p {
-  margin-right: 15%;
-  margin-top: 25%;
+  margin-right: 14%;
+  margin-top: 20%;
  }
  
   
@@ -1821,7 +1822,7 @@ button {
     
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-left: -2% ;
     gap: 5px;
   }
