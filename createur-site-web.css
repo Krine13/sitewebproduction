@@ -1450,14 +1450,14 @@ background-color:fuchsia
 .contact {
 position: relative;
 margin-top: 2%;
-text-align: center;
+
 height: auto;
 width: 100%;
 
 
 }
 .contact p {
-margin-right: 50%; 
+margin-right: 48%; 
 
 
 }
@@ -1479,7 +1479,7 @@ top: 3%;
 }
 
 .condition {
-  margin-left: 18%;
+  margin-left: 19%;
   
 }
 .mention {
@@ -1511,7 +1511,7 @@ top: 3%;
   position: static;
   align-items: center;
  margin-top: 10%;
- margin-left: 5%;
+ margin-left: 6%;
   
  
 }
@@ -1522,7 +1522,7 @@ top: 3%;
   flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
   height: auto; 
   width: 100% !important;
-  margin-right: 12%;
+  margin-right: 9%;
 }
 .reseaux .insta {
   margin-bottom: 2%;
@@ -1781,15 +1781,12 @@ button {
 }  
 .footerContainer .loi {
     flex-direction: column;
-    margin-top: 24%;
-    
-   color: rgb(8, 8, 8);
-   
-    
-  }
+    color: rgb(8, 8, 8);
+    line-height: 0.5rem;
+}
 
   .condition {
-    margin-left: 15%;
+    margin-left: 14%;
   }
   .mention {
     margin-left: 30%;
@@ -1797,7 +1794,7 @@ button {
   }
 
   .politique {
-    margin-left: 20%;
+    margin-left: 21%;
     margin-top: 0;
   }
   
@@ -1819,6 +1816,7 @@ button {
     align-items: center;
     margin-top: 5%;
     margin-bottom: -10%;
+    margin-left: 5%;
  }
  
   
