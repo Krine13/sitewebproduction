@@ -1811,7 +1811,7 @@ button {
   }
 
  .footer2 p {
-  margin-right: 14%;
+  
   margin-top: 20%;
  }
  
@@ -1830,7 +1830,12 @@ button {
     
   }
  
+  .reseaux  .insta, .link  {
   
+    transform: translateX(-10%);
+   
+   }
+   
 
 
 }
