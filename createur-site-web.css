@@ -1802,7 +1802,7 @@ button {
   
 
   .footerContainer .footer2 {
-    margin-top: 35%;
+    margin-top: 30%;
     height: auto;
     background-color: fuchsia ;
   }
@@ -1817,15 +1817,12 @@ button {
     
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
-    margin-top: -5%;
+    margin-top: -10%;
     margin-left: -2% ;
     gap: 5px;
   }
   
-  .reseaux .insta {
-    margin-bottom: 5%;
-    
-  }
+  
  
   .reseaux  .insta, .link  {
   
