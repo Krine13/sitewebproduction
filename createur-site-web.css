@@ -1812,16 +1812,16 @@ button {
   }
 
  .footer2 p {
-  margin-right: 11%;
-  margin-top: 30%;
+  margin-right: 15%;
+  margin-top: 25%;
  }
  
   
   .footerContainer .reseaux {
-    position: relative;
+    
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
-    margin-top: 12%;
+    margin-top: 8%;
     margin-left: -2% ;
     gap: 5px;
   }
