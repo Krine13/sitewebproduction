@@ -272,8 +272,15 @@ box-shadow: 0 4px 8px rgba(247, 246, 246, 0.995); /* Ombre douce */
 }
 
 .imageContainer img {
-width: 100%;
+  
+    width: 100%;  /* L’image prendra toute la largeur de son conteneur */
+    height: auto; /* Garde les proportions */
+    max-width: 640px; /* Empêche l’image de dépasser sa taille originale */
+    display: block; /* Évite les marges indésirables */
+    margin: auto; /* Centre l’image si besoin */
 }
+
+
 
 
  
@@ -524,13 +531,24 @@ opacity: 0; /* L'élément est invisible au départ */
   .texteContainer .sousTitre {
     margin-left: 5%;
   }
+  .paragraphe1 {
+    box-shadow: none;
+  }
   
 .paragraphe1 p{
    width: 90%;
    padding-left: 3%;
    padding-bottom: 2%;
+   
 
  }
+ .texteContainer ul {
+  margin-left:15% ;
+  margin-top: -2%;
+  padding-bottom: 5%;
+}
+
+ 
  .imageContainer  {
   
   transform: translateY(5%);
@@ -541,13 +559,15 @@ opacity: 0; /* L'élément est invisible au départ */
  .paragraphe2 {
    width: 100%;
   position: static;
-  margin-top: 70%;
+  margin-top: 72%;
  }
  
  .prestations  {
   width: 80%;
+  height: auto;
   margin-left: 10%;
  }
+ 
 }
 
 .configuration {
@@ -815,10 +835,12 @@ margin-left: 25%;
 
 .iconId {
   width: 16%;
+  height: auto;
   margin-left: 38%;
   margin-top: 25%;
   
 }
+
 
 .colonne1 h3 {
   font-family:monospace;
@@ -838,6 +860,7 @@ margin-left: 25%;
 }
 .cible {
   width: 16%;
+  height: auto;
   margin-left: 38%;
   margin-top: 25%;
 }
@@ -857,6 +880,7 @@ margin-left: 25%;
 
 .responsive {
   width: 16%;
+  height: auto;
   margin-left: 40%;
   margin-top: 25%; 
 }
@@ -881,6 +905,7 @@ color: #fbf9f9;
 
 .service {
 width: 16%;
+height: auto;
 margin-left: 40%;
 margin-top: 25%;  
 }
@@ -904,6 +929,7 @@ color: #fbf9f9;
 
 .cles {
 width: 17%;
+height: auto;
 margin-left: 40%;
 margin-top: 25%;  
 }
@@ -989,9 +1015,10 @@ margin-top: 25%;
    } 
   
 .tel {
-  width:25px;
-  padding-left: 60%;
-  padding-top: 12%;
+  width:20px;
+  height: auto;
+  padding-left: 80%;
+  padding-top: 32%;
   
   
   
@@ -1137,10 +1164,11 @@ position: relative;
 .telephone {
   position: absolute;
     width: auto;
-    left: 0;
+    left: 3%;
+    top: 45%;
     display: flex;
-    margin-left: 40%;
-    padding-bottom: 6%;
+    margin-left: 35%;
+    padding-bottom: -8%;
     
 }
 
@@ -1268,6 +1296,7 @@ margin-right: 5%;
 .paragraphe1 ul {
   width: 80%;
   font-size: 1em;
+  margin-left: 3%;
 }
 #toggleText1:hover, #toggleText2:hover {
   text-decoration: underline;
@@ -1435,15 +1464,11 @@ margin-right: 53%;
 .telephone {
 position: relative;
 width: 45%;
-left: 14%;
-padding-bottom: 10%;
+left: 9%;
+top: 3%;
 }
 
-.telephone .tel {
 
-margin-left: 0%;
-margin-top: -30%;
-}
 .footerContainer .loi {
   flex-direction: column;
   margin-top: 25%;
@@ -1733,13 +1758,12 @@ button {
 }
 .telephone {
   position: relative;
-  width: 50%;
-  left: 16%;
-  padding-bottom: 15%;
+  width: 40%;
+  left: 10%;
+  bottom: 20%;
 }
 .tel {
-  margin-top: -20%;
-width: 20px;
+  width: 15px;
 }
 
 .contact {

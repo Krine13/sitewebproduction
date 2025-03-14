@@ -21,7 +21,7 @@ body {
   .logoContainer {
     position: absolute;
     width:6%;
-    margin-left: 1%;
+    
     
     
   }
@@ -148,6 +148,7 @@ body {
       }
       .presentationContainer img {
         width: 100%;
+        height: auto;
       
       }
   
@@ -165,10 +166,7 @@ body {
         margin-top: -10%;
       }
   
-      .logoContainer {
-          width: 8%; /* Augmente un peu la taille si nécessaire pour la visibilité */
-      }
-
+      
       .menu {
         visibility: hidden; /* Cache le menu */
         opacity: 0;
@@ -670,10 +668,8 @@ transform:translateY(-10%);
   top: 40%; /* Centrer verticalement */
   left: 35%; /* Centrer horizontalement */
   transform: translate(-50%, -50%); /* Ajuste l'alignement */
-  color: rgb(15, 1, 1); /* Contraste pour être lisible sur l'image */
-  font-size: 1em; /* Taille du texte, ajustez selon vos besoins */
   text-align: center;
-  font-weight: bold;
+  
 }
 
 .resume {
@@ -721,6 +717,7 @@ transform:translateY(-10%);
     width: 100%;
     margin-left: 0;
     text-align:justify;
+
    }
    #toggleText1, #toggleText2 {
     cursor: pointer;
@@ -742,7 +739,7 @@ transform:translateY(-10%);
   .suiteContainer2 h2{
    width: 50%;
    margin-left:12%;
-  font-size: 35px;
+  font-size: 30px;
    position: static;
    font-weight: 600;
    padding: 0;
@@ -789,12 +786,15 @@ transform:translateY(-10%);
  
 }
 .resume p {
- font-size: 1em;
+ 
  margin-left: 5%;
  padding: 2% 0;
  width: 80%;
  text-align: justify;
- 
+}
+
+.suiteContainer p, .resume p {
+  font-size: 1rem;
 }
 #toggleText2 {
   margin-left: 38%;
@@ -906,10 +906,12 @@ transform:translateY(-10%);
 }
 
 .dernier {
-  margin-left: 150px;
-  margin-top: 0;
-  width: 670px;
+  margin-left:10%;
+  margin-top: -5%;
+  
+  width:40%;
 }
+
 
 
 
@@ -928,22 +930,24 @@ transform:translateY(-10%);
     margin-left: 5%;
     width: 100px;
    }
+   
    .explication {
     position: static;
     width: 80%;
     margin-left: 5%;
    }
    .explication .button1 {
-    margin-left: 28%;
+    margin-left: 31%;
+    
    }
+   
    
    .dernier  {
-    position: static;
-    margin-left: 8.5%;
-    margin-top: 18%;
-    width: 100%;
+    width: 98%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 10%;
    }
-   
 }
 
 
@@ -954,9 +958,6 @@ transform:translateY(-10%);
   flex-direction: column;
   width: 100vw;
   height:auto;
-  
-  margin-top: 15%;
-  
   background-color:fuchsia
   }
 
@@ -1078,7 +1079,7 @@ margin-right: 15px;
     
     align-items: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 20px;
 }
 
@@ -1325,12 +1326,6 @@ color: #fefeff;
     flex-direction: column-reverse;
   }
 
-  .dernier img {
-    width: 96%;
-    margin-left:-7%;
-    margin-top: 5%;
-    
-  }
   .container4 .titre4::before {
     margin-left:4%;
     width: 0.4%;
@@ -1352,15 +1347,22 @@ color: #fefeff;
     
   }
   .button1 {
-    margin-left:18% !important;
+    margin-left:22% !important;
   }
+  .dernier {
+    width: 98%;
+  }
+    .dernier img {
+    margin-top: 5%;
+      
+    }
  
  .footerContainer {
     display: flex;
     position: relative;
     height: auto;
    flex-direction: column;
-  margin-top: 10%;
+  margin-top: 5%;
  background-color:fuchsia
 }
 
@@ -1615,12 +1617,7 @@ color: #fefeff;
         .explicationContainer {
           flex-direction: column-reverse;
         }
-      
-        .dernier img {
-          width: 96%;
-          margin-left:-7%;
-          
-        }
+       
         .big {
           padding-top: 5%;
         }
@@ -1642,13 +1639,19 @@ color: #fefeff;
           
         }
         .button1 {
-          margin-left:18% !important;
+          margin-left:21% !important;
         }
         /*.footer {
           background-color: deeppink;
           
         }*/
-       
+        .dernier {
+          width: 98%;
+         }
+          .dernier img {
+          margin-left:0.2%;
+            
+          }
           
         }
        
@@ -1658,7 +1661,7 @@ color: #fefeff;
         .footerContainer {
           display: flex;
           position: relative;
-          height:45vh;
+          height:40vh;
          flex-direction: column;
         
        background-color:fuchsia
