@@ -1828,12 +1828,12 @@ button {
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
     margin-top: 12%;
-    gap: 5px;
+    gap: 30px;
   }
   
   .reseaux .insta {
     margin-bottom: 5%;
-    margin-left: 2%;
+    
   }
  
  
