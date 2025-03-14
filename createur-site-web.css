@@ -1503,7 +1503,7 @@ top: 3%;
   text-align: center;
   flex-direction: column;
   margin-top: 20%;
-  margin-right: 10%;
+  
   background-color: fuchsia ;
 }
 
@@ -1511,7 +1511,7 @@ top: 3%;
   position: static;
   align-items: center;
  margin-top: 10%;
- margin-left: 6%;
+ margin-right: 9%;
   
  
 }
@@ -1817,6 +1817,7 @@ button {
     margin-top: 5%;
     margin-bottom: -10%;
     
+    
  }
  
   
@@ -1824,7 +1825,7 @@ button {
     position: relative;
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
-    margin-top: 15%;
+    margin-top: 12%;
   
   }
   .reseaux .insta {
