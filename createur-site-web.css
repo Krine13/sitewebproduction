@@ -1828,18 +1828,14 @@ button {
     flex-direction: row !important;  /* ✅ Garde les icônes en ligne */
     width: 100%;
     margin-top: 12%;
+    gap: 5px;
+  }
   
-  }
-  .reseaux {
-    gap: 10px;
-  }
-  .reseaux .insta {
+  .reseaux .insta a{
     margin-bottom: 5%;
-    
+    margin-left: 30%;
   }
- .link {
-  
- }
+ 
  
 
 
