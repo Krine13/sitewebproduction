@@ -1661,7 +1661,7 @@ color: #fefeff;
         .footerContainer {
           display: flex;
           position: relative;
-          height:40vh;
+          height:45vh;
          flex-direction: column;
         
        background-color:fuchsia
