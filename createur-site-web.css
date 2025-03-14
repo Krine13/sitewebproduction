@@ -1782,7 +1782,7 @@ button {
 .footerContainer .loi {
     flex-direction: column;
     color: rgb(8, 8, 8);
-    margin-top: 25%;
+    margin-top: 25% !important;
 }
 
   .condition {
@@ -1816,7 +1816,7 @@ button {
     align-items: center;
     margin-top: 5%;
     margin-bottom: -10%;
-    
+    margin-right: 9%;
     
  }
  
