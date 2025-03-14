@@ -1507,7 +1507,7 @@ top: 3%;
 .footer2 p {
   
   margin-bottom: 16%;
-  margin-right: 11%;
+  transform: translateX(-5%);
    
 }
   
@@ -1808,7 +1808,7 @@ button {
   }
 
  .footer2 p {
-  
+  transform: translateX(-9%);
   margin-top: 20%;
  }
  
@@ -1829,7 +1829,7 @@ button {
  
   .reseaux  .insta, .link  {
   
-    transform: translateX(-10%);
+    transform: translateX(-20%);
    
    }
    
