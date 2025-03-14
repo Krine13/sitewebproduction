@@ -1524,9 +1524,11 @@ top: 3%;
   width: 100% !important;
   margin-right: 9%;
 }
-.reseaux .insta {
+.reseaux  .insta  {
   margin-bottom: 2%;
+
 }
+
 
 }
 
@@ -1828,10 +1830,16 @@ button {
     margin-top: 12%;
   
   }
+  .reseaux {
+    gap: 10px;
+  }
   .reseaux .insta {
     margin-bottom: 5%;
+    
   }
-
+ .link {
+  
+ }
  
 
 
