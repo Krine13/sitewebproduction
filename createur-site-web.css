@@ -1501,15 +1501,17 @@ top: 3%;
 .footerContainer .footer2 {
   
   
-  
+  position: relative;
   flex-direction: column;
   margin-left: -5%;
-  margin-top: 22%;
+  margin-top: 35%;
   background-color: fuchsia ;
 }
-
 .footer2 p {
-margin-top: 14%;
+  position: absolute;
+}
+.footer2 p {
+margin-top: 16%;
  margin-right: 8%;
   
  
@@ -1809,9 +1811,9 @@ button {
     background-color: fuchsia ;
   }
 
-  .footer2 p {
-  margin-right: 9%;
-    
+ .footer2 p {
+  margin-right: 11%;
+  margin-top: 30%;
  }
  
   
