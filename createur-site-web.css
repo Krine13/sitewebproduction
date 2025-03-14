@@ -1500,8 +1500,8 @@ top: 3%;
 
 .footerContainer .footer2 {
   
-  justify-content: center;
-  text-align: center;
+  
+  
   flex-direction: column;
   margin-left: -5%;
   margin-top: 22%;
@@ -1509,14 +1509,11 @@ top: 3%;
 }
 
 .footer2 p {
-  position: static;
-  align-items: center;
- margin-top: 14%;
+margin-top: 14%;
  margin-right: 8%;
   
  
 }
-
 
 .reseaux {
   width: 100%;
@@ -1807,19 +1804,13 @@ button {
   
 
   .footerContainer .footer2 {
-    display: block;
-    flex-direction: column;
+    margin-top: 30%;
     height: auto;
-    margin-top: 25%;
     background-color: fuchsia ;
   }
 
   .footer2 p {
-    position: static;
-    align-items: center;
-    margin-top: 20%;
-    
-    margin-right: 9%;
+  margin-right: 9%;
     
  }
  
