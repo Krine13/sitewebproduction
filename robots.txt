@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /cgi-bin/
-Sitemap: https://sitewebproduction.com/sitemap.xml
+Sitemap: https://www.sitewebproduction.com/sitemap.xml
