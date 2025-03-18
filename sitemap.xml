@@ -18,5 +18,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+  <loc>https://www.sitewebproduction.com/politique-de-confidentialite</loc>
+  <lastmod>2025-03-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.sitewebproduction.com/mentions-legales</loc>
+  <lastmod>2025-03-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.sitewebproduction.com/conditions-generales-de-vente</loc>
+  <lastmod>2025-03-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
   
   </urlset> 
