@@ -11,11 +11,6 @@
       "source": "/createursiteweb",
       "destination": "/createur-site-web",
       "permanent": true
-    },
-    {
-      "source": "https://sitewebproduction.com/:path*",
-      "destination": "https://www.sitewebproduction.com/:path*",
-      "permanent": true
     }
   ]
 }
