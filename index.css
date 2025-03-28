@@ -699,9 +699,55 @@ transform:translateY(-10%);
  margin-left: 5%;
 }
 
+.asavoir {
+  position: relative;
+  width: 100%;
+  margin-top: 8%;
+  
+} 
 
 
 
+
+.strategie {
+  
+  border: 2px solid #000;
+  padding: 15px 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color:#083e56;
+  text-align: center;
+  font-size: 16px;
+  
+}
+.strategie:hover {
+  color: #b57b32; /* Change la couleur au survol */
+}
+
+.arrow {
+  font-size: 20px;
+  
+  transition: transform 0.3s ease, color 0.3s ease;
+  
+}
+
+
+.hidden-content {
+  
+ background-color: fuchsia;
+  display: none;
+  
+  line-height: 1.8em;
+ padding: 10px 7px;
+}
+
+.hidden-content p {
+padding: 10px 10px;
+}
+.strategie, .hidden-content {
+  width: 60%;
+  margin-left: 19%;
+}
 @media screen and (max-width:768px){
   .suiteContainer  {
     width: 80%;
@@ -1321,7 +1367,16 @@ color: #fefeff;
   .toggle-link:hover {
     color: #fbfbfa;
   }
-
+.strategie {
+padding: 2px 2px;
+}
+.arrow {
+  font-size: 14px;
+}
+.hidden-content, .strategie {
+  width: 80%;
+  margin-left: 9%;
+}
   .explicationContainer {
     flex-direction: column-reverse;
   }

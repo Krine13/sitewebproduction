@@ -200,6 +200,29 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('load', handleResize);
   window.addEventListener('resize', handleResize);
 });
+// Cibler tous les éléments avec la classe .strategie
+const strategies = document.querySelectorAll('.strategie');
+
+// Ajouter un écouteur d'événement pour chaque titre de stratégie
+strategies.forEach((strategie) => {
+  strategie.addEventListener('click', function() {
+    // Cibler directement le contenu caché à l'intérieur du parent
+    const hiddenContent = this.nextElementSibling;
+
+    // Vérifier si c'est bien un div avec la classe .hidden-content
+    if (hiddenContent && hiddenContent.classList.contains('hidden-content')) {
+      // Basculer la visibilité du contenu caché
+      if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+        hiddenContent.style.display = "block";
+        this.classList.add('active');  // Ajouter la classe active pour changer la flèche
+      } else {
+        hiddenContent.style.display = "none";
+        this.classList.remove('active');  // Retirer la classe active
+      }
+    }
+  });
+});
+
 
 
       
