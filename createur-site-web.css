@@ -255,11 +255,11 @@ width: 100%;
 
 }
 .encadre {
-border: 1px solid rgb(255, 187, 0); /* Bordure noire */
+border: 1px solid rgb(250, 250, 249); /* Bordure noire */
   padding: 2px 5px;       /* Espace entre le texte et la bordure */
   display: inline-block;  /* Assure que l'encadré suit la taille du contenu */
   color: #083e56;
-  background-color: rgb(255, 187, 0); /* Couleur de fond légère (optionnel) */
+  background-color: rgb(250, 250, 249); /* Couleur de fond légère (optionnel) */
 }
 
 .imageContainer {
@@ -770,6 +770,7 @@ margin-left: 25%;
 }
 .recap a {
   color:rgb(232, 137, 41) ;
+  
 }
 
 .recap .p1 {
@@ -801,6 +802,8 @@ margin-left: 25%;
  .voir {
   margin-left: 10%;
   font-size: 16px;
+ color:#083e56;
+ 
  } 
 
  
