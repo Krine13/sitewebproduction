@@ -800,6 +800,7 @@ margin-left: 25%;
   display: none; /* Le lien disparaît sur grand écran */
 }
  .voir {
+  background-color: #fdfbfb;
   margin-left: 10%;
   font-size: 16px;
  color:#083e56;
