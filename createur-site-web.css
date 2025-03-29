@@ -255,11 +255,11 @@ width: 100%;
 
 }
 .encadre {
-border: 1px solid rgb(232, 137, 41); /* Bordure noire */
+border: 1px solid rgb(255, 187, 0); /* Bordure noire */
   padding: 2px 5px;       /* Espace entre le texte et la bordure */
   display: inline-block;  /* Assure que l'encadré suit la taille du contenu */
   
-  background-color: rgb(232, 137, 41); /* Couleur de fond légère (optionnel) */
+  background-color: rgb(255, 187, 0); /* Couleur de fond légère (optionnel) */
 }
 
 .imageContainer {
