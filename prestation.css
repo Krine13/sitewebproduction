@@ -113,6 +113,7 @@ html {
           }
 
           @media (max-width:480px) {
+            
             .menu {
               display: none; /* Cache le menu */
               flex-direction: row;
