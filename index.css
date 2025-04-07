@@ -1437,9 +1437,7 @@ padding: 2px 2px;
   color: #083e56;
   
 }
-.bouton.bouton {
-  color: #b57b32;
-}
+
   .explicationContainer {
     flex-direction: column-reverse;
   }
@@ -1745,9 +1743,7 @@ padding: 2px 2px;
           margin-left: 10%;
           
         }
-       .bouton:hover {
-        color: #b57b32;
-       }
+       
         .big {
           padding-top: 5%;
         }
