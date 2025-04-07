@@ -1432,7 +1432,8 @@ padding: 2px 2px;
 }
 .bouton {
   margin-left: 15%;
-  font-weight: 600;
+  background-color: rgb(232, 137, 41);
+  
   
 }
   .explicationContainer {
@@ -1735,7 +1736,8 @@ padding: 2px 2px;
           width: 98%;
         }
         .bouton {
-          margin-left: 7%;
+          background-color: rgb(232, 137, 41);
+          margin-left: 10%;
         }
        
         .big {
