@@ -865,6 +865,9 @@ padding: 10px 10px;
 #toggleText2 {
   margin-left: 38%;
 }
+.bouton {
+  margin-left: 28%;
+}
 
 }
 
@@ -1013,6 +1016,7 @@ padding: 10px 10px;
     margin-left: 1%;
     margin-top: 10%;
    }
+
 }
 
 
@@ -1396,6 +1400,9 @@ padding: 2px 2px;
   width: 80%;
   margin-left: 9%;
 }
+.bouton {
+  margin-left: 15%;
+}
   .explicationContainer {
     flex-direction: column-reverse;
   }
@@ -1690,6 +1697,9 @@ padding: 2px 2px;
         }
         .explicationContainer {
           flex-direction: column-reverse;
+        }
+        .bouton {
+          margin-left: 10.5%;
         }
        
         .big {
