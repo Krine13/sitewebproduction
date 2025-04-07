@@ -1726,6 +1726,10 @@ padding: 2px 2px;
         .explicationContainer {
           flex-direction: column-reverse;
         }
+        .le-seo {
+          
+          width: 98%;
+        }
         .bouton {
           margin-left: 10.5%;
         }
@@ -1750,9 +1754,7 @@ padding: 2px 2px;
           line-height: 1.6em;
           
         }
-        .le-seo {
-          width: 98%;
-        }
+        
         .button1 {
           margin-left:21% !important;
         }
