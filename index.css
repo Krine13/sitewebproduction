@@ -757,6 +757,7 @@ padding: 10px 10px;
 }
 .bouton {
   font-size: 22px;
+ 
   color:#f9f9f9;
   background-color: #b57b32;
   padding: 30px 15px;
@@ -778,6 +779,7 @@ padding: 10px 10px;
  }
  .le-seo p {
   padding: 10px 30px;
+  
   font-size: 18px;
   line-height: 2em;
   text-align: center;
@@ -1430,6 +1432,8 @@ padding: 2px 2px;
 }
 .bouton {
   margin-left: 15%;
+  font-weight: 600;
+  
 }
   .explicationContainer {
     flex-direction: column-reverse;
@@ -1731,7 +1735,7 @@ padding: 2px 2px;
           width: 98%;
         }
         .bouton {
-          margin-left: 10.5%;
+          margin-left: 7%;
         }
        
         .big {
