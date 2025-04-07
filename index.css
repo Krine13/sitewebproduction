@@ -748,6 +748,26 @@ padding: 10px 10px;
   width: 60%;
   margin-left: 19%;
 }
+.boutonContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  
+}
+.bouton {
+  font-size: 22px;
+  color:#f9f9f9;
+  background-color: #b57b32;
+  padding: 30px 15px;
+  text-decoration: none;
+  margin-left: 39%;
+  margin-top: 5%;
+}
+
+.bouton:hover {
+  color: #083e56;
+}
 @media screen and (max-width:768px){
   .suiteContainer  {
     width: 80%;
@@ -957,7 +977,6 @@ padding: 10px 10px;
   
   width:40%;
 }
-
 
 
 
