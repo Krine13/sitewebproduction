@@ -760,6 +760,7 @@ padding: 10px 10px;
  
   color:#f9f9f9;
   background-color: #b57b32;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   padding: 30px 15px;
   text-decoration: none;
   margin-left: 39%;
@@ -1432,9 +1433,12 @@ padding: 2px 2px;
 }
 .bouton {
   margin-left: 15%;
-  background-color: rgb(232, 137, 41);
+  background-color:#f9f9f9;
+  color: #083e56;
   
-  
+}
+.bouton.bouton {
+  color: #b57b32;
 }
   .explicationContainer {
     flex-direction: column-reverse;
@@ -1736,10 +1740,14 @@ padding: 2px 2px;
           width: 98%;
         }
         .bouton {
-          background-color: rgb(232, 137, 41);
+          background-color:#f9f9f9;
+          color:#083e56;
           margin-left: 10%;
+          
         }
-       
+       .bouton:hover {
+        color: #b57b32;
+       }
         .big {
           padding-top: 5%;
         }
