@@ -758,8 +758,8 @@ padding: 10px 10px;
 .bouton {
   font-size: 22px;
  
-  color:#f9f9f9;
-  background-color: #b57b32;
+  background-color:#f9f9f9;
+  color: #083e56;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   padding: 30px 15px;
   text-decoration: none;
@@ -768,7 +768,7 @@ padding: 10px 10px;
 }
 
 .bouton:hover {
-  color: #083e56;
+  color: fuchsia;
 }
 .le-seo {
   background-image: linear-gradient(#b57b32, #1f495c); ;
@@ -1433,8 +1433,7 @@ padding: 2px 2px;
 }
 .bouton {
   margin-left: 15%;
-  background-color:#f9f9f9;
-  color: #083e56;
+  
   
 }
 
@@ -1734,12 +1733,9 @@ padding: 2px 2px;
           flex-direction: column-reverse;
         }
         .le-seo {
-          
           width: 98%;
         }
         .bouton {
-          background-color:#f9f9f9;
-          color:#083e56;
           margin-left: 10%;
           
         }
