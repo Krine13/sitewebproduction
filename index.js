@@ -224,9 +224,30 @@ strategies.forEach((strategie) => {
 });
 
 
+const details = document.querySelectorAll('.details');
 
-      
-      
-      
-  
+details.forEach((detail) => {
+  detail.addEventListener('click', function () {
+    const hiddenContent = this.nextElementSibling;
 
+    if (hiddenContent && hiddenContent.classList.contains('hidden-content1')) {
+      const isVisible = hiddenContent.style.display === 'block';
+
+      // Fermer tous les autres contenus
+      document.querySelectorAll('.hidden-content1').forEach(content => {
+        content.style.display = 'none';
+        content.previousElementSibling.classList.remove('active');
+        const arrow = content.previousElementSibling.querySelector('.arrow');
+        if (arrow) arrow.innerHTML = '&#9660;'; // Flèche vers le bas
+      });
+
+      // Ouvrir ou fermer le contenu cliqué
+      if (!isVisible) {
+        hiddenContent.style.display = 'block';
+        this.classList.add('active');
+        const arrow = this.querySelector('.arrow');
+        if (arrow) arrow.innerHTML = '&#9650;'; // Flèche vers le haut
+      }
+    }
+  });
+});
