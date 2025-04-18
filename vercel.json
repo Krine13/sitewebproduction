@@ -11,6 +11,16 @@
       "source": "/createursiteweb",
       "destination": "/createur-site-web",
       "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
