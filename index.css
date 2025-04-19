@@ -751,8 +751,8 @@ h4, h5, h6 {
 padding: 10px 10px;
 }
 .details {
-  background-color: red;
-  color: #f9f9f9;
+  background-color: rgb(254, 253, 253);
+  color: #fb0505;
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 4px;
