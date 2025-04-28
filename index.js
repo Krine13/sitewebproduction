@@ -251,3 +251,30 @@ details.forEach((detail) => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const monBlocDetails = document.querySelector('.details');
+
+  if (monBlocDetails) {
+    let aDéjàDéclenché = false;
+
+    const observerPerso = new IntersectionObserver(function(observations) {
+      const observation = observations[0];
+      if (observation.isIntersecting && !aDéjàDéclenché) {
+        monBlocDetails.classList.add('active');
+        aDéjàDéclenché = true;
+
+        setTimeout(function() {
+          monBlocDetails.classList.remove('active');
+          aDéjàDéclenché = false;
+        }, 2200); // temps légèrement supérieur à l'animation
+      }
+    }, {
+      root: null,
+      threshold: 0.48
+    });
+
+    observerPerso.observe(monBlocDetails);
+  }
+});
+

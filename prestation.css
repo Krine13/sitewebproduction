@@ -59,6 +59,7 @@ html {
             position: absolute;
             right: 25px;
             top: 10px;
+            display: none;
         }
         .creat a, .ref a, .tarif a{
             
@@ -98,7 +99,7 @@ html {
           }    
           
               .hamburger {
-                  display: none; /* Affiche l'icône burger */
+                  display: none !important; /* Affiche l'icône burger */
                   position: absolute;
                   right: 20px;
                   top: 10px;
@@ -239,7 +240,6 @@ html {
             .offre p {
               text-decoration: underline;
               font-size: 1em;
-              
               margin-left: 12%;
               padding: 10px 10px;
               background-color: rgb(25, 52, 90);
@@ -303,7 +303,7 @@ html {
             @media (max-width:480px) {
               
               .offre p {
-              font-family: cursive ;
+              font-family:cursive;
               
             }
             .offre ul {

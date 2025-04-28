@@ -754,11 +754,44 @@ padding: 10px 10px;
   background-color: rgb(254, 253, 253);
   color: #083e56;
   text-align: center;
-  text-decoration: underline;
+  box-shadow: 0 4px 8px rgb(235, 231, 231);
   text-underline-offset: 4px;
   line-height: 1.4em; 
+  width: 40%;
+  margin-left:29% ;
+  
 }
-.strategie,  .hidden-content, .details, .hidden-content1 {
+
+.details.active {
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#plan-seo {
+  font-size: 30px;
+  padding: 10px 5px;
+}
+
+.fleche {
+ margin-left: 20px; 
+} 
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    
+            transform: translateY(0) rotateX(0) scale(1);
+    
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+
+.strategie,  .hidden-content, .hidden-content1 {
   width: 60%;
   margin-left: 19%;
 }
@@ -899,6 +932,10 @@ padding: 10px 10px;
 }
 #toggleText2 {
   margin-left: 38%;
+}
+.details {
+  width: 80%;
+  margin-left: 9%;
 }
 .hidden-content1 {
   width: 90%;
@@ -1442,6 +1479,17 @@ padding: 2px 2px;
 .hidden-content, .strategie {
   width: 80%;
   margin-left: 9%;
+}
+.details {
+  background-color: rgb(254, 253, 254);
+}
+#plan-seo {
+  color:#083e56;
+  padding: 30px 10px;
+  font-size: 22px;
+  font-weight: 600;
+  width: 85%;
+  margin-left: 5%;
 }
 .le-seo {
   width: 98%;
