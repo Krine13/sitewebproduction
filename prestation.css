@@ -144,7 +144,7 @@ html {
         
           .hamburger {
             
-              display: block; /* Affiche l'icône hamburger */
+              display: block !important; /* Affiche l'icône hamburger */
           }
 
           
@@ -157,6 +157,9 @@ html {
               gap: 12px;
               font-size: 11px;
               margin-top: 5%;
+            }
+            .hamburger {
+              display: block;
             }
             
           }
