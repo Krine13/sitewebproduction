@@ -139,6 +139,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Évite le scroll horizontal */
+    
     }
       .presentationContainer  {
       position: relative;
@@ -373,7 +374,7 @@ transform:translateY(-10%);
 
 .firstContainer {
   
-  width:60%;
+  width:100%;
   
   
 }
@@ -429,7 +430,9 @@ transform:translateY(-10%);
   font-size: 1.2rem;
   margin-top: 5%;
 }
-
+.form {
+  color: rgb(232, 137, 41);
+}
 .seo {
   position: relative;
   width: 100%;
@@ -442,9 +445,9 @@ transform:translateY(-10%);
 .seo img {
   
   
-  margin-top: 16%;
-  width: 60%;
-  margin-left: 30%;
+  margin-top: 38%;
+  width: 70%;
+  margin-left: 18%;
 
 }
 
@@ -526,11 +529,11 @@ transform:translateY(-10%);
 
   .firstContainer {
     position: static;
-    width: 80%; /* Prend toute la largeur */
-    margin-left: 2%;
+    width: 90%; /* Prend toute la largeur */
+    
   }
   .firstContainer h1 {
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 1.8em;
     
    }
@@ -540,7 +543,7 @@ transform:translateY(-10%);
     
   }
   .firstContainer P {
-    margin-left:5%;
+    margin-left:0%;
     line-height: 1.8em
   }
  
@@ -549,7 +552,7 @@ transform:translateY(-10%);
  .seo img{
   /*position: static;*/
   margin-left: 5%;
-  margin-top: 4%;
+  margin-top: 10%;
   width: 80%;
   
  }
@@ -640,15 +643,15 @@ transform:translateY(-10%);
 }
 
 .imageRef img {
-  width: 85%; /* Ajustez selon vos besoins */
+  width: 88%; /* Ajustez selon vos besoins */
   height: auto;
   margin-top: 5%;
   
 }
 .textOverlay {
  
-  margin-left: 10%;
-  margin-top: 9%;
+  margin-left: 12%;
+  margin-top: 10%;
 }
 .textOverlay ul {
   list-style-type: none; /* Enlève les puces */
@@ -698,7 +701,9 @@ transform:translateY(-10%);
   width: 90%;
  margin-left: 5%;
 }
-
+.resume a {
+  color: rgb(232, 137, 41);
+}
 .asavoir {
   position: relative;
   width: 100%;
@@ -767,12 +772,10 @@ padding: 10px 10px;
 }
 #plan-seo {
   font-size: 30px;
-  padding: 10px 5px;
+  
+  text-align: center;
 }
 
-.fleche {
- margin-left: 20px; 
-} 
 @keyframes slide-in-elliptic-top-fwd {
   0% {
     
@@ -836,9 +839,22 @@ padding: 10px 10px;
   line-height: 2em;
   text-align: center;
  }
+ .appel {
+  background-color:#b57b32;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  padding: 5px 20px;
+  width: 65%;
+  margin-top: 5%;
+  margin-left: 16%;
+ }
+ .appel p {
+  font-size: 25px;
+  text-align: center;
+  
+ }
 @media screen and (max-width:768px){
   .suiteContainer  {
-    width: 80%;
+    width: 90%;
     margin-top: 20%;
    }
    .suiteContainer h2 {
@@ -895,21 +911,24 @@ padding: 10px 10px;
    gap: 10px;
  }
  .imageRef img {
-  width: 90%;
+  width: 92%;
+  
  }
- 
+ h4, h5, h6 {
+  font-size: 1.6em;
+ }
  .imageRef .textOverlay {
-  margin-left: 18%;
+  margin-left: 19%;
  }
  
 .textOverlay ul li h3, .textOverlay ul li h4 {
   font-size: 1.2em;
 }
  .resume {
-  width:90%;
+  width:98%;
   margin-top: 10%;
   font-size: 1.4em;
-  margin-left: 5%;
+  margin-left: 1%;
 }
 .resume h3 {
  font-family: cursive;
@@ -928,7 +947,7 @@ padding: 10px 10px;
 }
 
 .suiteContainer p, .resume p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #toggleText2 {
   margin-left: 38%;
@@ -940,6 +959,17 @@ padding: 10px 10px;
 .hidden-content1 {
   width: 90%;
   margin-left: 5%;
+}
+.hidden-content1 p {
+  font-size: 1.2em;
+}
+.appel {
+  width: 80%;
+  margin-left: 7%;
+  
+}
+.appel p {
+  font-size: 22px;
 }
 .le-seo {
   width: 90%;
@@ -1333,10 +1363,10 @@ width:90%;
   margin-left: 10%;
 }
 .suiteContainer p {
-  width: 80%;
+  width: 90%;
   font-size: 1rem;
   line-height: 1.4em;
-  margin-left: 10%;
+  margin-left: 5%;
   
 }
 
@@ -1501,6 +1531,9 @@ padding: 2px 2px;
   padding: 2px 5px;
   text-align: center;
 }
+.appel {
+  margin-left:6% ;
+}
 .bouton {
   margin-left: 15%;
   
@@ -1509,6 +1542,7 @@ padding: 2px 2px;
 
   .explicationContainer {
     flex-direction: column-reverse;
+    
   }
 
   .container4 .titre4::before {
@@ -1526,13 +1560,13 @@ padding: 2px 2px;
   }
   .texte4 P{
     font-size: 1.1rem;
-    line-height: 1.2em;
+    line-height: 1.6em;
     
     
     
   }
   .button1 {
-    margin-left:22% !important;
+    margin-left:30% !important;
   }
   .dernier {
     width: 98%;
@@ -1688,6 +1722,7 @@ padding: 2px 2px;
     /* Boutons de bas de page */
     .toggle-link {
         cursor: pointer;
+        
     }
     
    
@@ -1771,6 +1806,7 @@ padding: 2px 2px;
        
         #toggleText2 {
           font-size: 1rem;
+          margin-left: 36%;
         }
         
         .hidden-text {
@@ -1801,6 +1837,12 @@ padding: 2px 2px;
         }
         .explicationContainer {
           flex-direction: column-reverse;
+        }
+        .strategie {
+          font-weight:600;
+        }
+        #plan-seo {
+          font-size: 22px !important;
         }
         .le-seo {
           width: 98%;
