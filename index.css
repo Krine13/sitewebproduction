@@ -843,13 +843,14 @@ padding: 10px 10px;
   background-color:#b57b32;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   padding: 5px 20px;
-  width: 65%;
+  width: 50%;
   margin-top: 5%;
-  margin-left: 16%;
+  margin-left: 24%;
  }
  .appel p {
   font-size: 25px;
   text-align: center;
+  text-shadow:0 4px 8px rgb(0, 0, 0, 1) ;
   
  }
 @media screen and (max-width:768px){
@@ -1542,6 +1543,9 @@ padding: 2px 2px;
   margin-left:6% ;
   background-color: #f9f9f9;
   color: #083e56;
+}
+.appel p {
+  text-shadow: none;
 }
 .bouton {
   margin-left: 15%;
