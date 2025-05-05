@@ -1369,7 +1369,9 @@ width:90%;
   margin-left: 5%;
   
 }
-
+.suiteContainer a {
+  color: rgb(247, 247, 249);
+}
 
 
 #toggleText1:hover, #toggleText2:hover {
@@ -1500,6 +1502,8 @@ color: #fefeff;
   .toggle-link:hover {
     color: #fbfbfa;
   }
+
+  
 .strategie {
 padding: 2px 2px;
 }
@@ -1530,6 +1534,9 @@ padding: 2px 2px;
   line-height: 1.6em;
   padding: 2px 5px;
   text-align: center;
+}
+.form {
+  color: #f9f9f9;
 }
 .appel {
   margin-left:6% ;
@@ -1565,9 +1572,7 @@ padding: 2px 2px;
     
     
   }
-  .button1 {
-    margin-left:30% !important;
-  }
+  
   .dernier {
     width: 98%;
   }
@@ -1874,7 +1879,7 @@ padding: 2px 2px;
         }
         
         .button1 {
-          margin-left:21% !important;
+          margin-left:30% !important;
         }
         /*.footer {
           background-color: deeppink;
