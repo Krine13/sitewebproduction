@@ -76,7 +76,18 @@ content.addEventListener('click', function () {
   trigger.style.display = 'block';
 });
       
-  
+  const trigger2 = document.querySelector('.pourquoiContainer');
+const contenu2 = document.querySelector('.hidden-content5');
+
+trigger2.addEventListener('click', function () {
+  contenu2.classList.add('visible');
+  trigger2.style.display = 'none';
+});
+
+contenu2.addEventListener('click', function () {
+  contenu2.classList.remove('visible');
+  trigger2.style.display = 'block';
+}); 
     
     
   
