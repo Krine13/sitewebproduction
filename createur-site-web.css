@@ -1371,7 +1371,7 @@ margin-right: 5%;
   height: 100vh;
 }
   .menu-header {
-    transform: translateY(-150%);
+    transform: translateY(-120%);
   }
   .menu-header p {
     font-size: 1.2em;
@@ -1382,10 +1382,10 @@ margin-right: 5%;
   }
   
   #contact {
-   margin-top: 17%;
+   margin-top: 20%;
     font-size: 17px;
     width: 40%;
-    margin-left:3%;
+    margin-left:1%;
   }
   .menu-deroule ul {
    gap: 80px;
@@ -1667,7 +1667,7 @@ top: 3%;
     
   }
 
-   
+  
   .nom {
     font-size: 1.2em;
   }
