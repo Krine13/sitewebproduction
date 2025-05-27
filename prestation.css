@@ -73,8 +73,21 @@ html {
            
         
             @media screen and (max-width: 768px) {
+
+              .hamburger {
+    display: block;
+    font-size: 1.9em;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 50px;
+    top:10%;
+    
+    z-index: 10000;
+}
+
              
-         
+        
               .menu {
       pointer-events: none;
     opacity: 0;
@@ -100,6 +113,10 @@ html {
 }
 .logoContainer img {
   width: 10%;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
 }
 
 .menu-deroule {
@@ -190,30 +207,7 @@ transform: translateY(-40%);
   text-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
 }
 
-.hamburger {
-    display: block;
-    font-size: 1.9em;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    z-index: 10000;
-}
-.hamburger.open {
-    /* Affiche une croix */
-     position: fixed;
-    font-size: 1.6em;
-    color:#f9f9f9;
-    /* Optionnel : rotation ou autre effet */
-    transform: rotate(90deg);
-   margin-top: 6%;
-   display: none;
-}
-.hamburger.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+
           }
 
           @media (max-width:480px) {
