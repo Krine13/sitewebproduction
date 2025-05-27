@@ -2251,8 +2251,8 @@ margin-left: 70%;
         }
         
         .textOverlay h3, h4 {
-          font-size: 14px !important;
-        
+          font-size: 15px !important;
+        font-family: 'Times New Roman', Times, serif !important;
           line-height: 0.5rem;
         }
       
