@@ -217,6 +217,9 @@ transform: translateY(-40%);
     
     
 }
+#contact {
+  
+}
 .menu.closed {
   pointer-events: none;
   opacity: 0;
@@ -306,134 +309,7 @@ transform: translateY(-40%);
       }
   
       
-      .menu {
-    position: fixed;
-    background: linear-gradient(135deg, #083e56, #00bcd4);
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-   
-    -webkit-backdrop-filter: blur(10px);
-     backdrop-filter: blur(10px);
-    padding-right: 2%;
-    box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.6s ease, opacity 0.4s ease;
-    z-index: 9999;
-}
-
-.menu-deroule {
-  position: relative;
-  display: flex;
-  top: 6%;
-  
-  width: 100%;
-  height: 30%;
-  
-}
-
-.menu-deroule ul  {
-  
-  position: absolute;
-  flex-direction: column;
-  gap:40px;
-  font-size: 17px;
-  text-align: center;
-  width: 100%;
-  transform: translateY(-70%);
-  padding-left: 2%;
-   list-style: none;
-  
-}
-
-.menu a {
-  
-  
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  letter-spacing: 1px;
-   
-  border-radius: 8px;
-  
-  transition: background 0.3s;
-  
-  color:#f9f9f9;
-  text-decoration: none;
-  
-}
-.menu.open {
-     transform: translateY(0);
-    opacity: 1;
-}
-
-#contact {
-  
-  display: block;
-  padding: 2% 2%;
-  margin-left: 2%;
-  margin-top: 10%;
- 
-}
-.menu-header {
-  
-  position: relative;
-  display: flex;
-   align-items: center;
-   
-  width: 80%;
-  height: auto ;
-  transform: translateY(-80%);
-  border-radius: 8px;
-   box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
-  
-}
-.logomenu  {
-  position: absolute;
- border-radius: 8px;
-  width: 90px !important;
-  height: 90px !important;
-   box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
-
- 
-}
-
-.nom {
-  font-size: 1.8em;
-  color: #f6fe01;
-  margin-left: 32%;
-  text-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
-}
-
-.hamburger {
-    display: block;
-    font-size: 1.9em;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    z-index: 10000;
-}
-.hamburger.open {
-    /* Affiche une croix */
-     position: fixed;
-    font-size: 1.6em;
-    color:#f9f9f9;
-    /* Optionnel : rotation ou autre effet */
-    transform: rotate(90deg);
-   margin-top: 6%;
-   display: none;
-}
-.hamburger.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
+     
 }
   
 @media screen and (max-width:480px){
