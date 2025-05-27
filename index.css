@@ -147,6 +147,138 @@ body {
     overflow-x: hidden; /* Évite le scroll horizontal */
     
     }
+
+    .menu {
+      pointer-events: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.6s ease, opacity 0.4s ease;
+    position: fixed;
+    background-color: #083e56;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
+    padding-right: 2%;
+    box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+    z-index: 9999;
+}
+.logoContainer img {
+  width: 10%;
+}
+.menu-deroule {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40%;
+  
+  
+}
+.menu-deroule ul  {
+  
+  position: absolute;
+  flex-direction: column;
+transform: translateY(-40%);
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin-top: 15%;
+  
+  padding-left: 2%;
+   list-style: none;
+  
+}
+.menu a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 8px;
+  width: 40%;
+  transition: background 0.3s;
+  margin-top: 0;
+  color:#f9f9f9;
+  text-decoration: none;
+
+}
+.menu.open {
+  pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+    
+    
+}
+.menu.closed {
+  pointer-events: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(-100%);
+}
+
+.menu-header {
+  
+  position: relative;
+  display: flex;
+   align-items: center;
+  
+  width: 80%;
+  height: auto ;
+  transform:translateY(-150%);
+  border-radius: 8px;
+   box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
+  
+}
+.logomenu  {
+  position: absolute;
+ border-radius: 8px;
+  width: 90px !important;
+  height: 90px !important;
+   box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
+
+ 
+}
+
+.nom {
+  font-size: 1.8em;
+  color: #f6fe01;
+  margin-left: 32%;
+  text-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
+}
+
+.hamburger {
+    display: block;
+    font-size: 1.9em;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 10000;
+}
+.hamburger.open {
+    /* Affiche une croix */
+     position: fixed;
+    font-size: 1.6em;
+    color:#f9f9f9;
+    /* Optionnel : rotation ou autre effet */
+    transform: rotate(90deg);
+   margin-top: 6%;
+   display: none;
+}
+.hamburger.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
       .presentationContainer  {
       position: relative;
         width: 100%;
@@ -213,7 +345,7 @@ body {
   font-size: 17px;
   text-align: center;
   width: 100%;
-  transform: translateY(-20%);
+  transform: translateY(-70%);
   padding-left: 2%;
    list-style: none;
   
@@ -241,18 +373,21 @@ body {
 
 #contact {
   
+  display: block;
+  padding: 2% 2%;
   margin-left: 2%;
-  transform: translateY(-100%);
+  margin-top: 10%;
+ 
 }
 .menu-header {
   
   position: relative;
   display: flex;
    align-items: center;
-  margin-top: 2%; 
+   
   width: 80%;
   height: auto ;
-  transform: translateY(-10%);
+  transform: translateY(-80%);
   border-radius: 8px;
    box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
   
@@ -331,8 +466,14 @@ body {
   .menu {
     height: 30%;
   }
+  .menu.open {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  height: 100vh;
+}
   .menu-header {
-    margin-top: 10%;
+    transform: translateY(-280%);
   }
   .menu-header p {
     font-size: 1.2em;
@@ -349,8 +490,8 @@ body {
     margin-left:3%;
   }
   .menu-deroule ul {
-   gap: 10px;
-   font-size: 14px;
+   gap: 40px;
+   font-size: 22px;
    transform: translateY(-55%);
   }
  
@@ -358,7 +499,38 @@ body {
     
 @media screen and (max-width:420px){
 
-   
+  
+
+
+   .menu-header {
+    width: 90%;
+  }
+  .nom {
+    font-size: 1.2em;
+  }
+  .logomenu{
+    width:60px !important;
+    height: 60px !important;
+  }
+  .menu-deroule ul {
+    font-size: 1.4em;
+    margin-top: 15%;
+    
+  }
+.menu a {
+ color:rgb(255, 254, 254) ;
+}
+
+#contact {
+  font-size: 20px;
+  width: 60%;
+}
+
+.hamburger {
+ 
+   display: block; /* Affiche l'icône hamburger */
+}
+  
   .presentationContainer {
    width: 100%;
    height: auto;
@@ -387,32 +559,7 @@ transform:translateY(-10%);
    margin-top: 1px;
 
  }
- .menu {
-   display: none; /* Cache le menu */
-   font-size: 80%;
-   border-radius: 8px;
-   position: fixed;
-   color:rgb(255, 254, 254) ;
-   gap:12px;
-   width: 100vw;
-   height:auto;
-   box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.8);
-   padding:3% 1%;
-   text-align: center;
-   
-}
-.menu a {
- color:rgb(255, 254, 254) ;
-}
-
-.menu.active {
-   display: flex; /* Affiche le menu quand activé */
-}
-
-.hamburger {
  
-   display: block; /* Affiche l'icône hamburger */
-}
 }
    
 
@@ -1622,7 +1769,7 @@ margin-right: 15px;
     font-size: 0.9em;
   }
    .seo img {
-    margin-top: 10%;
+    margin-top: 25%;
     margin-left: 15%;
     width: 60%;
   }
@@ -1631,12 +1778,16 @@ margin-right: 15px;
     margin-top: 30%;
   }
   .hidden-content4.visible {
-    width: 92%;
-    margin-left: 2%;
+    width: 90%;
+    margin-left: 3%;
+    
   }
-  .form {
-  color: rgb(232, 137, 41);
+  
+.pourquoiContainer h3 {
+  font-size: 1.6em;
+  margin-left: 5%;
 }
+
  .outerContainer {
   display: block;
   width: 100%;
@@ -1835,13 +1986,13 @@ margin-left: 70%;
   margin-left: 5%;
 }
 .le-seo {
-  width: 98%;
-  margin-left: 1%;
+  width: 96%;
+  margin-left: 2%;
   margin-top: 10%;
   
 }
 .le-seo p{
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6em;
   padding: 2px 5px;
   text-align: center;
@@ -1855,6 +2006,7 @@ margin-left: 70%;
 }
 .appel p {
   text-shadow: none;
+  font-size: 1em;
 }
 .bouton {
   margin-left: 15%;
@@ -1999,6 +2151,8 @@ margin-left: 70%;
           position: static;
           width: 90%;
         }
+
+        
        .outerContainer {
         display: block;
         width: 100%;
@@ -2013,8 +2167,12 @@ margin-left: 70%;
       .sousTitre2 {
         margin-top: 8%;
         font-size: 1.2em ;
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        
+      }
+      .suiteContainer h3 {
+        font-size: 18px;
+        margin-left: 0;
       }
       .suiteContainer p {
         width: 100%;
@@ -2081,14 +2239,12 @@ margin-left: 70%;
           
       
         }
-        .imageRef {
-          width: 140%;
-        }
+       
         
        .imageRef img {
         width: 100%; /* Plus grande que le conteneur */
         height: auto; /* Pour garder les proportions */
-        margin-left: -60%; /* Si nécessaire, ajustez la position */
+        margin-left: -30%; /* Si nécessaire, ajustez la position */
       }
         .imageRef .textOverlay {
           margin-left: -5%;
@@ -2097,9 +2253,9 @@ margin-left: 70%;
         }
         
         .textOverlay h3, h4 {
-          font-size: 14px !important;
+          font-size: 13px !important;
         
-          line-height: 1rem;
+          line-height: 0.5rem;
         }
       
        .resume {
@@ -2162,9 +2318,7 @@ margin-left: 70%;
         #plan-seo {
           font-size: 22px !important;
         }
-        .le-seo {
-          width: 98%;
-        }
+        
         .bouton {
           margin-left: 10%;
           

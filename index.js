@@ -1,6 +1,6 @@
 
     
-  const hamburger = document.getElementById('hamburger');
+ const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
 
 hamburger.addEventListener('click', (event) => {
@@ -14,6 +14,7 @@ hamburger.addEventListener('click', (event) => {
     } else {
         hamburger.textContent = '☰';  // hamburger
     }
+    
 });
 
 
@@ -34,6 +35,8 @@ document.addEventListener('click', () => {
         hamburger.textContent = '☰';
     }
 });
+
+
 
 
 
