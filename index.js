@@ -1,34 +1,43 @@
 
     
-    // Fonction pour détecter les éléments dans la fenêtre
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const menu = document.getElementById("menu");
+  const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
 
-  if (hamburger && menu) {
-      // Ajout de l'événement click sur l'icône hamburger
-      hamburger.addEventListener("click", function () {
-          // Ajoute ou retire la classe 'active' pour afficher/masquer le menu
-          menu.classList.toggle("active");
+hamburger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    menu.classList.toggle('open');
+    hamburger.classList.toggle('open');
 
-          // Cache l'icône hamburger lorsque le menu est ouvert
-          if (menu.classList.contains("active")) {
-              hamburger.style.display = "none";  // Cacher l'icône hamburger
-          } else {
-              hamburger.style.display = "block";  // Réafficher l'icône hamburger
-          }
-      });
-
-      // Fermer le menu si on clique à l'extérieur du menu (optionnel)
-      document.addEventListener("click", function (event) {
-          // Vérifie si le clic a été fait en dehors du menu et de l'icône hamburger
-          if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-              menu.classList.remove("active");  // Ferme le menu
-              hamburger.style.display = "block";  // Réaffiche l'icône hamburger
-          }
-      });
-  }
+    // Change le contenu textuel entre hamburger et croix
+    if (hamburger.classList.contains('open')) {
+        hamburger.textContent = '✕';  // croix
+    } else {
+        hamburger.textContent = '☰';  // hamburger
+    }
 });
+
+
+// Ferme menu au clic sur un lien
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.textContent = '☰';
+    });
+});
+
+// Ferme menu si clic en dehors du menu et hamburger
+document.addEventListener('click', () => {
+    if(menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.textContent = '☰';
+    }
+});
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
       const texteElements = document.querySelectorAll('.firstContainer h1');
       console.log(document.querySelector('.firstContainer h1, .firstContainer h1::before'));
@@ -51,7 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
           animate.observe(element);
       });
   
-      
+     const trigger = document.querySelector('.referencement');
+const content = document.querySelector('.hidden-content4');
+
+trigger.addEventListener('click', function () {
+  content.classList.add('visible');
+  trigger.style.display = 'none';
+});
+
+content.addEventListener('click', function () {
+  content.classList.remove('visible');
+  trigger.style.display = 'block';
+});
       
   
     
@@ -131,7 +151,7 @@ window.addEventListener('scroll', function() {
       
       
 
-      const elements = document.querySelectorAll('.resume,.suiteContainer2 h2, .container4 .titre4'); // Sélectionne tous les éléments correspondants
+      const elements = document.querySelectorAll('.hidden-content,.suiteContainer2 h2, .container4 .titre4'); // Sélectionne tous les éléments correspondants
       console.log(window.getComputedStyle(document.querySelector('.container4 .titre4'), '::before').transition);
       elements.forEach(element => {
         const position = element.getBoundingClientRect();
@@ -147,11 +167,42 @@ window.addEventListener('scroll', function() {
 
       
 
+      
+
       isScrolling = false;
     });
     isScrolling = true;
   }
 });
+
+
+  // Lorsque l'utilisateur clique sur le bouton principal
+  /*document.getElementById('toggleApproche').addEventListener('click', function(e) {
+    e.preventDefault();
+    const contenu = document.getElementById('contenuApproche');
+    contenu.classList.toggle('visible');
+    this.textContent = contenu.classList.contains('visible') 
+      ? '▲ Réduire'
+      : '🌱 Pourquoi me faire confiance ?';
+  });*/
+function toggleResume() {
+  const wrapper = document.getElementById('resumeWrapper');
+  wrapper.classList.toggle('visible');
+}
+
+// Quand on clique sur une ancre
+function showSection(id) {
+  const sections = document.querySelectorAll('.resume-section');
+  sections.forEach(section => {
+    section.classList.remove('active');
+  });
+  
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.add('active');
+  }
+}
+  
 
 document.addEventListener('DOMContentLoaded', function() {
   function toggleTextDisplay(moreText, link) {
@@ -201,30 +252,17 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', handleResize);
 });
 // Cibler tous les éléments avec la classe .strategie
-const strategies = document.querySelectorAll('.strategie');
+ document.querySelectorAll('.strategie').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
 
-// Ajouter un écouteur d'événement pour chaque titre de stratégie
-strategies.forEach((strategie) => {
-  strategie.addEventListener('click', function() {
-    // Cibler directement le contenu caché à l'intérieur du parent
-    const hiddenContent = this.nextElementSibling;
-
-    // Vérifier si c'est bien un div avec la classe .hidden-content
-    if (hiddenContent && hiddenContent.classList.contains('hidden-content')) {
-      // Basculer la visibilité du contenu caché
-      if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
-        hiddenContent.style.display = "block";
-        this.classList.add('active');  // Ajouter la classe active pour changer la flèche
-      } else {
-        hiddenContent.style.display = "none";
-        this.classList.remove('active');  // Retirer la classe active
-      }
-    }
+      button.classList.toggle('active');
+      content.classList.toggle('active');
+    });
   });
-});
 
 
-const details = document.querySelectorAll('.details');
+const details = document.querySelectorAll('.deuxieme');
 
 details.forEach((detail) => {
   detail.addEventListener('click', function () {
