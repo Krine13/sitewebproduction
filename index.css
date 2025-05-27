@@ -1219,7 +1219,7 @@ margin-left: 18%;
 .le-seo {
   background-color:#fbfcfc;
   border: #f6fe01 solid 2px;
-  color:#f10d0d ;
+  color:#083e56 ;
   display: flex;
   width: 52%;
   margin-left: 24%;
@@ -1249,9 +1249,7 @@ margin-left: 18%;
   line-height: 1.6em;
   
  }
- .appel a {
-  color: rgb(232, 137, 41);
- }
+ 
 @media screen and (max-width:768px){
   .suiteContainer  {
     width: 90%;
@@ -1911,7 +1909,7 @@ color: #fefeff;
   
  }
   .resume h3 {
-    
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     text-align: left;
     
