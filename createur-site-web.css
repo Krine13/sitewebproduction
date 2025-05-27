@@ -1684,10 +1684,6 @@ top: 3%;
  color:rgb(255, 254, 254) ;
 }
 
-#contact {
-  font-size: 20px;
-  width: 60%;
-}
 
 .menu a {
  color:rgb(255, 254, 254) ;
@@ -1696,7 +1692,7 @@ top: 3%;
 #contact {
   font-size: 20px;
   width: 60%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .hamburger {
