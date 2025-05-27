@@ -553,7 +553,7 @@ transform: translateY(-40%);
     
 }
 #contact {
-  background-color: rgb(51, 121, 250);
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
   display: block;
   padding: 2% 2%;
   margin-left: 2%;
@@ -1667,10 +1667,7 @@ top: 3%;
     
   }
 
-   .menu-header {
-    width: 90%;
-    transform: translateY(-220%);
-  }
+   
   .nom {
     font-size: 1.2em;
   }
@@ -1678,11 +1675,20 @@ top: 3%;
     width:60px !important;
     height: 60px !important;
   }
-  .menu-deroule ul {
+ .menu-deroule ul {
     font-size: 1.2em;
-    
+    margin-top: 15%;
     
   }
+.menu a {
+ color:rgb(255, 254, 254) ;
+}
+
+#contact {
+  font-size: 20px;
+  width: 60%;
+}
+
 .menu a {
  color:rgb(255, 254, 254) ;
 }
