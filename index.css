@@ -14,9 +14,9 @@ body {
   
   
   strong {
-    font-style: italic;
+    
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
   
 
@@ -588,6 +588,7 @@ transform:translateY(-10%);
 }
 
 .hidden-content4, .hidden-content5 {
+  
   display: none;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards; /* Ajoute l'animation */
@@ -609,10 +610,6 @@ transform:translateY(-10%);
   animation: fadeIn 1s ease-in-out forwards; /* Applique l'animation quand visible */
 }
 
-.hidden-content5.visible {
-  display: block;
-  width: 100%;
-}
 
 
 
@@ -673,7 +670,7 @@ transform:translateY(-10%);
   font-weight: bold;
   width: 40%;
   text-decoration: none;
-  margin-top: 5%;
+  
   margin-left: 29%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.3s;
@@ -690,14 +687,35 @@ transform:translateY(-10%);
   font-weight: 400;
    /* Nécessaire pour positionner le trait */
 }
+.hidden-content5.visible {
+  background-color: #f9f9f9;
+  border: #f6fe01 solid 4px;
+  box-shadow: 0 4px 12px rgb(5, 5, 5); /* jaune lumineux */
+  color: #083e56;
+  border-radius: 8px;
+  display: block;
+  width: 80%;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.8em;
+  padding: 20px 10px;
+  margin-left: 10%;
+}
+.hidden-content5 a {
+  background-color: #236c91;
+  border: #f6fe01 solid 2px;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 2px 2px;
+}
 
 .suiteContainer h3 {
  font-size: 35px; /* Taille du texte */
-  color:#f9f9f9;
+  color:#083e56;
   margin-left: 10%;
   margin-bottom: 2%;
   font-weight: 400;
-  text-decoration: underline;
+  
 
 }
 
@@ -718,13 +736,7 @@ transform:translateY(-10%);
   align-items: center;
 }
 
-.suiteContainer p {
-  font-size: 1.2rem;
-  line-height: 1.6; /* Lisibilité accrue */
-  font-weight: 400;
-  width: 80%;
-  margin-left: 10%;
-}
+
 
 #toggleText1 {
   display: none;
@@ -789,6 +801,11 @@ transform:translateY(-10%);
   margin-left: 28%;
   font-size: 1rem;
   padding: 2px 2px;
+}
+.hidden-content5.visible {
+  width: 90%;
+  margin-left: 3%;
+  font-size: 1em;
 }
 }
 .outerContainer2 {
@@ -961,7 +978,7 @@ transform:translateY(-10%);
 .sommaire li {
   background-color: #f9f9f9;
   box-shadow: 0 8px 20px rgb(8, 8, 8);
-  margin-top: 2%;
+  margin-top: 2.2%;
   font-size: 1.2em;
   transition: background-color 0.3s;
   width: 65%;
@@ -1025,13 +1042,8 @@ margin-left: 18%;
 
 }
 
-#resumeContent {
-  width: 100%;
-}
-
 .resume-section {
   display: none;
-  
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards; /* Ajoute l'animation */
 }
@@ -1081,8 +1093,11 @@ margin-left: 18%;
   line-height: 1.6em;
   color: #083e56;
 }
-#ancre, #ancre1, #ancre2, #ancre3, #ancre4 {
-  padding: 2% 5%;
+#ancre {
+  padding: 0.1% 2%;
+}
+ #ancre1, #ancre2, #ancre3, #ancre4 {
+  padding: 2% 3%;
   color: #083e56;
   background-color: #d8eee6;
   line-height: 1.4em;
@@ -1268,7 +1283,7 @@ margin-left: 18%;
 .sommaire li {
   width: 100%;
   padding: 3% 0;
-  margin-top: 5%;
+  
 }
 .pose {
   margin-left: 0;
@@ -1284,7 +1299,7 @@ margin-left: 18%;
 
 .resume-section.active {
   width: 88%;
-  margin-left: 1%;
+  margin-left: 4%;
 }
 
 .resume h3, .couleur {
@@ -1719,22 +1734,26 @@ width:90%;
 }
 .suiteContainer .sousTitre2 {
   margin-top: 8%;
-  font-size: 1.2em;
+  font-size: 0.8em;
   
   
   
 }
-.suiteContainer p {
-  width: 90%;
-  font-size: 1rem;
-  line-height: 1.4em;
-  margin-left: 5%;
-  
+.hidden-content5.visible {
+  width: 93%;
+  text-align: left;
+  margin-left: 0;
+line-height: 2em;
+font-weight: 500;
+font-size: 1.1em;
 }
 .suiteContainer a {
   color: rgb(247, 247, 249);
 }
-
+.fusee {
+  width: 70%;
+  margin-left: 15%;
+}
 
 #toggleText1:hover, #toggleText2:hover {
   text-decoration: underline;
@@ -1915,15 +1934,19 @@ margin-left: 70%;
 }
 
 .appel {
-  margin-left: 1%;
-  width: 90% !important;
-  background-color: #f9f9f9;
+  margin-left: 1.8%;
+  width: 88% !important;
+  
   
 }
 .appel p {
-  color: #083e56;
+  color: #fcfeff;
   text-shadow: none;
   font-size: 1em;
+}
+.appel a {
+  color:#f9f9f9;
+  
 }
 .bouton {
   margin-left: 15%;

@@ -98,7 +98,7 @@ body {
   margin: 2rem auto;         /* Centrer la bulle */
 }
 .intro p, .intro ul, .intro a {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6em;
   text-align: left;
   
@@ -298,6 +298,9 @@ transform: translateY(-40%);
 }
 .intro {
 width: 96%;
+}
+.intro p, .intro ul {
+  line-height: 1.8em;
 }
 .cart-container {
   position: relative;
@@ -562,6 +565,18 @@ width: 80%;
   font-size: 17px;
   margin-bottom: 10px;
 
+}
+#bloc5 {
+  line-height: 1.5em;
+}
+#bloc5 a {
+  background-color:#083e56;
+  color: #f9f9f9;
+  text-decoration: none;
+  border: #e0f903 solid 2px;
+  padding: 1px 2px;
+
+  
 }
 @media screen and (max-width: 480px){
   .hidden-content1 {

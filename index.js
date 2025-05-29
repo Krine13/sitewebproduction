@@ -76,7 +76,7 @@ content.addEventListener('click', function () {
   trigger.style.display = 'block';
 });
       
-  const trigger2 = document.querySelector('.pourquoiContainer');
+  const trigger2 = document.querySelector('.fusee');
 const contenu2 = document.querySelector('.hidden-content5');
 
 trigger2.addEventListener('click', function () {
