@@ -623,6 +623,13 @@ transform:translateY(-10%);
     opacity: 1;
   }
 }
+.hidden-content4.visible a {
+  background-color: #1e40af;
+  border: #fe2f01 solid 2px;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 1px 1px;
+}
 .seo {
   position: relative;
   width: 100%;
