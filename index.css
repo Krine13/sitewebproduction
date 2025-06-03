@@ -1187,7 +1187,7 @@ margin-left: 18%;
   
  }
  .appel a {
-  color: fuchsia;
+  color:#f9f9f9;
  }
  
 @media screen and (max-width:768px){
@@ -1278,12 +1278,10 @@ margin-left: 18%;
   width: 65%;
   margin-left: 17%;
   margin-top: 25%;
-  line-height: 1.8em;
+
 
 }
-.clic {
-  font-size: 1.4em;
-}
+
 .resume-layout {
   position: relative;
   display: flex;
