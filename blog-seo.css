@@ -400,7 +400,9 @@ width: 96%;
 .strategie.active .arrow {
   transform: rotate(180deg);
 }
-
+.espace li {
+ margin-top: 1.4em;
+}
 .hidden-content {
   
   border-radius: 8px;
