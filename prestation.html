@@ -220,21 +220,51 @@
      </footer>    
     
      
- <script>(function(d,t) {
-    var BASE_URL="https://app.chatwoot.com";
-    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=BASE_URL+"/packs/js/sdk.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g,s);
-    g.onload=function(){
-      window.chatwootSDK.run({
-        websiteToken: 'FFWgtyv7LWmqRB1cfm3A9iCM',
-        baseUrl: BASE_URL
-      })
+ <div id="cookieConsent" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:15px;text-align:center;z-index:9999;">
+  Ce site utilise un chat pour améliorer le support. Acceptez-vous l'utilisation de cookies ?
+  <button id="acceptCookies" style="margin-left:15px;padding:8px 15px;cursor:pointer;">Accepter</button>
+</div>
+
+<script>
+  (function() {
+    var consentKey = 'chatwootConsent';
+
+    function loadChatwoot() {
+      var BASE_URL = "https://app.chatwoot.com";
+      var script = document.createElement('script');
+      script.src = BASE_URL + "/packs/js/sdk.js";
+      script.defer = true;
+      script.async = true;
+      script.onload = function() {
+        window.chatwootSDK.run({
+          websiteToken: 'FFWgtyv7LWmqRB1cfm3A9iCM',
+          baseUrl: BASE_URL
+        });
+      };
+      document.head.appendChild(script);
     }
-  })(document,"script");
-  </script>
+
+    function hideConsentBanner() {
+      var banner = document.getElementById('cookieConsent');
+      if (banner) banner.style.display = 'none';
+    }
+
+    document.getElementById('acceptCookies').addEventListener('click', function() {
+      localStorage.setItem(consentKey, 'true');
+      hideConsentBanner();
+      loadChatwoot();
+    });
+
+    // Au chargement de la page, vérifier si le consentement est déjà donné
+    window.addEventListener('load', function() {
+      if (localStorage.getItem(consentKey) === 'true') {
+        hideConsentBanner();
+        loadChatwoot();
+      }
+    });
+  })();
+</script>
+
 <!--End of Tawk.to Script-->
      <script src="prestation.js"></script>
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>   
