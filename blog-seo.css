@@ -386,7 +386,7 @@ width: 96%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.strategie:hover {
+.strategie:hover, .strategie:hover a {
   background-color: #e3effa;
   color: #09194b;
   cursor: pointer;
@@ -400,6 +400,11 @@ width: 96%;
 .strategie.active .arrow {
   transform: rotate(180deg);
 }
+.strategie a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
 .espace li {
  margin-top: 1.4em;
 }
