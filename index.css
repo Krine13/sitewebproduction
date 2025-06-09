@@ -497,7 +497,14 @@ transform:translateY(-10%);
 .animate.active {
   opacity: 1;
   transform: translateY(0); /* Repositionne à l'endroit d'origine */
-} 
+}
+
+section h1,
+article h1,
+aside h1,
+nav h1 {
+  font-size: 1.8rem; /* ajuste selon ton design */
+}
 
 .firstContainer {
   
