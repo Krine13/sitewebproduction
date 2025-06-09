@@ -404,10 +404,45 @@ Autrement dit, un bon positionnement sur Google ne suffit pas. Encore faut-il un
    
 
 </footer>
-<!--Start of Tawk.to Script-->
+
+<!-- Cookie Consent Banner -->
+<div id="cookieConsent">
+  Cliquez sur Accepter pour une expérience personnalisée et sécurisée. 
+  <button id="acceptCookies">Accepter</button>
+</div>
+
+<script>
+  // Vérifie si le cookie 'cookiesAccepted' existe déjà
+  if (!localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookieConsent').style.display = 'block';
+  }
+
+  document.getElementById('acceptCookies').addEventListener('click', function() {
+    // Enregistre la validation dans le localStorage
+    localStorage.setItem('cookiesAccepted', 'true');
+    // Cache la bannière
+    document.getElementById('cookieConsent').style.display = 'none';
+  });
+</script>
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'FFWgtyv7LWmqRB1cfm3A9iCM',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
 
 
-<!--End of Tawk.to Script-->
+
    <script src="index.js"></script>
     
 </body>
