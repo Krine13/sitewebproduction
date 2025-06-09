@@ -957,7 +957,7 @@ nav h1 {
   display: inline-block;
   background: linear-gradient(135deg, #1e40af, #3b82f6);
   color: white;
-  padding: 14px 28px;
+  padding: 16px 28px;
   border-radius: 999px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -967,7 +967,11 @@ nav h1 {
   margin-left: 29%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.3s;
+  
+  min-width: 150px;      /* largeur mini */
+  min-height: 48px;      /* hauteur mini recommandée */
 }
+
 
 
 .toggle-btn:hover {
