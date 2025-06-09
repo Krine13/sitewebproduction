@@ -709,6 +709,9 @@ transform:translateY(-10%);
   padding: 20px 10px;
   margin-left: 10%;
 }
+.hidden-content5.visible p {
+  padding: 5px 50px;
+}
 .hidden-content5 a {
   background-color: #236c91;
   border: #f6fe01 solid 2px;
@@ -963,7 +966,10 @@ transform:translateY(-10%);
   transition: transform 0.2s, box-shadow 0.3s;
 }
 
-
+a.toggle-btn.question {
+  width: 37%;
+  text-align: center;
+}
 
 .toggle-btn:hover {
   transform: scale(1.05);
