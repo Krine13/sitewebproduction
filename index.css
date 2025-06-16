@@ -710,7 +710,7 @@ transform:translateY(-10%);
   margin-left: 10%;
 }
 .hidden-content5.visible p {
-  padding: 5px 50px;
+  padding: 5px 20px;
 }
 .hidden-content5 a {
   background-color: #236c91;
@@ -719,7 +719,10 @@ transform:translateY(-10%);
   text-decoration: none;
   padding: 2px 2px;
 }
-
+.liste {
+  text-align: left;
+  margin-left: 5%;
+}
 .suiteContainer h3 {
  font-size: 35px; /* Taille du texte */
   color:#083e56;
@@ -809,14 +812,18 @@ transform:translateY(-10%);
 }
 .fusee {
   width: 40%;
-  margin-left: 28%;
+  margin-left: 30%;
   font-size: 1rem;
   padding: 2px 2px;
 }
 .hidden-content5.visible {
   width: 90%;
   margin-left: 3%;
-  font-size: 1em;
+  
+}
+.hidden-content5.visible p {
+  text-align:justify;
+  
 }
 }
 .outerContainer2 {
@@ -1262,13 +1269,13 @@ margin-left: 18%;
  }
  .imageRef img {
   width: 92%;
-  transform:translateX(-15%);
+  transform:translateX(-8%);
  }
  h4, h5, h6, .question p {
   font-size: 1.6em;
  }
  .imageRef .textOverlay {
-  margin-left: 10%;
+  margin-left: 15%;
   margin-top: 2%;
  }
  .textOverlay {
@@ -1286,8 +1293,10 @@ margin-left: 18%;
   width: 65%;
   margin-left: 17%;
   margin-top: 25%;
+}
 
-
+a.toggle-btn.question {
+  width: 60%;
 }
 
 .resume-layout {
@@ -1859,6 +1868,10 @@ color: #fefeff;
   width: 90%;
  margin-left: 5%;
 }
+
+a.toggle-btn.question {
+  width: 78%;
+}
  .resume {
   width: 98%;
   margin: 0 1%;
@@ -2141,7 +2154,12 @@ margin-left: 70%;
       width: 60%;
       margin-left: 19%;
      } 
-     
+    .hidden-content5.visible  {
+      font-size: 1em;
+    }
+    .hidden-content5.visible p {
+      padding: 2px 2px;
+    } 
     
     #toggleText1:hover, #toggleText2:hover {
         text-decoration: underline;
