@@ -364,12 +364,17 @@ transform: translateY(-30%);
         font-size: 1rem;
 }
   .bouton {
-    margin-left: -16%;
+    margin-left: -20%;
   
   }
   .bouton a {
     padding: 7px 7px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
+@media screen and (max-width:420px) {
+  .bouton {
+    margin-left:-23% ;
+  }
+}
