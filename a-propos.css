@@ -361,7 +361,7 @@ transform: translateY(-30%);
    } 
    .container-manifest, .container-manifest1, .container-manifest2, .container-manifest3, .container-manifest4  {
        
-        font-size: 0.8rem;
+        font-size: 1rem;
 }
   .bouton {
     margin-left: -16%;
