@@ -552,6 +552,9 @@ transform: translateY(-40%);
     
     
 }
+.cont {
+  display: none;
+}
 #contact {
   background: linear-gradient(135deg, #1e40af, #3b82f6);
   display: block;

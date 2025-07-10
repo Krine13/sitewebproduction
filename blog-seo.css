@@ -470,6 +470,9 @@ width: 96%;
 margin-left: 11%;
 width: 80%;
 }
+.cont {
+  display: none;
+}
 #contact {
   display: block;
   padding: 2% 2%;

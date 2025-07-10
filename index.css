@@ -217,6 +217,9 @@ transform: translateY(-40%);
     
     
 }
+.cont {
+  display: none;
+}
 #contact {
   
   display: block;
