@@ -156,6 +156,9 @@ transform: translateY(-40%);
   text-decoration: none;
 
 }
+.cont {
+  display: none;
+}
 #contact {
   background-color: rgb(51, 121, 250);
   display: block;
