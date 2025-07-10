@@ -10,13 +10,19 @@
     <loc>https://www.sitewebproduction.com/createur-site-web</loc>
     <lastmod>2025-04-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.sitewebproduction.com/blog-seo</loc>
     <lastmod>2025-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://www.sitewebproduction.com/a-propos</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.sitewebproduction.com/prestation</loc>

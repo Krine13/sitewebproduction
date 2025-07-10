@@ -179,11 +179,7 @@ window.addEventListener('scroll', function() {
         }
       });
 
-      
-
-      
-
-      isScrolling = false;
+     isScrolling = false;
     });
     isScrolling = true;
   }
@@ -330,3 +326,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+ document.querySelectorAll('.sommaire1 .item').forEach(item => {
+  item.addEventListener('click', () => {
+    const targetId = item.getAttribute('data-target');
+    const bloc = document.getElementById(targetId);
+
+    if (!bloc) return;
+
+    // On ferme tous les blocs sauf celui cliqué
+    document.querySelectorAll('.bloc').forEach(b => {
+      if (b !== bloc) b.classList.remove('active');
+    });
+
+    // On toggle le bloc cliqué
+    bloc.classList.toggle('active');
+  });
+});

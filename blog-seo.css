@@ -562,7 +562,7 @@ width: 80%;
 .bloc.active {
   display: block;
 }
-.bloc h4, .bloc h5 {
+.bloc h4, .bloc h5, .bloc h6 {
   color: #09194b;
   font-size: 20px;
 }
