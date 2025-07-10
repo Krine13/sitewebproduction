@@ -344,10 +344,10 @@ transform: translateY(-30%);
    }
    .menu-header {
     width: 90%;
-    height: 10%;
+    
    }
    .logomenu {
-    width: 86.8px !important;
+    width: 80px !important;
     height: auto !important;
 
    }
