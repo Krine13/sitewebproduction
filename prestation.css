@@ -164,6 +164,7 @@ transform: translateY(-40%);
   display: block;
   padding: 2% 2%;
   margin-left: 2%;
+  margin-top: 5%;
 
 }
 .menu.open {
@@ -181,15 +182,17 @@ transform: translateY(-40%);
   overflow: hidden;
   transform: translateY(-100%);
 }
-
+.header {
+  height: 9vh;
+}
 .menu-header {
   
   position: relative;
   display: flex;
    align-items: center;
   
-  width: 80%;
-  height: auto ;
+  width: 75%;
+  height: 9vh ;
   transform:translateY(-120%);
   border-radius: 8px;
    box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
@@ -198,8 +201,8 @@ transform: translateY(-40%);
 .logomenu  {
   position: absolute;
  border-radius: 8px;
-  width: 110px !important;
-  height: 110px !important;
+  width: 75px !important;
+  height: auto !important;
    box-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
 
  
@@ -208,7 +211,7 @@ transform: translateY(-40%);
 .nom {
   font-size: 1.8em;
   color: #f6fe01;
-  margin-left: 32%;
+  margin-left: 30%;
   text-shadow: -2px 0 10px rgba(254, 253, 253, 0.995);
 }
 
@@ -227,14 +230,14 @@ transform: translateY(-40%);
   height: 100vh;
 }
   .menu-header {
-    transform: translateY(-180%);
+    transform: translateY(-160%);
   }
   .menu-header p {
     font-size: 1.2em;
   }
   .logomenu {
-    width: 70px !important;
-    height: 70px !important;
+    width: 75px !important;
+    height: auto!important;
   }
   
   #contact {
@@ -255,18 +258,16 @@ transform: translateY(-40%);
           @media screen and (max-width:420px) {
             .menu-header {
     width: 90%;
-    transform: translateY(-180%);
+    margin-left: -3%;
   }
   .nom {
     font-size: 1.2em;
   }
-  .logomenu{
-    width:70px !important;
-    height: 70px !important;
-  }
+  
   .menu-deroule ul {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 15%;
+    margin-left: -2%;
     
   }
 .menu a {
