@@ -1,4 +1,5 @@
 body {
+  width: 100vw;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -136,6 +137,8 @@ body {
   animation-duration: 3s;
   
 }
+
+
   
 
      
@@ -479,8 +482,138 @@ transform:translateY(-10%);
 }
 
 
+.container1 {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.oneContainer {
+  width: 45%;
+  margin-top: 6%;
+  
+}
+.oneContainer h1 {
+  width: 100%;
+  margin-left: 5%;
+  font-size: 45px;
+}
+.oneContainer p{
+  font-size: 18px;
+  margin-left: 5%;
+  margin-top: 7%;
+  line-height: 1.6em;
+  font-style: italic;
+  
+}
+.call-to {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 18%;
+  gap: 70px;
+  
+  
+}
+.contacter, .telephoner {
+  width: 100%;
+
+}
+.telephoner {
+  margin-left: 10%;
+}
 
 
+.telephoner a, .contacter a {
+  color: #f9f9f9;
+  text-decoration: none;
+  border: #f9f9f9 solid 2px ;
+  padding: 20PX 20PX;
+  background-color: #8504e0;
+}
+
+.photop {
+width: 25%;
+margin-top: 4%;
+margin-left: 22%;
+}
+
+.offres {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+  
+  gap: 100px;
+}
+.offre {
+  
+  background-color:#f9f9f9;
+  color: #09194b;
+  width: 20%;
+  height: 300px;
+  margin-left: 6%;
+  padding: 20px 10px;
+  box-shadow: 0 0 20px rgba(10, 10, 10, 0.929);
+}
+
+.titre-offre {
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 1%;
+  font-weight: 600;
+ 
+  
+}
+
+.offre .decaller, .offre .decaller1, .offre .decaller2  {
+  line-height: 1.4em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 5px 7px;
+  color:#1e294c;
+  font-weight: 600;
+  font-family:'Times New Roman', Times, serif;
+  
+  
+}
+.offre .decaller {
+  margin-top: 14%;
+}
+.offre .decaller1 {
+  margin-top: -2%;
+}
+
+.offre a {
+ color:#f7fafb;
+  
+}
+.container-btn1 {
+  margin-top: 17%;
+  margin-left: -2%;
+}
+.container-btn2 {
+  margin-top: 14%;
+  margin-left: 7%;
+}
+.container-btn3 {
+  margin-top: 18%;
+  
+}
+.btn {
+  padding: 14px 7px;
+  background-color: #f80396;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(2, 2, 2, 0.99);
+  font-size: 15px;
+  margin-left: 25%;
+ 
+  
+}
  .outerContainer {
   display: flex;
   position: relative;
@@ -560,10 +693,10 @@ transform:translateY(-10%);
   margin-top: 10%;
 }
 .form {
-  background-color: #1e40af;
+  
   color: white;
-  border: #0f0f0f solid 2px;
-  text-decoration: none;
+  
+  text-decoration: underline;
   padding: 2px 5px;
 }
 
@@ -578,7 +711,7 @@ transform:translateY(-10%);
   text-align: center;
   font-size: 20px;
   margin-left: 8%;
-  margin-top: 5%;
+  margin-top: -3%;
   transform: translateY(-80%);
   background-color: #f9f9f9;
   
@@ -599,7 +732,7 @@ transform:translateY(-10%);
 /* Lorsqu'on affiche le contenu */
 .hidden-content4.visible  {
   display: block;
-  margin-top: 5%;
+  margin-top: -15%;
   margin-left: 5%;
   line-height: 1.8em;
   text-align: justify;
@@ -612,10 +745,116 @@ transform:translateY(-10%);
   animation: fadeIn 1s ease-in-out forwards; /* Applique l'animation quand visible */
 }
 
+ .pop-up .titre-offre1 {
+   font-size: 1.8em;
+   margin-left: 44%;
+
+}
+.pop-up p {
+  margin-left: 30%;
+  
+}
+.btn-contact {
+  margin-left: 46% ;
+  padding: 12px 5px;
+  margin-top: 2%;
+  background-color: #fe0496;
+ 
+  color: #f9f9f9;
+}
+
+.close {
+  margin-left: 50%;
+  top: 1%;
+  
+}
+.modal {
+  display: none;
+  position: fixed;
+  
+  left: -43%;
+  top: -10%;
+  width: 100vw;
+
+ 
+  
+}
+
+/* ---- POP-UP CONTENT ---- */
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 50px 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+ z-index: 9999;
+}
 
 
+/* ---- CLOSE ICON ---- */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
 
+.close:hover {
+  color: #000;
+}
 
+/* ---- FORM ELEMENTS ---- */
+
+.modal-content label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ---- SUBMIT BUTTON ---- */
+.modal-content button[type="submit"] {
+  background-color: #e65100; /* orange foncé */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #bf360c;
+}
 /* Animation du fondu */
 @keyframes fadeIn {
   0% {
@@ -645,7 +884,7 @@ transform:translateY(-10%);
   
   
   margin-top: 15%;
-  width: 45%;
+  width: 38%;
   margin-left: 35%;
   border-radius: 10%;
 
@@ -660,7 +899,9 @@ transform:translateY(-10%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
   opacity: 0; /* Commence invisible */
   transform: scale(0.8); /* Échelle initiale */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  z-index: 1;
+
+  transition: opacity 1s ease-out, transform 0.5s ease-out;
   
 }
 
@@ -668,6 +909,10 @@ transform:translateY(-10%);
   opacity: 1;
   transform: scale(1); /* Reviens à la taille normale */
   animation: bounceIn 1s ease-in-out; /* Animation de rebond */
+}
+.suiteContainer.slide-down {
+  
+  transition: transform 0.5s ease;
 }
 .fusee {
    display: inline-block;
@@ -714,12 +959,9 @@ transform:translateY(-10%);
   padding: 5px 20px;
 }
 .hidden-content5 a, .le-seo a {
-  background-color: #252391;
-  border: #f6fe01 solid 2px;
-  color: #f9f9f9;
-  text-decoration: none;
   padding: 2px 5px;
   border-radius: 8px;
+  color: #083e56;
 }
 .liste {
   text-align: left;
@@ -762,7 +1004,83 @@ transform:translateY(-10%);
 }
 
 @media screen and (max-width:768px) {
+  .container1  {
+position:relative;
+display:flex;
+flex-direction: column;
+  }
+  .oneContainer {
+    width: 90%;
+  }
+  .oneContainer h1 {
+font-size: 40px;
+margin-left: 5%;
+  }
+  .photop {
+   display: none;
+  }
+  .call-to {
+    gap:80px;
+    margin-top: 20%;
+  }
+  .telephoner {
+    margin-left: 17%;
   
+  }
+  
+ .offres {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+ }
+ .offre {
+  
+  
+  width: 50%;
+  margin-left: 23%;
+ }
+ .offre .decaller,.offre .decaller1, .offre .decaller2 {
+  font-size: 1.3em;
+  margin-top: 2%;
+  
+ }
+.container-btn1 {
+  margin-top: 12%;
+  
+}
+.container-btn2 {
+  margin-top: 2%;
+  margin-left: 12%;
+}
+.container-btn3 {
+  margin-top: 24%;
+}
+.container-btn1, .container-btn3 {
+  margin-left: 5%;
+}
+.pop-up {
+  margin-left: -22%;
+}
+.pop-up p {
+  margin-left: 33.8%;
+}
+.btn-contact {
+  margin-top: 2%;
+}
+.referencement {
+  margin-left: 10%;
+}
+.modal {
+  left: -5%;
+  top: 5%;
+  margin-bottom: 10%;
+  
+}
+.modal-content {
+padding: 110px 80px;
+}
+
   .outerContainer 
    {
     display: block;
@@ -860,6 +1178,7 @@ transform:translateY(-10%);
 .suiteContainer2 {
   width: 100%;
   position: relative;
+
 }
 .suiteContainer2 h2 {
   width: 30%;
@@ -1802,6 +2121,38 @@ margin-right: 15px;
 
 
 @media screen and (max-width:480px)  {
+  .oneContainer h1 {
+    font-size: 32px;
+    margin-left: 0;
+    padding-left: 4%;
+  }
+  .call-to {
+    width: 100%;
+    gap: 23px;
+    font-size: 12px;
+    padding: 2px 2px;
+  
+  }
+  .call-to .telephoner, .call-to .contacter {
+    margin-left: 8%;
+  }
+  .offre {
+width: 70%;
+margin-left: 12%;
+  }
+ .offre .decaller, .offre .decaller1, .offre .decaller2 {
+  font-weight: 400 ;
+ }
+ .container-btn1  {
+  margin-top: 15%;
+  margin-left: 3%;
+ }
+ .container-btn2 {
+  margin-top: 8%;
+ }
+ .container-btn3 {
+  margin-top: 14%;
+ }
   .firstContainer {
     position: static;
     width: 90%;
@@ -1814,9 +2165,24 @@ margin-right: 15px;
     font-size: 0.9em;
   }
    .seo img {
-    margin-top: 25%;
+    margin-top: 17%;
     margin-left: 15%;
     width: 60%;
+  }
+  .pop-up .titre-offre1 {
+    margin-left: 40%;
+  }
+  .btn-contact {
+    margin-left: 42%;
+  }
+  .pop-up p {
+    margin-left: 22%;
+  }
+  .modal {
+    margin-top: -3%;
+  }
+  .modal-content {
+    padding: 40px 20px;
   }
   .referencement {
     margin-left: 10%;
@@ -2219,6 +2585,36 @@ margin-left: 70%;
       height: 0 !important;
       overflow: hidden !important;*/
       @media screen and (max-width:420px)  {
+        .oneContainer h1 {
+          font-size: 28px;
+          margin-left: 3%;
+        }
+        .oneContainer p {
+          font-size: 16px;
+          margin-left: 7%;
+        }
+        .call-to {
+          gap: 15px;
+          font-size: 10px;
+        }
+        .offre {
+          width: 80%;
+          margin-left: 8%;
+        }
+        
+        .pop-up .titre-offre1 {
+          margin-left: 24%;
+        }
+        .pop-up p {
+          line-height: 1.4em;
+          font-size: 1.2em;
+          margin-left: 25%;
+          width: 60%;
+          text-align: center;
+        }
+        .referencement {
+          margin-top: 45%;
+        }
         .firstContainer {
           position: static;
           width: 90%;

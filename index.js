@@ -342,3 +342,23 @@ document.addEventListener('DOMContentLoaded', function() {
     bloc.classList.toggle('active');
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const openBtn = document.getElementById('open-form');
+  const closeBtn = document.getElementById('close-form');
+  const modal = document.getElementById('popup-form');
+
+  openBtn.addEventListener('click', function () {
+    modal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function () {
+    modal.style.display = 'none';
+  });
+
+  // Ferme la pop-up si on clique en dehors du formulaire
+  window.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
