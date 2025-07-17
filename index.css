@@ -491,19 +491,23 @@ transform:translateY(-10%);
   flex-direction: row;
 }
 .oneContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 45%;
   margin-top: 6%;
+ 
   
 }
 .oneContainer h1 {
   width: 100%;
   margin-left: 5%;
-  font-size: 45px;
+  font-size: 44px;
 }
 .oneContainer p{
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 5%;
-  margin-top: 7%;
+  margin-top: 12%;
   line-height: 1.6em;
   font-style: italic;
   
@@ -513,8 +517,8 @@ transform:translateY(-10%);
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 18%;
-  gap: 70px;
+  margin-top: 8%;
+  gap: 50px;
   
   
 }
@@ -523,7 +527,8 @@ transform:translateY(-10%);
 
 }
 .telephoner {
-  margin-left: 10%;
+  margin-left: 22%;
+  
 }
 
 
@@ -532,15 +537,18 @@ transform:translateY(-10%);
   text-decoration: none;
   border: #f9f9f9 solid 2px ;
   padding: 20PX 20PX;
-  background-color: #8504e0;
+  background-color: #f80396;
 }
 
 .photop {
-width: 25%;
-margin-top: 4%;
-margin-left: 22%;
-}
+width: 20%;
 
+margin-top: 4%;
+margin-left: 20%;
+}
+.photop img {
+border-radius: 8px; 
+}
 .offres {
   width: 100%;
   position: relative;
@@ -593,15 +601,15 @@ margin-left: 22%;
   
 }
 .container-btn1 {
-  margin-top: 17%;
+  margin-top: 15%;
   margin-left: -2%;
 }
 .container-btn2 {
-  margin-top: 14%;
+  margin-top: 12%;
   margin-left: 7%;
 }
 .container-btn3 {
-  margin-top: 18%;
+  margin-top: 16%;
   
 }
 .btn {
@@ -942,10 +950,10 @@ margin-left: 22%;
    /* Nécessaire pour positionner le trait */
 }
 .hidden-content5.visible {
-  background-color: #f9f9f9;
+  
   border: #f6fe01 solid 4px;
   box-shadow: 0 4px 12px rgb(5, 5, 5); /* jaune lumineux */
-  color: #083e56;
+  
   border-radius: 8px;
   display: block;
   width: 80%;
@@ -961,7 +969,7 @@ margin-left: 22%;
 .hidden-content5 a, .le-seo a {
   padding: 2px 5px;
   border-radius: 8px;
-  color: #083e56;
+  color: #f80396;
 }
 .liste {
   text-align: left;
@@ -1004,29 +1012,33 @@ margin-left: 22%;
 }
 
 @media screen and (max-width:768px) {
-  .container1  {
-position:relative;
-display:flex;
-flex-direction: column;
-  }
+  
   .oneContainer {
-    width: 90%;
+    width: 50%;
   }
   .oneContainer h1 {
 font-size: 40px;
 margin-left: 5%;
   }
-  .photop {
-   display: none;
-  }
+.oneContainer p {
+  font-size: 15px;
+}
+.photop {
+  width: 32%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
   .call-to {
+    width: 100%;
     gap:80px;
-    margin-top: 20%;
+    
   }
   .telephoner {
-    margin-left: 17%;
+    margin-left: 12%;
+    padding: 2px 2px;
   
   }
+  
   
  .offres {
   position: relative;
@@ -1113,9 +1125,12 @@ padding: 110px 80px;
  
  .seo img{
   /*position: static;*/
-  margin-left: 20%;
+  margin-left: 27%;
   margin-top: 20%;
-  width: 50%;
+  width: 35%;
+}
+.pop-up .titre-offre1 {
+margin-left: 46%;
 }
 .referencementContainer {
   margin-top: 25%;
@@ -1565,9 +1580,9 @@ margin-left: 18%;
   color: fuchsia;
 }
 .le-seo {
-  background-color:#fbfcfc;
+  
   border: #f6fe01 solid 5px;
-  color:#083e56 ;
+  
   display: flex;
   width: 52%;
   margin-left: 24%;
@@ -1866,7 +1881,7 @@ a.toggle-btn.question {
 .texte4 .button1 {
    margin-left: 100px;
   color: aliceblue;
-  background-color: rgb(232, 137, 41);
+  background-color: #f80396;
   text-decoration: none;
  font-size: 0.9em; 
  padding:2%;
@@ -2122,19 +2137,27 @@ margin-right: 15px;
 
 @media screen and (max-width:480px)  {
   .oneContainer h1 {
-    font-size: 32px;
+    font-size: 28px;
     margin-left: 0;
     padding-left: 4%;
+  }
+  .oneContainer P {
+    font-size: 12px;
+  }
+  .photop {
+    width: 35%;
+    margin-top: 15%;
+    margin-left: 10%;
   }
   .call-to {
     width: 100%;
     gap: 23px;
-    font-size: 12px;
+    font-size: 15px;
     padding: 2px 2px;
   
   }
   .call-to .telephoner, .call-to .contacter {
-    margin-left: 8%;
+    margin-left: 2%;
   }
   .offre {
 width: 70%;
@@ -2586,11 +2609,11 @@ margin-left: 70%;
       overflow: hidden !important;*/
       @media screen and (max-width:420px)  {
         .oneContainer h1 {
-          font-size: 28px;
+          font-size: 25px;
           margin-left: 3%;
         }
         .oneContainer p {
-          font-size: 16px;
+          font-size: 10px;
           margin-left: 7%;
         }
         .call-to {
@@ -2599,7 +2622,7 @@ margin-left: 70%;
         }
         .offre {
           width: 80%;
-          margin-left: 8%;
+          margin-left: 7%;
         }
         
         .pop-up .titre-offre1 {
