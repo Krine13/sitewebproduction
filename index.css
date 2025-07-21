@@ -99,6 +99,11 @@ body {
     .menu.open {
         right: 40px;
     }
+  .cont {
+    background-color:#f80396;
+    padding: 5px 5px;
+    
+  }
   
 .presentationContainer .presentationText {
     position: absolute;
@@ -534,7 +539,7 @@ border-radius: 8px;
   
 }
 .contacter, .telephoner {
-  width: 100%;
+  width: 25%;
 
 }
 .telephoner {
@@ -1034,6 +1039,9 @@ margin-left: 5%;
     width: 100%;
     gap:80px;
     
+  }
+  .contacter, .telephoner {
+    width: 100%;
   }
   .telephoner {
     margin-left: 12%;
@@ -2619,13 +2627,16 @@ margin-left: 70%;
           margin-left: 7%;
         }
         .call-to {
-          gap: 15px;
+          gap: 17px;
           font-size: 10px;
+          margin-left: 3%;
         }
+        
         .offre {
           width: 80%;
           margin-left: 7%;
         }
+        
         
         .pop-up .titre-offre1 {
           margin-left: 24%;
