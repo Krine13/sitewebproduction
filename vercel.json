@@ -21,11 +21,6 @@
       "source": "/index",
       "destination": "/",
       "permanent": true
-    },
-    {
-      "source": "/prestation/",
-      "destination": "/prestation",
-      "permanent": true
     }
     
   ]
