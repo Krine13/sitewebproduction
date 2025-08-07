@@ -526,6 +526,7 @@ margin-left: 20%;
 }
 .photop img {
 border-radius: 8px; 
+margin-top: 20%;
 }
 
 .call-to {
@@ -533,7 +534,7 @@ border-radius: 8px;
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 8%;
+  margin-top: -3%;
   
   
   
@@ -1024,27 +1025,28 @@ border-radius: 8px;
     width: 50%;
   }
   .oneContainer h1 {
-font-size: 40px;
+font-size: 38px;
 margin-left: 5%;
   }
 .oneContainer p {
-  font-size: 15px;
+  font-size: 16px;
 }
 .photop {
   width: 32%;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 3%;
 }
   .call-to {
     width: 100%;
     gap:80px;
+    margin-top: 8%;
     
   }
   .contacter, .telephoner {
     width: 100%;
   }
   .telephoner {
-    margin-left: 12%;
+    margin-left: 11%;
     padding: 2px 2px;
   
   }
@@ -1072,14 +1074,14 @@ margin-left: 5%;
   
 }
 .container-btn2 {
-  margin-top: 2%;
-  margin-left: 12%;
+  margin-top: 8%;
+  margin-left: 14%;
 }
 .container-btn3 {
   margin-top: 24%;
 }
 .container-btn1, .container-btn3 {
-  margin-left: 5%;
+  margin-left: 7%;
 }
 .pop-up {
   margin-left: -22%;
@@ -1089,6 +1091,8 @@ margin-left: 5%;
 }
 .btn-contact {
   margin-top: 2%;
+  font-size: 16px;
+ 
 }
 .referencement {
   margin-left: 10%;
@@ -1928,7 +1932,8 @@ a.toggle-btn.question {
     margin-left: 5%;
    }
    .explication .button1 {
-    margin-left: 31%;
+    margin-left: 34%;
+    font-size: 20px;
     
    }
    
@@ -2489,7 +2494,10 @@ margin-left: 70%;
     flex-direction: column-reverse;
     
   }
-
+.explication .button1 {
+  font-size: 18px;
+  margin-left: 30%;
+}
   .container4 .titre4::before {
     margin-left:4%;
     width: 0.4%;
@@ -2628,7 +2636,7 @@ margin-left: 70%;
         }
         .call-to {
           gap: 17px;
-          font-size: 10px;
+          font-size: 12px;
           margin-left: 0%;
         }
         .telephoner a, .contacter a {
@@ -2664,9 +2672,12 @@ margin-left: 70%;
         display: block;
         width: 100%;
       }
-      
+      .btn-contact {
+        margin-left: 38%;
+      }
       .suiteContainer {
       width:90%;
+      margin-top: 5%;
       }
       .suiteContainer h2 {
         font-size: 1.4em;
