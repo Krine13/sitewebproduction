@@ -1305,7 +1305,7 @@ margin-left: 46%;
 }
 
 .reforcer {
-  background-color: #8504e0;
+  background-color: #4706fc;
   color: rgb(250, 249, 249);
   padding: 1rem;
   border: none;
@@ -2629,9 +2629,12 @@ margin-left: 70%;
         .call-to {
           gap: 17px;
           font-size: 10px;
-          margin-left: 3%;
+          margin-left: 0%;
         }
-        
+        .telephoner a, .contacter a {
+          font-size: 14px;
+          padding:14px 14px;
+        }
         .offre {
           width: 80%;
           margin-left: 7%;
