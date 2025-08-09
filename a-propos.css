@@ -296,12 +296,14 @@ transform: translateY(-30%);
     font-size: 1.4rem;
     font-weight: bold;
     width: 40%;
+  
 }
 #contact {
   display: block;
   padding: 2% 2%;
   margin-left: 2%;
 }
+
     .container h1 {
         width: 88%;
         margin-left: 6%;

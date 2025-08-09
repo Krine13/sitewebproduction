@@ -82,11 +82,16 @@ body {
   color: #f9f9f9;
   
 }
+.menu-deroule {
+  width: 100%;
+}
     .menu-deroule ul {
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        gap: 80px;
         list-style: none;
+        width: auto;
+        
     }
 
    
@@ -197,10 +202,10 @@ body {
 transform: translateY(-40%);
   font-size: 22px;
   text-align: center;
-  width: 100%;
+  width: 90%;
   margin-top: 15%;
   
-  padding-left: 2%;
+  padding-left: 5%;
    list-style: none;
   
 }
@@ -232,7 +237,8 @@ transform: translateY(-40%);
   
   display: block;
   padding: 2% 2%;
-  margin-left: 2%;
+  margin-left: 1%;
+  margin-top: 10%;
 
 }
 .menu.closed {
@@ -363,7 +369,7 @@ transform: translateY(-40%);
   transform: translateY(0);
   height: 100vh;
 }
-  
+
   .menu-header p {
     font-size: 1.2em;
   }
@@ -373,16 +379,18 @@ transform: translateY(-40%);
   }
   
   #contact {
-   margin-top: 17%;
-    font-size: 20px;
+   margin-top: 25%;
+    font-size: 17px;
     width: 50%;
     
   }
   .menu-deroule ul {
-   gap: 40px;
-   font-size: 20px;
-   transform: translateY(20%);
-   padding-left: 0;
+    
+   gap: 60px;
+   font-size: 17px;
+   transform: translateY(-2%);
+   padding-left: 5%;
+   margin-top: 4%;
   }
  
 }
@@ -404,7 +412,7 @@ transform: translateY(-40%);
     height: 60px !important;
   }
   .menu-deroule ul {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 15%;
     
   }
@@ -413,7 +421,7 @@ transform: translateY(-40%);
 }
 
 #contact {
-  font-size: 20px;
+  font-size: 17px;
   width: 60%;
 }
 
@@ -1610,16 +1618,12 @@ margin-left: 18%;
   line-height: 2em;
   text-align: center;
  }
- .appel {
-  background-color:rgb(52, 75, 104);
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-  padding: 5px 20px;
-  width: 80%;
-  margin-top: 5%;
-  margin-left: 8%;
- }
  .appel p {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+width: 85%;
+margin-left: 7%;
+margin-top: 5%;
   font-size: 25px;
   color: #f9f9f9;
   text-align: center;
@@ -1801,12 +1805,12 @@ a.toggle-btn.question {
 
 
 .appel {
-  width: 86%;
-  margin-left: 5%;
+  width: 100%;
+  margin-left: 1%;
   
 }
 .appel p {
-  font-size: 22px;
+  font-size: 20px;
 }
 .le-seo {
   width: 90%;
@@ -2469,12 +2473,7 @@ margin-left: 70%;
   text-align: center;
 }
 
-.appel {
-  margin-left: 1.8%;
-  width: 88% !important;
-  
-  
-}
+
 .appel p {
   color: #fcfeff;
   text-shadow: none;
@@ -2814,8 +2813,8 @@ margin-left: 70%;
         }
 
         .appel {
-          padding:1px 2px;
-          width: 97% !important;
+          
+          width: 100% !important;
           margin-left: 1%;
         }
        
