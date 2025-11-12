@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // ---------------- Hamburger Menu ----------------
     const hamburger = document.getElementById('hamburger');

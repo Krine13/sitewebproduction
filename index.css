@@ -1287,10 +1287,10 @@ margin-left: 46%;
 
 .textOverlay {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 20%;
+  left: 20%;
   padding: 1rem;
-  
+  top: 15%;
   width: 100%;
 }
 .textOverlay ul {
@@ -1301,7 +1301,7 @@ margin-left: 46%;
 
 .textOverlay ul li h3, .textOverlay ul li h4 {
   line-height: 0.8rem;
-   font-size: 1rem;
+   font-size: 1.2rem;
    letter-spacing: 2px;
    color:#f9f9f9;
    font-family: cursive;
@@ -1880,7 +1880,8 @@ a.toggle-btn.question {
   line-height: 1.8em;
   
  }
- 
+ /* ✅ Animation fade-in */
+
 
 .explication .texte4 {
   left: 0;
@@ -1908,8 +1909,26 @@ a.toggle-btn.question {
   
   width:40%;
 }
+.image-anime {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+.image-anime.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.animation-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
 
+.animation-fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 @media(max-width:768px) {
   
