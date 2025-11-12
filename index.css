@@ -141,10 +141,7 @@ body {
   font-size: 17px;
   color: aliceblue;
   padding: 5px 10px;
-  animation: zoomer 2s forwards, moveUpSousTitre 2s ease-out forwards;
   
-  transition: bottom 0.1s, opacity 0.5s;
-  animation-duration: 3s;
   
 }
 
