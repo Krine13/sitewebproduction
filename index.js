@@ -1,21 +1,3 @@
-function loadGTM() {
-    const gtagScript = document.createElement('script');
-    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-5X5MRBBKP6";
-    gtagScript.async = true;
-    document.head.appendChild(gtagScript);
-
-    gtagScript.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-5X5MRBBKP6');
-    };
-}
-
-// Charger GTM au premier scroll / clic
-window.addEventListener('scroll', loadGTM, {once: true});
-window.addEventListener('click', loadGTM, {once: true});
-
 
 
 
