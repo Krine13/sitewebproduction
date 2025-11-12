@@ -1,3 +1,25 @@
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const gtagScript = document.createElement('script');
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-5X5MRBBKP6";
+        gtagScript.async = true;
+        document.head.appendChild(gtagScript);
+
+        gtagScript.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5X5MRBBKP6');
+        };
+    }, 2000); // délai léger
+});
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // ---------------- Hamburger Menu ----------------
     const hamburger = document.getElementById('hamburger');
