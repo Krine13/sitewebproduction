@@ -14,8 +14,14 @@
     "detect-css-reflows/paint": "off",
     "compat-api/css": [
       "default"
-      
-        
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "link[imagesrcset]"
+        ]
+      }
     ]
   }
 }

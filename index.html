@@ -10,6 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preload" href="/index.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/index.css"></noscript>
     <link rel="canonical" href="https://www.sitewebproduction.com/">
     <link rel="sitemap" type="application/xml" href="https://www.sitewebproduction.com/sitemap.xml">
 
@@ -22,6 +24,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preload"
+      as="image"
+      href="./image/couverture.avif"
+      imagesrcset="
+        ./image/couverture.avif 800w,
+        ./image/couverture.avif 1200w,
+        ./image/couverture.avif 1500w
+      "
+      imagesizes="(max-width: 600px) 100vw, 1200px"
+      fetchpriority="high">
 
 </head>
 
@@ -35,9 +47,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="logoContainer">
             <a href="/createur-site-web">
             <img src="./image/logo-sitewebproduction.avif"
-            width="250px" height="250px"
+            width="250" height="250"
             srcset="./image/logo-sitewebproduction.avif 420w, ./image/logo-sitewebproduction.avif 480w, ./image/logo-sitewebproduction.avif 1024w"
-             class="logo" alt="logo site web production" loading="lazy" >
+             class="logo" alt="logo site web production"
+             loading="lazy">
             </a>
         </div>
        
@@ -51,7 +64,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     width="1500" 
                     height="750"
                     srcset="./image/couverture.jpg 420w, ./image/couverture.jpg 480w  , ./image/couverture.jpg 1024w"
-                    alt="un ordinateur avec une fusée qui décolle">
+                    alt="un ordinateur avec une fusée qui décolle"
+                     fetchpriority="high">
             </picture>
         
          
@@ -574,7 +588,7 @@ Autrement dit, un bon positionnement sur Google ne suffit pas. Encore faut-il un
 
 
 
-   <script src="index.js"></script>
+   <script src="index.js" defer></script>
     
 </body>
 </html>
