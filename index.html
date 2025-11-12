@@ -55,22 +55,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
        
         
-        <div class="photo">
-            <picture>
-                <source srcset="./image/couverture.avif" type="image/avif">
-                
-                <img 
-                    src="./image/couverture.jpg" 
-                    width="1500" 
-                    height="750"
-                    srcset="./image/couverture.jpg 420w, ./image/couverture.jpg 480w  , ./image/couverture.jpg 1024w"
-                    alt="un ordinateur avec une fusée qui décolle"
-                     fetchpriority="high">
-            </picture>
-        
-         
-    
-        </div>
+       <div class="photo">
+  <picture>
+    <!-- AVIF -->
+    <source 
+        srcset="./image/couverture-420w.avif 420w,
+                ./image/couverture-480w.avif 480w,
+                ./image/couverture-768w.avif 768w,
+                ./image/couverture.avif 1500w"
+        sizes="(max-width: 480px) 100vw, 1500px"
+        type="image/avif">
+
+    <!-- Fallback JPEG -->
+    <img 
+        src="./image/couverture-1500w.jpg" 
+        width="1500" 
+        height="750"
+        srcset="./image/couverture-420w.jpg 420w,
+                ./image/couverture-480w.jpg 480w,
+                ./image/couverture-768w.jpg 768w,
+                ./image/couverture-1500w.jpg 1500w"
+        sizes="(max-width: 480px) 100vw, 1500px"
+        alt="un ordinateur avec une fusée qui décolle"
+        fetchpriority="high">
+  </picture>
+</div>
+
 
         <div class="presentationText">
             <p class="grosTitre">Site Web Production</p>
