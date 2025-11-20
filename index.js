@@ -115,13 +115,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ---------------- Redimensionnement pour hidden-text ----------------
-    function handleResize() {
+   /* function handleResize() {
         if (window.innerWidth > 480) {
             document.querySelectorAll('.hidden-text').forEach(el => el.style.display = 'inline');
         }
     }
     window.addEventListener('load', handleResize);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);*/
+
+   function handleResize() {
+    document.body.classList.toggle('large-screen', window.innerWidth > 480);
+}
+
+window.addEventListener('load', handleResize);
+window.addEventListener('resize', handleResize);
+ 
 
     // ---------------- Toggle stratégie ----------------
     document.querySelectorAll('.strategie').forEach(button => {
