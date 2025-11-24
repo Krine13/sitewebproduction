@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.4 });
 
     document.querySelectorAll(
-        '.animate, .animation-fade-in, .image-anime, .firstContainer h1, .suiteContainer'
+        '.animate, .animation-fade-in, .image-anime, .suiteContainer, firstContainer h2'
     ).forEach(el => observer.observe(el));
 
     // ---------------- Contenus cachés / toggle ----------------
