@@ -19,7 +19,54 @@ body {
     font-weight: 400;
     font-size: 1.1em;
 }
+  .presentationContainer {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    
+    margin: 0;
+    padding: 0;
+    
+    
+    
+} 
+.presentationContainer .presentationText {
+   position: absolute;
+    top: 40%;             /* ajuste la hauteur verticale */
+    left: 33%;            /* centre horizontal */
+    transform: translate(-50%, -50%);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: top 2s, opacity 0.5s;
+    animation: moveDownTitre 2s ease-out forwards;
+    animation-delay: -1s;
+}
+.presentationText .grosTitre {
+  font-size: 3.2em;
   
+}
+
+.presentationText p {
+  font-size: 1.4em;
+  
+}
+
+
+.bouton-prestation {
+  
+  
+  text-decoration:none;
+  background-color:#434e5f;
+  
+  left:45%;
+  border: white solid;
+  font-size: 17px;
+  color: aliceblue;
+  padding: 5px 10px;
+  
+  
+}
+
+
 
   .logoContainer {
     position: absolute;
@@ -36,17 +83,7 @@ body {
   height: auto; /* Conserve les proportions */
   }
   
-  .presentationContainer {
-    position: relative;
-    text-align: center;
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    
-    
-    
-}
+ 
 
 
 
@@ -60,6 +97,7 @@ body {
      /* Ajuste automatiquement la hauteur en fonction de la largeur pour maintenir le ratio */
      /* Ajuste l'image tout en conservant son ratio d'aspect */
 }
+
 
 .menu {
         position: absolute;
@@ -110,40 +148,6 @@ body {
     
   }
   
-.presentationContainer .presentationText {
-    position: absolute;
-    top: 40%;
-    left: 33%;
-    
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    transition: top 2s, opacity 0.5s;
-    animation: moveDownTitre 2s ease-out forwards;
-    animation-delay: -1s;
-}
-.presentationText .grosTitre {
-  font-size: 3.2em;
-}
-
-.presentationText p {
-  font-size: 1.4em;
-  
-}
-
-
-.bouton-prestation {
-  
-  
-  text-decoration:none;
-  background-color:#434e5f;
-  
-  left:45%;
-  border: white solid;
-  font-size: 17px;
-  color: aliceblue;
-  padding: 5px 10px;
-  
-  
-}
 
 
   
@@ -614,15 +618,15 @@ margin-top: 20%;
   
 }
 .container-btn1 {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: -2%;
 }
 .container-btn2 {
-  margin-top: 12%;
+  margin-top: 15%;
   margin-left: 7%;
 }
 .container-btn3 {
-  margin-top: 16%;
+  margin-top: 11%;
   
 }
 .btn {
@@ -784,7 +788,7 @@ margin-top: 20%;
 
 }
 .pop-up p {
-  margin-left: 30%;
+  margin-left: 43%;
   
 }
 .btn-contact {
@@ -1313,7 +1317,7 @@ margin-left: 46%;
 
 .textOverlay ul li h3, .textOverlay ul li h4 {
   line-height: 0.5rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
    letter-spacing: 2px;
    color:#f9f9f9;
    font-family: cursive;
@@ -1332,6 +1336,7 @@ margin-left: 46%;
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  padding: 15px 98px;
   margin-bottom: 1rem;
   margin-left: 15%;
 }
