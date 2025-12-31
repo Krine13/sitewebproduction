@@ -19,7 +19,8 @@
       "default",
       {
         "ignore": [
-          "link[imagesrcset]"
+          "link[imagesrcset]",
+          "link[fetchpriority]"
         ]
       }
     ]
